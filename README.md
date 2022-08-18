@@ -1,7 +1,7 @@
 
 ![](./sql2022workshop/graphics/microsoftlogo.png)
 
-# Workshop: The SQL Server 2022 Workshop
+# Workshop: The SQL Server 2022 Workshop (BETA)
 
 #### <i>A Microsoft Course from the SQL Server team</i>
 
