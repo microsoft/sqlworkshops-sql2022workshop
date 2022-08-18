@@ -1,5 +1,5 @@
 
-![](./sql2019workshop/graphics/microsoftlogo.png)
+![](./sql2022workshop/graphics/microsoftlogo.png)
 
 # Workshop: The SQL Server 2022 Workshop
 
@@ -87,7 +87,7 @@ In addition, SQL Server Polybase allows you to connect to Azure SQL, Azure SQL D
 
 To complete this workshop you will need the following:
 
-- Clone the workshop using git from https://github.com/microsoft/sqlworkshops-sql2019workshop.git. All the scripts and files in the labs are found in the **sql2019workshop** folder.
+- Clone the workshop using git from https://github.com/microsoft/sqlworkshops-sql2019workshop.git. All the scripts and files in the labs are found in the **sql2022workshop** folder.
 - On Windows systems, you should use the following git syntax
 
     `git clone --config core.autocrlf=false https://github.com/microsoft/sqlworkshops-sql2019workshop.git`
@@ -113,13 +113,7 @@ In order to complete this workshop you need to install the following software:
 - Install SQL Server Management Studio (SSMS) 18.2 or higher from https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms. Several of the modules require features built only into SSMS.
 - Install Azure Data Studio June 2019 or higher from https://docs.microsoft.com/en-us/sql/azure-data-studio/download. T-SQL notebooks are used extensively in this course.
 
-Azure Data Studio includes new important capabilities for the SQL Server professional called Notebooks. To learn more watch this video by Microsoft Principal Program Manager Vicky Harp on Azure Data Studio:
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Nt4kIHQ0IOc
-" target="_blank"><img src="http://img.youtube.com/vi/Nt4kIHQ0IOc/0.jpg" 
-alt="Introducing SQL Server 2019" width="400" height="300" border="10" /></a>
-
-- The WideWorldImporters sample backup from https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak. You can find example scripts to restore the WideWorldImporters database in the **sql2019workshop** folder.
+- The WideWorldImporters sample backup from https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak. You can find example scripts to restore the WideWorldImporters database in the **sql2022workshop** folder.
 
 This workshop was built and designed for a computer or VM to run SQL Server with at least 8Gb RAM and 4 CPUs.
 
@@ -134,11 +128,11 @@ LICENSE-CODE file. All license files are found in the LICENSES directory.
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/education1.png?raw=true"><b>     Workshop Details</b></h2>
 
-This workshop uses SQL Server 2019, SQL Server Management Studio, Azure Data Studio, containers, Kubernetes, and Azure SQL Database for you to learn how you can solve modern data challenges with SQL Server 2019.
+This workshop uses SQL Server 2022, SQL Server Management Studio, Azure Data Studio, Azure SQL Managed Instance, Azure Synapse Analytics, Azure Active Directory (AAD), and Microsoft Purview you to learn how you can solve new challenges with SQL Server 2022.
 
 <table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 5px; border-color: gray;">
 
-  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Primary Audience:</td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Data professionals looking to understand and use new capabilities of SQL Server 2019</td></tr>
+  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Primary Audience:</td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Data professionals looking to understand and use new capabilities of SQL Server 2022</td></tr>
   <tr><td>Secondary Audience:</td><td>Developers, Architects, IT Pros, Data Scientists, and Data Engineers</td></tr>
   <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Level: </td><td style="background-color: Cornsilk; color: black; padding: 5px 5px0;">300</td></tr>
   <tr><td>Type:</td><td>Self-Paced or Instructor Led</td></tr>
@@ -150,12 +144,6 @@ This workshop uses SQL Server 2019, SQL Server Management Studio, Azure Data Stu
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pinmap.png?raw=true"><b>     Related Workshops</b></h2>
 
-- [SQL Server 2019 Lab](https://github.com/microsoft/sqlworkshops/tree/master/sql2019lab)
-- [SQL Server Big Data Clusters Architecture](https://github.com/microsoft/sqlworkshops/tree/master/sqlserver2019bigdataclusters)
-- [SQL Server 2019 on OpenShift](https://github.com/microsoft/sqlworkshops/tree/master/SQLonOpenShift)
-- [SQL Ground-to-Cloud](https://github.com/microsoft/sqlworkshops/tree/master/SQLGroundToCloud)
-
-
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/bookpencil.png?raw=true"><b>     Workshop Modules</b></h2>
@@ -166,25 +154,20 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td style="background-color: AliceBlue; color: black;"><b>Module</b></td><td style="background-color: AliceBlue; color: black;"><b>Topics</b></td></tr>
 
-  <tr><td ><a href="./sql2019workshop/01_Introduction.md" target="_blank">01 - Introduction to SQL Server 2019</a></td><td> Learn how SQL Server 2019 solves challenges for the modern data professional</td></tr>
-  <tr><td><a href="./sql2019workshop/02_IntelligentPerformance.md" target="_blank">02 - Intelligent Performance</a></td><td> Learn the how SQL Server can boost your performance with no application changes</td></tr>
-  <tr><td><a href="./sql2019workshop/03_Security.md" target="_blank">03 - Security</a> </td><td > Learn new security features of SQL Server 2019 such as Data Classification and Auditing</td></tr>
-  <tr><td><a href="./sql2019workshop/04_Availability.md" target="_blank">04 - Availability</a></td><td> Learn new capabilities to make your SQL Server more available such as Accelerated Database Recovery</td></tr>
-  <tr><td ><a href="./sql2019workshop/05_ModernDevPlatform.md" target="_blank">05 - Modern Development Platform</a></td><td> Learn how SQL Server 2019 provides new capabilities for the modern data developer</td></tr>
-  <tr><td><a href="./sql2019workshop/06_Linux_and_Containers.md" target="_blank">06 - Linux and Containers</a></td><td>Learn how to deploy SQL Server in containers and SQL Server Replication on Linux.</td></tr>
-  <tr><td><a href="./sql2019workshop/07_SQLOnKubernetes.md" target="_blank">07 - SQL Server on Kubernetes</a></td><td>Learn how to deploy SQL Server on a Kubernetes Cluster</td></tr>
-  <tr><td><a href="./sql2019workshop/08_DataVirtualization.md" target="_blank">08 - Data Virtualization</a> </td><td>Learn how to use SQL Server as a data hub and reduce data movement using Polybase++</td></tr> 
-  <tr><td><a href="./sql2019workshop/09_BigDataClusters.md" target="_blank">09 - Big Data Clusters</a> </td><td>Learn how to use and manage an integrated solution with SQL Server, Hadoop, and Spark</td></tr>
-  <tr><td><a href="./sql2019workshop/10_Additional_Migration.md" target="_blank">10 - Additional Capabilities,  Migration, and Next Steps</a></td><td>Learn more about Additional Capabilities in SQL Server 2019, Migration Tools, Database Compatibility, and Next Steps</td></tr>
-  <tr></tr>
-  <tr></tr>
+  <tr><td ><a href="./sql2022workshop/02_Introduction.md" target="_blank">01 - Introduction to SQL Server 2022</a></td><td> Learn how SQL Server 2022 solves challenges for the data professional</td></tr>
+  <tr><td><a href="./sql2022workshop/02_AzureConnected.md" target="_blank">02 - Connect SQL Server 2022 to Azure</a></td><td> Learn the how SQL Server is a hybrid data platform connecting to Azure services</td></tr>
+  <tr><td><a href="./sql2022workshop/03_BuiltinQueryIntelligence.md" target="_blank">03 - Accelerate performance with built-in query intelligence</a> </td><td >Learn how to get faster with no code changes</td></tr>
+  <tr><td><a href="./sql2022workshop/04_Engine.md" target="_blank">04 - Power your database with security, scalability, and availability</a></td><td>Learn the new capabilities of the industry proven SQL Server engine</td></tr>
+  <tr><td ><a href="./sql2022workshop/05_datavirt.md" target="_blank">05 - Access new sources with data virtualization and object storage</a></td><td> Learn the new data virtualization and object storage capabilities</td></tr>
+  <tr><td><a href="./sql2022workshop/06_tsql.md" target="_blank">06 - Enhance your application with new T-SQL capabilities</a></td><td>Learn the new T-SQL enhancements for new application scenarios</td></tr>
+  <tr><td><a href="./sql2019workshop/07_summary.md" target="_blank">07 - Summary</a></td><td>Get more resources and next steps for SQL Server 2022</td></tr>
 </table>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b>     Next Steps</b></h2>
 
-Next, Continue to <a href="./sql2019workshop/01_Introduction.md" target="_blank"><i>Introduction to SQL Server 2019</i></a>
+Next, Continue to <a href="./sql2022workshop/02_Introduction.md" target="_blank"><i>Introduction to SQL Server 2022</i></a>
 
 ## Contributing
 
