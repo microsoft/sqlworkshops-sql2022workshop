@@ -114,12 +114,12 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td style="background-color: AliceBlue; color: black;"><b>Module</b></td><td style="background-color: AliceBlue; color: black;"><b>Topics</b></td></tr>
 
-  <tr><td ><a href="./sql2022workshop/02_Introduction.md" target="_blank">01 - Introduction to SQL Server 2022</a></td><td> Learn how SQL Server 2022 solves challenges for the data professional</td></tr>
+  <tr><td ><a href="./sql2022workshop/01_Introduction.md" target="_blank">01 - Introduction to SQL Server 2022</a></td><td> Learn how SQL Server 2022 solves challenges for the data professional</td></tr>
   <tr><td><a href="./sql2022workshop/02_AzureConnected.md" target="_blank">02 - Connect SQL Server 2022 to Azure</a></td><td> Learn the how SQL Server is a hybrid data platform connecting to Azure services</td></tr>
   <tr><td><a href="./sql2022workshop/03_BuiltinQueryIntelligence.md" target="_blank">03 - Accelerate performance with built-in query intelligence</a> </td><td >Learn how to get faster with no code changes</td></tr>
   <tr><td><a href="./sql2022workshop/04_Engine.md" target="_blank">04 - Power your database with security, scalability, and availability</a></td><td>Learn the new capabilities of the industry proven SQL Server engine</td></tr>
-  <tr><td ><a href="./sql2022workshop/05_datavirt.md" target="_blank">05 - Access new sources with data virtualization and object storage</a></td><td> Learn the new data virtualization and object storage capabilities</td></tr>
-  <tr><td><a href="./sql2022workshop/06_tsql.md" target="_blank">06 - Enhance your application with new T-SQL capabilities</a></td><td>Learn the new T-SQL enhancements for new application scenarios</td></tr>
+  <tr><td ><a href="./sql2022workshop/05_DataVirt.md" target="_blank">05 - Access new sources with data virtualization and object storage</a></td><td> Learn the new data virtualization and object storage capabilities</td></tr>
+  <tr><td><a href="./sql2022workshop/06_TSQL.md" target="_blank">06 - Enhance your application with new T-SQL capabilities</a></td><td>Learn the new T-SQL enhancements for new application scenarios</td></tr>
   <tr><td><a href="./sql2019workshop/07_summary.md" target="_blank">07 - Summary</a></td><td>Get more resources and next steps for SQL Server 2022</td></tr>
 </table>
 
