@@ -1,6 +1,6 @@
 # SQL Server 2022 IQP demos
 
-These are demos to be showcase new IQP features in SQL Server 2022.
+These are demos to showcase new IQP features in SQL Server 2022.
 
 **cefeedback**
 
