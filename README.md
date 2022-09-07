@@ -78,7 +78,6 @@ In order to complete the exercises in this workshop you will need the following:
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
 - The **WideWorldImporters** sample backup from https://aka.ms/WideWorldImporters. Many of the exercises have a script which by default restores the WideWorldImporters backup from the c:\sql_sample_databases folder.
 - Download **ostress.exe** by downloading RML utilities from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults.
-- **Optional**: If you want to go through the exercises in Module 2 you will need an Azure subscription. Check the detailed requirements in the exercises in Module 2 for other Azure requirements.
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
 in this repository under the Creative Commons Attribution 4.0 International Public License,
