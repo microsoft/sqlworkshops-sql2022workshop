@@ -1,7 +1,7 @@
 
 ![](./sql2022workshop/graphics/microsoftlogo.png)
 
-# Workshop: The SQL Server 2022 Workshop (BETA)
+# Workshop: The SQL Server 2022 Workshop (Preview)
 
 #### <i>A Microsoft Course from the SQL Server team</i>
 
@@ -70,14 +70,15 @@ Each module of this workshop can be studied and used independently of each other
 <h3><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/bulletlist.png?raw=true"> 
 <b>     Setup</b></h3>
 
-In order to complete this workshop you need to install the following software:
+In order to complete the exercises in this workshop you will need the following:
 
-- SQL Server 2022 Evaluation Edition
-- Install SQL Server Management Studio (SSMS) latest 18 or 19 build from https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
-- Install Azure Data Studio from https://docs.microsoft.com/en-us/sql/azure-data-studio/download. T-SQL notebooks are used in this course.
-- The WideWorldImporters sample backup from https://aka.ms/WideWorldImporters
-
-This workshop was built and designed for a computer or VM to run SQL Server with at least 8Gb RAM and 4 CPUs.
+- A virtual machine or computer with at least 4 CPUs and 8Gbm RAM.
+- SQL Server 2022 Evaluation Edition with the Database Engine feature installed. Exercises in Module 5 require the PolyBase Query Service for External Data Feature.
+- Install **SQL Server Management Studio (SSMS)** latest 18 or 19 build from https://aka.ms/ssms18 or https://aka.ms/ssms19. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
+- Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
+- The **WideWorldImporters** sample backup from https://aka.ms/WideWorldImporters. Many of the exercises have a script which by default restores the WideWorldImporters backup from the c:\sql_sample_databases folder.
+- Download **ostress.exe** from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults.
+- **Optional**: If you want to go through the exercises in Module 2 you will need an Azure subscription. Check the detailed requirements in the exercises in Module 2 for other Azure requirements.
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
 in this repository under the Creative Commons Attribution 4.0 International Public License,
