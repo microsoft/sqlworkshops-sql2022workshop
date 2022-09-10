@@ -1,8 +1,9 @@
-# Demo for Backup and Restore with S3 providers for SQL Server 2022
+# Exercise for Backup and Restore with S3 providers for SQL Server 2022
 
-This is a demonstration of BACKUP and RESTORE in SQL Server 2022 using the new REST API "connector" for S3 object storage.
+This is an exercise of BACKUP and RESTORE in SQL Server 2022 using the new REST API "connector" for S3 object storage.
 
-**Note**: This demo uses non-Microsoft software that has "free" license to use for testing and development purposes only. This demo should only be run in a testing environment and not with any production workload.
+> [!CAUTION]
+> This exercise uses non-Microsoft software that has "free" license to use for testing and development purposes only. This exercise should only be run in a testing environment and not with any production workload.
 
 ## Pre-requisites
 
@@ -10,12 +11,13 @@ This is a demonstration of BACKUP and RESTORE in SQL Server 2022 using the new R
 - VM or computer with 2 CPUs and at least 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 
-**Note**: The following pre-requisites for for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
-
-- The **minio** server for Windows which you can download at https://min.io/download#/windows. For the demo I assume you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
+> [!CAUTION]
+> The following pre-requisites for for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
+> 
+- The **minio** server for Windows which you can download at https://min.io/download#/windows. For the exercise I assume you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
 - openssl for Windows which you can download at https://slproweb.com/products/Win32OpenSSL.html. I chose the Win64 OpenSSL v3.0.5 MSI option.
 
-## Setup minio for the demo
+## Setup minio for the exercise
 
 - Download minio.exe for Windows into c:\minio.exe
 - Download the openssl for Windows MSI and run the installer. Use all the defaults.
@@ -32,7 +34,7 @@ This is a demonstration of BACKUP and RESTORE in SQL Server 2022 using the new R
 - Double-click the public.crt file and select Install Certificate. Choose Local Machine, Place all certificates in the following store, Browse, and select Trusted Root Certification Authorities.
 - Copy the private.key and public.crt files from c:\minio into %%USERPROFILE%%\.minio\certs.
 
-## Steps to use minio for the demo
+## Steps to use minio for the exercise
 
 1. From a command prompt at the c:\minio directory start the minio server with the following command (example syntax for Powershell)
 
@@ -65,7 +67,7 @@ Documentation: https://docs.min.io
 
 3. Select menu for Buckets. Select Create Bucket. Use a Bucket Name of **backups**. Leave all defaults and select Create Bucket.
 
-## Steps to use SQL Server for the demo
+## Steps to use SQL Server for the exercise
 
 1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**)
 1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go.

@@ -1,10 +1,12 @@
-# Demo for Data Virtualization using S3 providers for SQL Server 2022 for parquet
+# Exercise for Data Virtualization using S3 providers for SQL Server 2022 for parquet
 
-This is a demonstration of data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for parquet files. If you want to see the results of this demo without going through all the steps of the exercise you can use Azure Data Studio or a web browser to view the **queryparquet.ipynb** file.
+This is a exercise for data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for parquet files. If you want to see the results of this exercise without going through all the steps of the exercise you can use Azure Data Studio or a web browser to view the **queryparquet.ipynb** file.
 
-**IMPORTANT**: If you have already completed all the steps for the demo for delta you can skip all the prerequisites and steps to setup minio, except you will need to create a bucket called **wwi** instead of delta as described below in the section titled **Steps to use minio for the demo**. You can also skip to Step 8 to start using delta in the section below titled **Steps to use SQL Server for the demo for parquet**
+> [!IMPORTANT]
+> If you have already completed all the steps for the exercise for delta you can skip all the prerequisites and steps to setup minio, except you will need to create a bucket called **wwi** instead of delta as described below in the section titled **Steps to use minio for the exercise**. You can also skip to Step 8 to start using delta in the section below titled **Steps to use SQL Server for the exercise for parquet**
 
-**Note**: This demo uses non-Microsoft software that has "free" license to use for testing and development purposes only. This demo should only be run in a testing environment and not with any production workload.
+> [!CAUTION]
+> This exercise uses non-Microsoft software that has "free" license to use for testing and development purposes only. This exercise should only be run in a testing environment and not with any production workload.
 
 ## Prerequisites
 
@@ -12,12 +14,13 @@ This is a demonstration of data virtualization in SQL Server 2022 using the new 
 - VM or computer with 2 CPUs and at least 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 
-**Note**: The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
+> [!CAUTION]
+> The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
 
-- The **minio** server for Windows which you can download at https://min.io/download#/windows. For the demo I assume you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
+- The **minio** server for Windows which you can download at https://min.io/download#/windows. For the exercise it is assumed you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
 - openssl for Windows which you can download at https://slproweb.com/products/Win32OpenSSL.html. I chose the Win64 OpenSSL v3.0.5 MSI option.
 
-## Setup minio for the demo
+## Setup minio for the exercise
 
 - Download minio.exe for Windows into c:\minio.exe
 - Download the openssl for Windows MSI and run the installer. Use all the defaults.
@@ -34,7 +37,7 @@ This is a demonstration of data virtualization in SQL Server 2022 using the new 
 - Double-click the public.crt file and select Install Certificate. Choose Local Machine, Place all certificates in the following store, Browse, and select Trusted Root Certification Authorities.
 - Copy the private.key and public.crt files from c:\minio into %%USERPROFILE%%\.minio\certs.
 
-## Steps to use minio for the demo
+## Steps to use minio for the exercise
 
 1. From a command prompt at the c:\minio directory start the minio server with the following command (example syntax for Powershell)
 
@@ -67,7 +70,7 @@ Documentation: https://docs.min.io
 
 3. Select menu for Buckets. Select Create Bucket. Use a Bucket Name of **wwi**. Leave all defaults and select Create Bucket.
 
-## Steps to use SQL Server for the demo for parquet
+## Steps to use SQL Server for the exercise for parquet
 
 1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**)
 1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go.

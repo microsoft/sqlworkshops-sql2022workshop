@@ -1,23 +1,26 @@
-# Demo for Data Virtualization using S3 providers for SQL Server 2022 for delta
+# Exercise for Data Virtualization using S3 providers for SQL Server 2022 for delta tables
 
-This is a demonstration of data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for delta tables. If you want to see the results of this demo without going through all the steps of the exercise you can use Azure Data Studio or a web browser to view the **querydelta.ipynb** file.
+This is an exercise for data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for delta tables. If you want to see the results of this exercise without going through all the steps of the exercise you can use Azure Data Studio or a web browser to view the **querydelta.ipynb** file.
 
-**IMPORTANT**: If you have already completed all the steps for the demo for parquet you can skip all the prerequisites and steps to setup minio, except you will need to create a bucket called **delta** instead of wwi and follow the steps to upload a folder for the delta table in minio as described below in the section titled **Steps to use minio for the demo**. You can also skip to Step 8 to start using delta in the section below titled **Steps to use SQL Server for the demo for delta tables.**
+> [!IMPORTANT]
+> If you have already completed all the steps for the exercise for parquet you can skip all the prerequisites and steps to setup minio, except you will need to create a bucket called **delta** instead of wwi and follow the steps to upload a folder for the delta table in minio as described below in the section titled **Steps to use minio for the exercise**. You can also skip to Step 8 to start using delta in the section below titled **Steps to use SQL Server for the exercise for delta tables.**
 
-**Note**: This demo uses non-Microsoft software that has "free" license to use for testing and development purposes only. This demo should only be run in a testing environment and not with any production workload.
-
+> [!CAUTION]
+> This exercise uses non-Microsoft software that has "free" license to use for testing and development purposes only. This exercise should only be run in a testing environment and not with any production workload.
+> 
 ## Prerequisites
 
 - SQL Server 2022 Evaluation Edition with the Database Engine and PolyBase Query Service for External Data Feature installed. You can use the defaults in setup for Polybase.
 - VM or computer with 2 CPUs and at least 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 
-**Note**: The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
+> [!CAUTION]
+> The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
 
-- The **minio** server for Windows which you can download at https://min.io/download#/windows. For the demo I assume you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
+- The **minio** server for Windows which you can download at https://min.io/download#/windows. For the exercise I assume you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
 - openssl for Windows which you can download at https://slproweb.com/products/Win32OpenSSL.html. I chose the Win64 OpenSSL v3.0.5 MSI option.
 
-## Setup minio for the demo
+## Setup minio for the exercise
 
 - Download minio.exe for Windows into c:\minio.exe
 - Download the openssl for Windows MSI and run the installer. Use all the defaults.
@@ -34,7 +37,7 @@ This is a demonstration of data virtualization in SQL Server 2022 using the new 
 - Double-click the public.crt file and select Install Certificate. Choose Local Machine, Place all certificates in the following store, Browse, and select Trusted Root Certification Authorities.
 - Copy the private.key and public.crt files from c:\minio into %%USERPROFILE%%\.minio\certs.
 
-## Steps to use minio for the demo
+## Steps to use minio for the exercise
 
 1. From a command prompt at the c:\minio directory start the minio server with the following command (example syntax for Powershell)
 
@@ -65,11 +68,12 @@ Documentation: https://docs.min.io
 
 1. On the left-hand side menu, click on Identity and Users. Select Create User. Create a user name with password. Select the readwrite policy for the user. This is the user and password you will use for the SECRET value in creates3creds.sql.
 
-3. Select menu for Buckets. Select Create Bucket. Use a Bucket Name of **delta**. Leave all defaults and select Create Bucket. From this bucket Browse, Upload, Upload folder. Choose the **people-10m** folder provides with this exercise. This will upload all the files and folders for the delta table.
+1. Select menu for Buckets. Select Create Bucket. Use a Bucket Name of **delta**. Leave all defaults and select Create Bucket. From this bucket Browse, Upload, Upload folder. Choose the **people-10m** folder provides with this exercise. This will upload all the files and folders for the delta table.
 
-**Note**: The people-10m delta table is a sample delta table from a sample dataset from Databricks as found at https://docs.microsoft.com/en-us/azure/databricks/data/databricks-datasets#sql. This dataset contains names, birthdates, and SSN which are all fictional and don't represent actual people. This dataset falls under the creative commons license at http://creativecommons.org/licenses/by/4.0/legalcode and can be shared and provided in this repo.
+> [!NOTE]
+> The people-10m delta table is a sample delta table from a sample dataset from Databricks as found at https://docs.microsoft.com/en-us/azure/databricks/data/databricks-datasets#sql. This dataset contains names, birthdates, and SSN which are all fictional and don't represent actual people. This dataset falls under the creative commons license at http://creativecommons.org/licenses/by/4.0/legalcode and can be shared and provided in this repo.
 
-## Steps to use SQL Server for the demo for delta tables
+## Steps to use SQL Server for the exercise for delta tables
 
 1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**)
 1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go.
@@ -85,4 +89,3 @@ Documentation: https://docs.min.io
 1. Use CETAS to query the delta file and only extract a certain set of people to create a new folder by executing the script **createparquetfromdelta.sql**.
 1. Use the minio console to browse the delta bucket and see a new folder called 1960s with multiple parquet files.
 1. Query the new external table by executing the script **query1960speople.sql**
-

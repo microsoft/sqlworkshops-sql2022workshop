@@ -1,6 +1,6 @@
-# Demo for Memory Grant Feedback Persistence in SQL Server 2022
+# Exercise for Memory Grant Feedback Persistence in SQL Server 2022
 
-The following is a demonstration of memory grant feedback persistence in SQL Server 2022
+The following is an exercise to learn memory grant feedback persistence in SQL Server 2022.
 
 ## Prerequisites
 
@@ -8,7 +8,7 @@ The following is a demonstration of memory grant feedback persistence in SQL Ser
 - Virtual machine or computer with minimum 2 CPUs with 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work
 
-## Demo steps
+## Exercise steps
 
 1. Download the **WideWorldImportersDW** database backup from https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImportersDW-Full.bak.
 2. Restore this database to your SQL Server 2022 instance. You can use the provided **restorewwidw.sql** script. You may need to change the directory paths for the location of your backup and where you will restore the database files.

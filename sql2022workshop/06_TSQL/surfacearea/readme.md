@@ -1,6 +1,6 @@
-# Surface Area T-SQL functions in SQL Server 2022
+# Exercises for core T-SQL enhancements in SQL Server 2022
 
-Follow these steps to demonstrate T-SQL enhancements across the core SQL engine in SQL Server 2022
+Follow these steps for exercises for  T-SQL enhancements across the core SQL engine in SQL Server 2022.
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ Follow these steps to demonstrate T-SQL enhancements across the core SQL engine 
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 - To run the demo for isnotdistinct.sql you will need to restore the WideWorldImporters sample back from https://aka.ms/WideWorldImporters.
 
-##  Steps to run the demos
+##  Steps to run the exercises
 
 1. Execute the script **datetrunc.sql** to see how the new DATETRUNC() function works.
 1. Execute the script **greatest_least.sql** to see how the new GREATEST() and LEAST() functions work.

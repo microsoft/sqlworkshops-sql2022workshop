@@ -1,19 +1,19 @@
-# SQL Server 2022 T-SQL demos
+# Exercises for T-SQL language enhancements in SQL Server 2022
 
-These are demos to be showcase new T-SQL language enhancements in SQL Server 2022
+These are exercises for T-SQL language enhancements in SQL Server 2022
 
-**bit**
+**1. JSON enhancements**
 
-Demo for bit manipulation functions
+Exercises for new JSON functions. Follow the steps in the **json** folder.
 
-**json**
+**2. Core T-SQL enhancements**
 
-Demo new JSON functions
+Exercises for core T-SQL enhancements across T-SQL. Follow the steps in the **surfacearea** folder.
 
-**surfacearea**
+**3. New Time Series T-SQL functions**
 
-Demo for new surface area enhancements across T-SQL
+Exercises for time series T-SQL functions. Follow the steps in the **timeseries** folder.
 
-**timeseries**
+**4. New bit manipulation T-SQL functions.**
 
-Demo for new time series functions
+Exercises for new bit manipulation T-SQL functions. Follow the steps in the **bit** folder.
