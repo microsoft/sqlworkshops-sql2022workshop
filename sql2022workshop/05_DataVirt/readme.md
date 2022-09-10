@@ -1,15 +1,15 @@
-# Demos for data virtualization for s3 and SQL Server 2022
+# Exercises for data virtualization and object storage for s3 and SQL Server 2022
 
-This is a demonstration of data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for parquet files and delta tables.
+This is a set of exercises for data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for parquet files and delta tables. In addition there is an exercise to see the new BACKUP/RESTORE capabilities for s3 storage.
 
-## Demos
+1. Using parquet with S3
 
-Demos are contained in the following folders.
+Exercises to access parquet files with S3 object storage.
 
-**delta**
+2. Using delta tables with S3
 
-Demonstrate data virtualization for S3 and delta tables.
+Exercises to access delta tables with S3 object storage.
 
-**parquet**
+3. Using S3 object storage for backup and restore
 
-Demonstrate data virtualization for S3 and parquet files.
+Exercises to backup and restore databases with S3 object storage.

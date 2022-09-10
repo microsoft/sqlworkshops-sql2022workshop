@@ -1,19 +1,11 @@
-# SQL Server 2022 IQP demos
+# Exercises for new IQP NextGen capabilities in SQL Server 2022
 
-These are demos to showcase new IQP features in SQL Server 2022.
+These are exercises for new IQP features in SQL Server 2022.
 
-**cefeedback**
+1. Persisted Memory Grant Feedback
 
-Demo for CE Feedback
+Exercises for Persisted Memory Grant Feedback
 
-**dopfeedback**
+2. Parameter Sensitive Plan Optimization
 
-Demo for Degree of Parallelism feedback
-
-**opf**
-
-Demo for Optimized Plan Forcing
-
-**pspopt**
-
-Demo for Parameter Sensitive Plan (PSP) optimization
+Exercises for Parameter Sensitive Plan Optimization

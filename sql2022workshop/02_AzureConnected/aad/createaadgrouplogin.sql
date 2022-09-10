@@ -1,4 +1,0 @@
-USE master;
-GO
-CREATE LOGIN [sqlusers] FROM EXTERNAL PROVIDER;
-GO
