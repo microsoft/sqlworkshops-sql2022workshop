@@ -1,5 +1,11 @@
-# SQL Server 2022 Cloud connected demos
+# Exercises for SQL Server cloud connected scenarios
 
-These are demos to showcase the new cloud connected features for SQL Server 2022.
+Explore the following exercises for cloud connected scenarios for SQL Server 2022
 
-UNDER CONSTRUCTION
+**1. Link for Azure SQL Managed Instance feature**
+
+Exercise for the Link for Azure SQL Managed Instance feature including offline diaster recovery. Follow the instructions from the **milinkdr** folder.
+
+**2. Synapse Link for SQL Server**
+
+Exercise for near real-time analytics with Synapse Link for SQL Server 2022. Follow the instructions in the **synapselinksql** folder.
