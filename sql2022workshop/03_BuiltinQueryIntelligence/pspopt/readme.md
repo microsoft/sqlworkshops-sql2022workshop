@@ -6,7 +6,7 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 
 - SQL Server 2022 Evaluation Edition
 - VM or computer with at min 2 CPUs and 8Gb RAM.
-- SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work
+- SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 - Download **ostress.exe** from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults.
 
 ## Setup the exercise
