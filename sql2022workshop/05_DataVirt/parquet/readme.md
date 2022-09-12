@@ -2,11 +2,9 @@
 
 This is a exercise for data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for parquet files. If you want to see the results of this exercise without going through all the steps of the exercise you can use Azure Data Studio or a web browser to view the **queryparquet.ipynb** file.
 
-> [!IMPORTANT]
-> If you have already completed all the steps for the exercise for delta you can skip all the prerequisites and steps to setup minio, except you will need to create a bucket called **wwi** instead of delta as described below in the section titled **Steps to use minio for the exercise**. You can also skip to Step 8 to start using delta in the section below titled **Steps to use SQL Server for the exercise for parquet**
+**Important**: If you have already completed all the steps for the exercise for delta you can skip all the prerequisites and steps to setup minio, except you will need to create a bucket called **wwi** instead of delta as described below in the section titled **Steps to use minio for the exercise**. You can also skip to Step 8 to start using delta in the section below titled **Steps to use SQL Server for the exercise for parquet**
 
-> [!CAUTION]
-> This exercise uses non-Microsoft software that has "free" license to use for testing and development purposes only. This exercise should only be run in a testing environment and not with any production workload.
+**Caution**: This exercise uses non-Microsoft software that has "free" license to use for testing and development purposes only. This exercise should only be run in a testing environment and not with any production workload.
 
 ## Prerequisites
 
@@ -14,8 +12,7 @@ This is a exercise for data virtualization in SQL Server 2022 using the new REST
 - VM or computer with 2 CPUs and at least 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 
-> [!CAUTION]
-> The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
+**Caution**: The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
 
 - The **minio** server for Windows which you can download at https://min.io/download#/windows. For the exercise it is assumed you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
 - openssl for Windows which you can download at https://slproweb.com/products/Win32OpenSSL.html. I chose the Win64 OpenSSL v3.0.5 MSI option.

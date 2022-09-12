@@ -2,8 +2,7 @@
 
 This is a set of exercises for data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for parquet files and delta tables. In addition there is an exercise to see the new BACKUP/RESTORE capabilities for s3 storage.
 
-> [!NOTE]
-A T-SQL notebook is exists for each exercise that can be viewed with Azure Data Studio to view the results of all of these exercises if you have issues getting the exercises to work.
+**Note**: A T-SQL notebook is exists for each exercise that can be viewed with Azure Data Studio to view the results of all of these exercises if you have issues getting the exercises to work.
 
 **1. Using parquet with S3**
 

@@ -2,20 +2,17 @@
 
 This is an exercise for data virtualization in SQL Server 2022 using the new REST API "connector" for S3 object storage for delta tables. If you want to see the results of this exercise without going through all the steps of the exercise you can use Azure Data Studio or a web browser to view the **querydelta.ipynb** file.
 
-> [!IMPORTANT]
-> If you have already completed all the steps for the exercise for parquet you can skip all the prerequisites and steps to setup minio, except you will need to create a bucket called **delta** instead of wwi and follow the steps to upload a folder for the delta table in minio as described below in the section titled **Steps to use minio for the exercise**. You can also skip to Step 8 to start using delta in the section below titled **Steps to use SQL Server for the exercise for delta tables.**
+**IMPORTANT**: If you have already completed all the steps for the exercise for parquet you can skip all the prerequisites and steps to setup minio, except you will need to create a bucket called **delta** instead of wwi and follow the steps to upload a folder for the delta table in minio as described below in the section titled **Steps to use minio for the exercise**. You can also skip to Step 8 to start using delta in the section below titled **Steps to use SQL Server for the exercise for delta tables.**
 
-> [!CAUTION]
-> This exercise uses non-Microsoft software that has "free" license to use for testing and development purposes only. This exercise should only be run in a testing environment and not with any production workload.
-> 
+**CAUTION**: This exercise uses non-Microsoft software that has "free" license to use for testing and development purposes only. This exercise should only be run in a testing environment and not with any production workload.
+
 ## Prerequisites
 
 - SQL Server 2022 Evaluation Edition with the Database Engine and PolyBase Query Service for External Data Feature installed. You can use the defaults in setup for Polybase.
 - VM or computer with 2 CPUs and at least 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 
-> [!CAUTION]
-> The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
+**CAUTION**: The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
 
 - The **minio** server for Windows which you can download at https://min.io/download#/windows. For the exercise I assume you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
 - openssl for Windows which you can download at https://slproweb.com/products/Win32OpenSSL.html. I chose the Win64 OpenSSL v3.0.5 MSI option.
@@ -70,8 +67,8 @@ Documentation: https://docs.min.io
 
 1. Select menu for Buckets. Select Create Bucket. Use a Bucket Name of **delta**. Leave all defaults and select Create Bucket. From this bucket Browse, Upload, Upload folder. Choose the **people-10m** folder provides with this exercise. This will upload all the files and folders for the delta table.
 
-> [!NOTE]
-> The people-10m delta table is a sample delta table from a sample dataset from Databricks as found at https://docs.microsoft.com/en-us/azure/databricks/data/databricks-datasets#sql. This dataset contains names, birthdates, and SSN which are all fictional and don't represent actual people. This dataset falls under the creative commons license at http://creativecommons.org/licenses/by/4.0/legalcode and can be shared and provided in this repo.
+
+**Note**: The people-10m delta table is a sample delta table from a sample dataset from Databricks as found at https://docs.microsoft.com/en-us/azure/databricks/data/databricks-datasets#sql. This dataset contains names, birthdates, and SSN which are all fictional and don't represent actual people. This dataset falls under the creative commons license at http://creativecommons.org/licenses/by/4.0/legalcode and can be shared and provided in this repo.
 
 ## Steps to use SQL Server for the exercise for delta tables
 

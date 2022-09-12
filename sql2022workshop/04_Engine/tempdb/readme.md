@@ -14,14 +14,13 @@ Follow these steps for an exercise to see system page latch concurrency enhancem
 1. Configure perfmon to track SQL Server SQL Statistics:SQL Statistics/Batch requests/sec (set Scale to 0.1) and SQL Server:SQL Statistics/Page latch waits/Waits started per second.
 1. Execute the script **findtempdbdbilfes.sql** and save the output. A script is provided for the end of this exercise to restore back your tempdb file settings.
 1. Start SQL Server in minimal mode using the command script **startsqlminimal.cmd**
-1. Execute the command script **modifytempdbfiles.cmd**. This will execute the SQL script **modifytempdbfiles.sql** to expand the log to 200Mb (avoid any autogrow) and remove all tempdb files other than 1. If you have more than 4 tempdb files you need to edit this script to remove all of them except for tempdev..\.
+1. Execute the command script **modifytempdbfiles.cmd**. This will execute the SQL script **modifytempdbfiles.sql** to expand the log to 200Mb (avoid any autogrow) and remove all tempdb files other than 1. If you have more than 4 tempdb files you need to edit this script to remove all of them except for tempdev.
 
 ## Exercise 1: Observe performance of a tempdb based workload without metadata optimization and without new SQL Server 2022 enhancements
 
 1. Run **disableoptimizetempdb.cmd** and then **disablegamsgam.cmd** from the command prompt.
 
-> [!NOTE]
-> This will ensure tempdb metadata optimization is OFF and turn on two trace flags to disable GAM/SGAM concurrency enhancements. These trace flags are not documented and not supported for production use. They are only use to demonstrate new built-in enhancements.
+**Note**: This will ensure tempdb metadata optimization is OFF and turn on two trace flags to disable GAM/SGAM concurrency enhancements. These trace flags are not documented and not supported for production use. They are only use to demonstrate new built-in enhancements.
 
 1. Load the script **pageinfo.sql** into SSMS
 1. Run **tempsql22stress.cmd 25** from the command prompt.
@@ -55,8 +54,7 @@ Tempdb metadata optimization is already enabled and by restarting you are no lon
 
 You have now achieved maximum performance with tempdb workloads and did not have to do any special configuration for tempdb files. 
 
-> [!TIP]
-> This exercise showed that you no longer may have to create multiple tempdb files for avoid system page latch contention. However, it is recommend to use the default setting from SQL Server setup for the number of files. I have run this same exercise on a 4 CPU machine with 4 files. With tempdb metadata optimization ON and using the new GAM/SGAM enhancements I got similar results from just using 1 file.
+**Tip**: This exercise showed that you no longer may have to create multiple tempdb files for avoid system page latch contention. However, it is recommend to use the default setting from SQL Server setup for the number of files. I have run this same exercise on a 4 CPU machine with 4 files. With tempdb metadata optimization ON and using the new GAM/SGAM enhancements I got similar results from just using 1 file.
 
 If you want to restore your tempdb file settings you can perform the following steps:
 
