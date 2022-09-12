@@ -23,13 +23,11 @@ Exercise for Azure Active Directory Authentication (AAD) for SQL Server 2022
 1. Setup the AAD admin for SQL Server using the Azure portal.
     1. Find your SQL Server Azure Arc resource in the Azure portal.
     1. On the resource menu for this resource under Settings choose Azure Active Directory. Now choose Set Admin. Pick the AAD account you have selected as your AAD admin. You now will fill out information on a screen to set the admin:
-    
-    - Choose Service-managed cert.
-    - Change your key vault to the Azure Key Vault you have created.
-    - Choose service-managed app registration.
-    - Leave the option for Purview disabled.
-    
-    c. Select **Save**. After a few minutes is successful your screen should display all the details including an Azure application ID.
+        1. Choose Service-managed cert.
+        1. Change your key vault to the Azure Key Vault you have created
+        1. Choose service-managed app registration.
+        1. Leave the option for Purview disabled.
+    1. Select **Save**. After a few minutes is successful your screen should display all the details including an Azure application ID.
 1.  Grant consent to the Azure Application
     1. Find the Azure Application ID created from your Azure Active Directory in the portal under **App registrations**. The ID should be your SQL Server registered `<server name>`-MSSQLSERVER`<nnnn>`.
     1. Select **API permissions** from the left-hand menu and then select **Grant admin consent**.If this option is greyed out you don't have Global Administrator or Privileged Role Administrator rights for our AAD.
