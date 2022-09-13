@@ -31,7 +31,7 @@ You can find demonstrations of other engine improvements for SQL Server 2022 at 
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: How to use Ledger for SQL Server</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\04_sqlledger\sqlledger** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\sqlledger](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/sqlledger)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -39,7 +39,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\04_sqlled
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\04_Engine\tempdb** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\tempdb](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/tempdb)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 

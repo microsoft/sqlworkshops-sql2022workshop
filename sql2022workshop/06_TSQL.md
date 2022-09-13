@@ -27,11 +27,11 @@ You will cover the following topics in this Module:
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="5-0">     6.0 Process JSON data with T-SQL</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="6-0">     6.0 Process JSON data with T-SQL</a></b></h2>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Explore enhancements to process JSON data in SQL Server</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\06_TSQL\json** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\06_TSQL\json](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/06_TSQL/json)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -39,7 +39,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\06_TSQL\j
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Explore new core T-SQL enhancements</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\06_TSQL\surfacearea** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\06_TSQL\surfacearea](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/06_TSQL/surfacearea)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -47,14 +47,14 @@ Follow the instructions in the readme.md file in the **sql2022workshop\06_TSQL\s
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Learn how to process time series data with SQL Server</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\06_TSQL\timeseries** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\06_TSQL\timeseries](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/06_TSQL/timeseries)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="6-3">     6.3 Bit manipulation with T-SQLL</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="6-3">     6.3 Bit manipulation with T-SQL</a></b></h2>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Learn bit manipulation using T-SQL with SQL Server</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\06_TSQL\bit** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\06_TSQL\bit](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/06_TSQL/bit)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>

@@ -31,7 +31,7 @@ You will cover the following topics in this Module:
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Access parquet files with T-SQL using s3 compatible object storage</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\05_DataVirt\parquet** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\05_DataVirt\parquet](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/05_DataVirt/parquet)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -39,7 +39,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\05_DataVi
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Access delta table files with T-SQL using s3 compatible object storage</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\05_DataVirt\delta** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\05_DataVirt\delta](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/05_DataVirt/delta)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -47,7 +47,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\05_DataVi
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Backup and Restore SQL Server databases using s3 compatible object storage</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\05_DataVirt\s3objectstorage** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\05_DataVirt\s3objectstorage](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/05_DataVirt/s3objectstorage)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 

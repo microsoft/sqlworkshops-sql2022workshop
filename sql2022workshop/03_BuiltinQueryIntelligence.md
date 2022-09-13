@@ -32,7 +32,7 @@ You can find demonstrations of other built-in query intelligence capabilities at
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Automatic performance healing with Memory Grant Feedback Persistence </a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\03_BuiltinQueryIntelligence\persistedmgf** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\persistedmgf](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -40,7 +40,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\03_Builti
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\03_BuiltinQueryIntelligence\pspopt** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\pspopt](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
