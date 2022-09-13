@@ -77,6 +77,7 @@ In order to complete the exercises in this workshop you will need the following:
 - Install **SQL Server Management Studio (SSMS)** latest 18 or 19 build from https://aka.ms/ssms18 or https://aka.ms/ssms19. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
 - The **WideWorldImporters** sample backup from https://aka.ms/WideWorldImporters. Many of the exercises have a script which by default restores the WideWorldImporters backup from the c:\sql_sample_databases folder.
+-  Download the **WideWorldImportersDW** database backup from https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImportersDW-Full.bak.
 - Download **ostress.exe** by downloading RML utilities from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults.
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
