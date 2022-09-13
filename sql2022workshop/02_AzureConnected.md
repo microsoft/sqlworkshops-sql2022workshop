@@ -32,7 +32,7 @@ You will cover the following topics in this Module:
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Using the Link feature for Azure SQL Managed Instance </a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\02_AzureConnected\milinkdr** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\02_AzureConnected\milinkdr](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/02_AzureConnected/milinkdr)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -40,7 +40,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\02_AzureC
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Using Synapse Link for SQL Server 2022</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\02_AzureConnected\synapselink** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\02_AzureConnected\synapselink](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/02_AzureConnected/synapselink)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -48,7 +48,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\02_AzureC
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Using Azure Active Directory (AAD) Authentication with SQL Server 2022</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\02_AzureConnected\aad** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\02_AzureConnected\aad](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/02_AzureConnected/aad)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -56,7 +56,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\02_AzureC
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Using Microsoft Purview for access policies to SQL Server 2022</a></b></h2>
 
-Follow the instructions in the readme.md file in the **sql2022workshop\02_AzureConnected\purview** folder.
+Follow the instructions in the readme.md file in the **[sql2022workshop\02_AzureConnected\purview](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/02_AzureConnected/purview)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
