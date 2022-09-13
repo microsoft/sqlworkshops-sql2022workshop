@@ -62,4 +62,4 @@ Follow the instructions in the readme.md file in the **sql2022workshop\02_AzureC
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b>  Next Steps</b></h2>
 
-Next, Continue to <a href="./03_Security.md" target="_blank"><i>Security</i></a>.
+Next, Continue to <a href="./03_BuiltinQueryIntelligence.md" target="_blank"><i>Built-in Query Intelligence</i></a>.
