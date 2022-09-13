@@ -19,8 +19,8 @@ You will cover the following topics in this Module:
 
 <dl>
 
-  <dt><a href="#2-0">3.0 Enhancements to Memory Grant feedback</a></dt>
-  <dt><a href="#2-1">3.1 Parameter Sensitive Plan optimization</a></dt>
+  <dt><a href="#3-0">3.0 Enhancements to Memory Grant feedback</a></dt>
+  <dt><a href="#3-1">3.1 Parameter Sensitive Plan optimization</a></dt>
   
 </dl>
 
@@ -28,7 +28,7 @@ You can find demonstrations of other built-in query intelligence capabilities at
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="2-0">     3.0 Enhancements to Memory Grant Feedback</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-0">     3.0 Enhancements to Memory Grant Feedback</a></b></h2>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Automatic performance healing with Memory Grant Feedback Persistence </a></b></h2>
 
@@ -36,7 +36,7 @@ Follow the instructions in the readme.md file in the **sql2022workshop\03_Builti
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="2-1">     3.1 Parameter Sensitive Plan Optimization</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-1">     3.1 Parameter Sensitive Plan Optimization</a></b></h2>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
 
