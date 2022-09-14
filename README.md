@@ -17,7 +17,7 @@ This course is intended to be taken as a self-paced or instructor-led workshop. 
 
 This course is designed for data professionals who have a basic working knowledge of SQL Server and the T-SQL language.
 
-This **README.MD** file explains how the lab is structured, what you will learn, and the technologies you will use in this solution.
+This **README.MD** file explains how the workshop is structured, what you will learn, and the technologies you will use in this solution.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -25,18 +25,25 @@ This **README.MD** file explains how the lab is structured, what you will learn,
 
 When you complete this course, you will be able to:
 
-- XXXXX
+- Understand how SQL Server 2022 is the most cloud connected version ever.
+- Learn how built-in query intelligence allows your queries to run faster with no code changes
+- Learn how SQL Server 2022 has an industry proven engine with new innovations in security, scalability, and availability.
+- See new data virtualization capabilities using REST APIs with data sources like s3 and see how to backup and restore SQL databases with S3.
+- Learn how to enable developers for new scenarios using enhancements to the T-SQL language.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2>
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/building1.png?raw=true"><b>     Business Applications of this Workshop</b></h2>
 
-- Boost Database Performance with no application changes
-- Ensure data is highly available to outages that can disrupt your business.
-- Reduce costs of expensive data movement applications
-- Learn how to extend the T-SQL language to meet the needs of your application.
-- Learn tools and techniques to modernize and migrate to SQL Server 2022.
+- Enabling hybrid scenarios for disaster recovery, analytics, and security.
+- Ensure your application perform consistently and faster with no code changes.
+- Protect your data integrity with Ledger for SQL Server using blockchain technologies.
+- Save costs for maintenance of tempdb with new scalability improvements.
+- Reduce time for management of high availability with Contained Availability Groups.
+- Access information in data lakes without moving the data.
+- Use new S3 object storage providers for disaster recovery.
+- Maintain your skills for the T-SQL query language with new innovations.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
