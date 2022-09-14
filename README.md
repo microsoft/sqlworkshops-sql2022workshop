@@ -56,7 +56,9 @@ When you complete this course, you will be able to:
 <tr><td><i>SQL Server</i></td><td>Database Platform released and sold by Microsoft</td></tr>
 <tr><td><i>SQL Server 2022</i></td><td>Most current release of SQL Server</td></tr>
 <tr><td><i>Intelligent Query Processing</i></td><td>Automated query processing enhancements in SQL Server 2022</td></tr>
+<tr><td><i>Microsoft Azure</i></td><td>Microsoft's cloud platform for computing, data, and applications.</td></tr>
 <tr><td><i>Query Store</i></td><td>Built-in query performance execution statistics stored in a user database</td></tr>
+<tr><td><i>Ledger for SQL Server</i></td><td>Built-in tamper evident data integrity using blockchain technologies</td></tr>
 <tr><td><i>Polybase</i></td><td>Data Virtualization through external tables</td></tr>
 <tr><td><i>SQL Server Management Studio (SSMS)</i></td><td>Graphical User Interface Management and Query Tool</td></tr>
 <tr><td><i>Azure Data Studio<i></td><td>Graphical User Interface to execute T-SQL queries, notebooks, and manage SQL Server</td></tr>
