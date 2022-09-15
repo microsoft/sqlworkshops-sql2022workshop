@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS howaboutthemcowboys;
+DROP DATABASE IF EXISTS howboutthemcowboys;
 GO
 CREATE DATABASE howboutthemcowboys;
 GO
