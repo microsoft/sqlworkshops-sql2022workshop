@@ -74,7 +74,7 @@ To complete this workshop you will need the following:
 - Clone the workshop using git from https://github.com/microsoft/sqlworkshops-sql2022workshop.git. All the scripts and files in the labs are found in the **sql2022workshop** folder.
 - Install the software as listed in the **Setup** section below
 
-Each module of this workshop can be studied and used independently of each other or taken all as a single lab. The Modules are designed in a sequence but you can use each of them one at a time at your own pace.
+Each module of this workshop can be studied and used independently of each other or taken all as a single set of exercises. The Modules are designed in a sequence but you can use each of them one at a time at your own pace.
 
 <h3><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/bulletlist.png?raw=true"> 
 <b>     Setup</b></h3>
@@ -82,11 +82,12 @@ Each module of this workshop can be studied and used independently of each other
 In order to complete the exercises in this workshop you will need the following:
 
 - A virtual machine or computer running Windows 10, Windows 11, Windows Server 2019, or Windows 2022 with at least **4 CPUs and 8Gbm RAM**. You will need Administrator rights on the virtual machine or computer.
+- An Azure subscription is required for Module 2. Check the instructions in each exercise for specific permission requirements.
 - **SQL Server 2022 Evaluation Edition RC0 or later Preview** (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. Exercises in Module 5 require the PolyBase Query Service for External Data Feature. In Module 5 you have the option to review Azure Data Studio notebooks instead of going through the exercises. **You must configure SQL Server for mixed mode authentication**.
 - Install **SQL Server Management Studio (SSMS)** latest 18 or 19 build from https://aka.ms/ssms18 or https://aka.ms/ssms19. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
-- The **WideWorldImporters** sample backup from https://aka.ms/WideWorldImporters. Many of the exercises have a script which by default restores the WideWorldImporters backup from the c:\sql_sample_databases folder.
--  Download the **WideWorldImportersDW** database backup from https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImportersDW-Full.bak.
+- The **WideWorldImporters** sample backup from https://aka.ms/WideWorldImporters. Many of the exercises have a script which by default restores the WideWorldImporters backup from the c:\sql_sample_databases folder. This sample backup is used throughout several modules
+-  Download the **WideWorldImportersDW** database backup from https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImportersDW-Full.bak. This database is only used in Module 3.
 - Download **ostress.exe** by downloading RML utilities from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults.
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
