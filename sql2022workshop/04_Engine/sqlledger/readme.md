@@ -31,7 +31,7 @@ This exercise will show you the fundamentals of an updatable ledger table.
 
 ## Exercise 2: Using an append-only ledger
 
-Now see you can use an append-only ledger to capture application information. To ensure we captured what person was responsible for changes even if an application uses an "application login" we can use an append-only ledger table which was created earlier then you ran the script **createauditledger.sql**.
+Now see you can use an append-only ledger to capture application information. To ensure we captured what person was responsible for changes even if an application uses an "application login" we can use an append-only ledger table.
 
 Use the SQL login **bob** in these steps unless otherwise specified.
 
