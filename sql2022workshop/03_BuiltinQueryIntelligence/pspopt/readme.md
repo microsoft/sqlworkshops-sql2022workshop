@@ -32,7 +32,7 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 1. Run **workload_index_seek.cmd 10** from the command prompt. This should finish very quickly. The parameter is the number of users. You may want to increase this for machines with 8 CPUs or more. Observe perfmon counters.
 1. Run **workload_index_scan.cmd**. This should take longer but now locks into cache a plan for a scan.
 1. Run **workload_index_seek.cmd 10** again. Observe perfmon counters. Notice much higher CPU and much lower batch requests/sec. Also note the workload doesn't finish in a few seconds as before.
-1. Hit <Ctrl>+<C> in the command window for **workload_index_seek.cmd** as it can take minutes to complete.
+1. Hit `<Ctrl>`+`<C>` in the command window for **workload_index_seek.cmd** as it can take minutes to complete.
 1. Use the script **suppliercount.sql** to see the skew in supplierID values in the table. This explains why "one size does not fit all" for the stored procedure based on parameter values.
 
 ## Solve the problem in SQL Server 2022 with no code changes
