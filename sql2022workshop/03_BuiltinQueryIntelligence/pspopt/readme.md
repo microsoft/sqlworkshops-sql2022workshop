@@ -27,6 +27,8 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 
 ## See a workload problem for PSP
 
+**Note**: If you are using a named instance you will need to edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to include a -S.`<instance name`>.
+
 1. Execute the script **clear.sql** to clear plan cache and query store.
 1. Setup perfmon to capture % processor time and batch requests/second.
 1. Run **workload_index_seek.cmd 10** from the command prompt. This should finish very quickly. The parameter is the number of users. You may want to increase this for machines with 8 CPUs or more. Observe perfmon counters.
