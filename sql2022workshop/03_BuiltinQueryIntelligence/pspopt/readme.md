@@ -41,7 +41,7 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 2. Run **workload_index_seek.cmd 10** again. Should finish in a few seconds.
 3. Run **workload_index_scan.cmd** again.
 4. Run **workload_index_seek.cmd 10** again and see that it now finishes again in a few seconds. Observe perfmon counters and see consistent performance.
-5. Run Top Resource Consuming Queries report from SSMS and see that there are two plans for the same stored procedure. The one difference is that there is new OPTION applied to the query for each procedure which is why there are two different "queries" in the Query Store.
+5. Run the **Top Resource Consuming Queries** report from SSMS (Use Object Explorer and choose Query Store under your database context to find this report) and see that there are two plans for the same stored procedure. The one difference is that there is new OPTION applied to the query for each procedure which is why there are two different "queries" in the Query Store.
 6. Execute the script **query_store_plans.sql**. Look into the details of the results to see the query text is the same but slightly different with the option to use variants. But notice the query_hash is the same value.
 7. Execute the script **query_store_parent_query.sql** and observe this is the text of the query from the stored procedure without variant options. This is the text from the *parent plan*.
 8. Execute the script **query_store_dispatcher_plan.sql**. If you click on the dispatcher_plan value you will see a graphical plan operator called Multiple Plan.
