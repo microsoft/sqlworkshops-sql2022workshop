@@ -36,7 +36,7 @@ Now see you can use an append-only ledger to capture application information. To
 Use the SQL login **bob** in these steps unless otherwise specified.
 
 1. Create an append-only ledger table for auditing of the application by executing the script **createauditledger.sql**.
-1. To simulate a user using the application to change someone else's salary **connect to SSMS as the app login** created with the **addlogins.sql** script and execute the script **appchangemaryssalary.sql**
+1. To simulate a user using the application to change someone else's salary **connect to SSMS as the app login** created with the **createdb.sql** script and execute the script **appchangemaryssalary.sql**
 1. **Logging back in as bob or the local sysadmin login**, look at the ledger by executing the script **viewemployeesledgerhistory.sql**. All you can see is that the "app" changed Mary's salary.
 1. Look at the audit ledger by executing the script **getauditledger.sql**. This ledger cannot be updated so the app must "log" all operations and the originating user from the app who initiated the operation. So I can see from the ledger at the SQL level that the app user changed Mary's salary but the app ledger shows bob was the actual person who used the app to make the change.
 
