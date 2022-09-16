@@ -17,20 +17,20 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 1. Execute the **populatedata.sql** script to load more data into the Warehouse.StockItems table. This script will take 5-10 mins to run (timing depends on how many CPUs and the speed of your disk).
 1. Rebuild an index associated with the table using the script **rebuild_index.sql**. **IMPORTANT**: If you miss this step you will not be able to see the performance improvement for PSP optimization.
 1. Create a new procedure to be used for the workload test using **proc.sql**.
-1. Execute the script **setup.sql** from SSMS. This will ensure the WideWorldImporters database is at dbcompat 150 and clear the query store.
+1. Execute the script **setup.sql** from SSMS. This will ensure the WideWorldImporters database is at **dbcompat 150** and clear the query store.
 
 ## See a PSP problem for a single query execution
 
-1. Set the actual execution plan option in SSMS. Run **query_plan_seek.sql** **twice** in a query window in SSMS. Note the query execution time is fast (< 1 second). Check the timings from SET STATISTICS TIME ON from the second execution. The query is run twice so the 2nd execution will not require a compile. This is the time we want to compare. Note the query plan uses an Index Seek.
-2. In a different query window set the actual execution option in SSMS. Run **query_plan_scan.sql** in a query windows in SSMS. Note the query plan uses an Clustered Index Scan and parallelism.
+1. Set the actual execution plan option in SSMS by using the GUI or `<Ctrl>`+`<M>`. Run **query_plan_seek.sql** **twice** in a query window in SSMS. Note the query execution time is fast (< 1 second). Check the timings from SET STATISTICS TIME ON from the second execution. The query is run twice so the 2nd execution will not require a compile. This is the time we want to compare. Note the query plan uses an Index Seek.
+2. In a different query window set the actual execution option in SSMS by using the GUI or `<Ctrl>`+`<M>`. Run **query_plan_scan.sql** in a query windows in SSMS. Note the query plan uses an Clustered Index Scan and parallelism.
 3. Now go back and run **query_plan_seek.sql** again. Note that even though the query executes quickly (< 1 sec), the timing from SET STATISTICS TIME is significantly longer than the previous execution. Also note the query plan also uses a clustered index scan and parallelism.
 
 ## See a workload problem for PSP
 
-**Note**: If you are using a named instance you will need to edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to include a -S.`<instance name`>.
+**Note**: If you are using a named instance you will need to edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to include a -S.`<instance name>`
 
-1. Execute the script **clear.sql** to clear plan cache and query store.
-1. Setup perfmon to capture % processor time and batch requests/second.
+1. Execute the script **clear.sql** to clear plan cache and query store. Remember dbcompat is still set to 150.
+1. Setup perfmon to capture **Processor Information\% Processor Time** (on by default) and **SQL Server:SQL Statistics\Batch Requests/sec** counters.
 1. Run **workload_index_seek.cmd 10** from the command prompt. This should finish very quickly. The parameter is the number of users. You may want to increase this for machines with 8 CPUs or more. Observe perfmon counters.
 1. Run **workload_index_scan.cmd**. This should take longer but now locks into cache a plan for a scan.
 1. Run **workload_index_seek.cmd 10** again. Observe perfmon counters. Notice much higher CPU and much lower batch requests/sec. Also note the workload doesn't finish in a few seconds as before.
