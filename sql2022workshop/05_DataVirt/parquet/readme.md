@@ -32,7 +32,7 @@ This is a exercise for data virtualization in SQL Server 2022 using the new REST
 `openssl req -new -x509 -nodes -days 730 -key private.key -out public.crt -config openssl.conf`
 
 - Double-click the public.crt file and select Install Certificate. Choose Local Machine, Place all certificates in the following store, Browse, and select Trusted Root Certification Authorities.
-- Copy the private.key and public.crt files from c:\minio into %%USERPROFILE%%\.minio\certs.
+- Copy the private.key and public.crt files from c:\minio into `%%USERPROFILE%%\`.minio\certs. (c:\Users`\<username>\`.minio\certs).
 
 ## Steps to use minio for the exercise
 
