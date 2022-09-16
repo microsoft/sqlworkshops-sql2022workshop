@@ -1,3 +1,4 @@
+
 ![](./graphics/microsoftlogo.png)
 
 # Workshop: SQL Server 2022 Workshop
