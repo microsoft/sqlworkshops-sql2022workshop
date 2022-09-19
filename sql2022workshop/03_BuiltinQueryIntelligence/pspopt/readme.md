@@ -47,3 +47,4 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 6. Execute the script **query_store_plans.sql**. Look into the details of the results to see the query text is the same but slightly different with the option to use variants. But notice the query_hash is the same value.
 7. Execute the script **query_store_parent_query.sql** and observe this is the text of the query from the stored procedure without variant options. This is the text from the *parent plan*.
 8. Execute the script **query_store_dispatcher_plan.sql**. If you click on the dispatcher_plan value you will see a graphical plan operator called Multiple Plan.
+9. To find the parent stored procedure of the statements from variants execute the script **getsprocinqds.sql**.
