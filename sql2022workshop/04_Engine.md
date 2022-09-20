@@ -44,7 +44,7 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engin
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-2">     4.2 Contained Availability Groups</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-2">     4.2 Contained Availability Groups</a></b></h2>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Setup and use Contained Availability Groups</a></b></h2>
 
