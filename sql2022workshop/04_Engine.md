@@ -20,6 +20,7 @@ You will cover the following topics in this Module:
 
   <dt><a href="#4-0">4.0 Ledger for SQL Server</a></dt>
   <dt><a href="#4-1">4.1 "Hands-free" tempdb in SQL Server 2022</a></dt>
+  <dt><a href="#4-2">4.2 Contained Availability Groups</a></dt>
   
 </dl>
 
@@ -40,6 +41,14 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engin
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\tempdb](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/tempdb)** folder.
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-2">     4.2 Contained Availability Groups</a></b></h2>
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Setup and use Contained Availability Groups</a></b></h2>
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\containedag](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/containedag)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 

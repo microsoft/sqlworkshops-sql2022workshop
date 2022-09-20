@@ -9,3 +9,7 @@ Exercises for Persisted Memory Grant Feedback. Follow the instructions in the **
 **3.1 Parameter Sensitive Plan Optimization**
 
 Exercises for Parameter Sensitive Plan Optimization. Follow the instructions in the **pspopt** folder.
+
+**3.2 DOP Feedback**
+
+Exercises for DOP feedback. Follow the instructions in the **dopfeedback** folder.

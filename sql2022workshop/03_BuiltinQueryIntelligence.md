@@ -45,6 +45,14 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\03_Built
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-2">     3.2 DOP Feedback</a></b></h2>
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Gain parallel efficiency with DOP Feedback</a></b></h2>
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\dopfeedback](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback)** folder.
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b>  Next Steps</b></h2>
 
 Next, Continue to <a href="./04_Engine.md" target="_blank"><i>Security, Scalability, and Availability</i></a>.
