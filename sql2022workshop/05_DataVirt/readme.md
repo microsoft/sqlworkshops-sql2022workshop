@@ -4,20 +4,20 @@ This is a set of exercises for data virtualization in SQL Server 2022 using the 
 
 **5.0 Using OPENROWSET with parquet files**
 
-Exercise to quickly use OPENROWSET with parquet files with an public data set.
+Exercise to  use OPENROWSET with parquet files with an public data set. Follow the steps in the **openrowset** folder.
 
 **5.1 Using parquet with S3**
 
-Exercises to access parquet files with S3 object storage by examining T-SQL notebooks. Follow the steps in the **parquet** folder.
+Exercise to access parquet files with S3 object storage by examining T-SQL notebooks. Follow the steps in the **parquet** folder.
 
 **5.2 Using delta tables with S3**
 
-Exercises to access delta tables with S3 object storage by examining T-SQL notebooks. Follow the steps in the **delta** folder.
+Exercise to access delta tables with S3 object storage by examining T-SQL notebooks. Follow the steps in the **delta** folder.
 
 **5.3 Using S3 object storage for backup and restore**
 
-Exercises to backup and restore databases with S3 object storage by examining T-SQL notebooks. Follow the steps in the **s3objectstorage** folder.
+Exercise to backup and restore databases with S3 object storage by examining T-SQL notebooks. Follow the steps in the **s3objectstorage** folder.
 
 **5.4 Using minio with SQL Server 2022**
 
-Exercises to try out SQL Server 2022 data virtualization and object storage using minio server on Windows. Follow the steps in the **miniosever** folder.
+Exercises to try out SQL Server 2022 data virtualization and object storage using minio server on Windows. Follow the steps in the **minio** folder.
