@@ -8,4 +8,4 @@ This is an exercise for data virtualization in SQL Server 2022 using the new RES
 
 ## Exercise for using parquet files with s3
 
-Review all the steps and queries in the Azure Data Studio notebook **querydelta.ipynb**.
+**Review** all the steps and queries in the Azure Data Studio notebook **querydelta.ipynb**. You can only execute the steps in this notebook if you complete the prereqs and steps in the [minio](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/05_DataVirt/minio) exercise.
