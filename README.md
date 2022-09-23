@@ -86,8 +86,8 @@ In order to complete the exercises in this workshop you will need the following:
 - **SQL Server 2022 Evaluation Edition RC0 or later Preview** (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. Exercises in Module 5 require the PolyBase Query Service for External Data Feature. In Module 5 you have the option to review Azure Data Studio notebooks instead of going through the exercises. **You must configure SQL Server for mixed mode authentication**.
 - Install **SQL Server Management Studio (SSMS)** latest 18 or 19 build from https://aka.ms/ssms18 or https://aka.ms/ssms19. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
-- The **WideWorldImporters** sample backup from https://aka.ms/WideWorldImporters. Many of the exercises have a script which by default restores the WideWorldImporters backup from the c:\sql_sample_databases folder. This sample backup is used throughout several modules
--  Download the **WideWorldImportersDW** database backup from https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImportersDW-Full.bak. This database is only used in Module 3.
+- For **Exercise 3.1 in Module 3** you will need to download a customized version of the **WideWorldImporters** sample database from [https://aka.ms/wwi_pspopt](https://aka.ms/wwi_pspopt).
+- For **Exercise 3.0 in Module 3** you will need to download a customized version of the **WideWorldImportersDW** sample database from [https://aka.ms/wwidw_mgf](https://aka.ms/wwidw_mgf).
 - Download **ostress.exe** by downloading RML utilities from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults.
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content

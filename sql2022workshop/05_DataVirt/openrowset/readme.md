@@ -11,4 +11,5 @@ This is an exercise to see the fundamental capability of data virtualization usi
 ## Exercise: Use OPENROWSET to query parquet files
 
 1. Execute the script **enablepolybase.sql** to enable the Polybase feature for the instance.
+1. Restart SQL Server.
 1. Execute the statements in the script **openrowset.sql** to view data from parquet files and a list a files from a public data set in Azure.

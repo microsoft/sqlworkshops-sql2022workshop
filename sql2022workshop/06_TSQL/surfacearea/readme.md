@@ -9,6 +9,8 @@ Follow these steps for exercises for  T-SQL enhancements across the core SQL eng
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 - To run the demo for **isnotdistinct.sql** you will need to restore the WideWorldImporters sample back from https://aka.ms/WideWorldImporters.
 
+**Note**: If you have restored the WideWorldImporters backup for Module 3 you can use that restored backup.
+
 ##  Steps to run the exercises
 
 1. Execute the script **datetrunc.sql** to see how the new DATETRUNC() function works.
