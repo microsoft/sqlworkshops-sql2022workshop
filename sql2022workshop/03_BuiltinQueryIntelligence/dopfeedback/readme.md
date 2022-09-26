@@ -15,7 +15,10 @@ This demo will show you how to see how to get consistent performance with less C
 **Note**: If you are using a named instance you will need to edit **workload_index_scan_users.cmd** to include a -S.`<instance name>`
 
 1. Execute **configmaxdop.sql** to configure MAXDOP to 0 for the instance.
-1. Copy the customized **WideWorldImporters** sample database from [https://aka.ms/wwi_dop](https://aka.ms/wwi_dop) to a local directory (The restore script assumes **c:\sql_sample_databases**)
+1. Copy the customized **WideWorldImporters** sample database from [https://aka.ms/wwi_dop](https://aka.ms/wwi_dop) to a local directory (The restore script assumes **c:\sql_sample_databases**).
+
+**Note**: If you try to restore the default sample WideWorldImporters you can use the populatedata.sql and rebuild_index.sql scripts to customize the database for the exercise.
+
 1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go.
 1. Execute the script **restorewwi.sql**
 1. Execute **dopfeedback.sql** to set Query Store settings and db setting for DOP feedback.
