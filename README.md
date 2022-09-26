@@ -86,6 +86,8 @@ In order to complete the exercises in this workshop you will need the following:
 - **SQL Server 2022 Evaluation Edition** from (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. 
     - Exercises in Module 5 require the PolyBase Query Service for External Data Feature (using all defaults).
     - **You must configure SQL Server for mixed mode authentication**.
+    - Named instances are supported but you may need to make some edits to some scripts in modules where the exercise as you connect to SQL Server.
+    - SQL Sever on Linux or containers are not currently officially supported. However, many of the exercises use T-SQL so you still can go through many of the exercises using Linux or containers.
 - Install **SQL Server Management Studio (SSMS)** latest 18 or 19 build from https://aka.ms/ssms18 or https://aka.ms/ssms19. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
 - For **Exercise 3.0 in Module 3** you will need to download a customized version of the **WideWorldImportersDW** sample database from [https://aka.ms/wwidw_mgf](https://aka.ms/wwidw_mgf).
