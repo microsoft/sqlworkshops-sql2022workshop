@@ -73,7 +73,7 @@ Documentation: https://docs.min.io
 1. Execute the script **enablepolybase.sql** to enable the Polybase feature for the instance.
 1. Execute the script **createmasterkey.sql** to create a master key to protect a database scoped credential.
 1. Edit the script **creates3creds.sql** to put in your user and password. Execute the script **creates3creds.sql** to create a database scoped credential. This contains the S3 user and password you created earlier with the minio console.
-1. Edit the script **creates3datasource.sql** to substitute in your local IP address for the minio server. Execute the script creates3datasource.sql.
+1. Edit the script **creates3datasource.sql** to substitute in your local IP address for the minio server. Execute the script **creates3datasource.sql**.
 1. Create a file format to use for Parquet by executing the script **createparquetfileformat.sql**.
 1. Create a parquet file into the S3 storage bucket wwi by executing the script **wwi_cetas.sql**.
 1. Use the minio console to browse the wwi bucket and see the parquet file that was created.
@@ -92,14 +92,14 @@ Documentation: https://docs.min.io
 
 **Note**: The people-10m delta table is a sample delta table from a sample dataset from Databricks as found at https://docs.microsoft.com/en-us/azure/databricks/data/databricks-datasets#sql. This dataset contains names, birthdates, and SSN which are all fictional and don't represent actual people. This dataset falls under the creative commons license at http://creativecommons.org/licenses/by/4.0/legalcode and can be shared and provided in this repo.
 
-1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**)
-1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go.
-1. Execute the script **restorewwi.sql**.
-1. Execute the script **enablepolybase.sql** to enable the Polybase feature for the instance.
-1. Execute the script **createmasterkey.sql** to create a master key to protect a database scoped credential.
-1. Edit the script **creates3creds.sql** to put in your user and password. Execute the script creates3creds.sql to create a database scoped credential. This contains the S3 user and password you created earlier with the minio console.
-1. Edit the script **creates3datasource.sql** to substitute in your local IP address for the minio server. Execute the script **creates3datasource.sql**.
-1. Create a file format to use for Parquet by executing the script **createparquetfileformat.sql**.
+1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**). Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
+1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go. Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
+1. Execute the script **restorewwi.sql**. Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
+1. Execute the script **enablepolybase.sql** to enable the Polybase feature for the instance. Skip this step if you have already enabled Polybase in the previous exercise.
+1. Execute the script **createmasterkey.sql** to create a master key to protect a database scoped credential. Skip this step if you have already created a master key in the previous exercise.
+1. Edit the script **creates3creds.sql** to put in your user and password. Execute the script **creates3creds.sql** to create a database scoped credential. This contains the S3 user and password you created earlier with the minio console. Skip this step if you have already created a database scoped credential in the previous exercise.
+1. Edit the script **creates3datasource.sql** to substitute in your local IP address for the minio server. Execute the script **creates3datasource.sql**. Skip this step if you have already created an external data source in the previous exercise.
+1. Create a file format to use for Parquet by executing the script **createparquetfileformat.sql**. Skip this step if you already created a file format in the previous exercise.
 1. Query the delta table uploaded to the s3 storage under the delta bucket by executing the script **querydeltatable.sql**. There is 10m rows in the delta table so this query will take around 1 minute to execute.
 1. This delta table was built with a partition column for the id column (default partitioning). First filter on a column not partitioned by executing the script **querybyssn.sql**. It should complete with about 4 seconds.
 1. Now query by id to see if it is faster by executing the script **querybyid.sql**. Even though we used an id value in the query that was the highest one, the query still finishes in about 1 second because the delta table is partitioned on the id column.
@@ -110,9 +110,9 @@ Documentation: https://docs.min.io
 ## Exercise 3: Steps to use SQL Server for the exercise
 
 1. On the minio dashboard, select menu for Buckets. Select Create Bucket. Use a Bucket Name of **backups**. Leave all defaults and select Create Bucket.
-1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**)
-1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go.
-1. Execute the script **restorewwi.sql**.
+1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**). Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
+1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go. Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
+1. Execute the script **restorewwi.sql**. Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
 1. Edit the script **creates3creds.sql** to put in the local IP and user/password. Execute the script **creates3creds.sql**.
 1. Edit the script **backupdbtos3.sql** to put in your local IP. Execute the script **backupdbtos3.sql**.
 1. Use the minio browser to verify the backup file is in the backups bucket.
