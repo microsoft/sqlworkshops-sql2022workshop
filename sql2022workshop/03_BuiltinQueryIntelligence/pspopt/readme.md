@@ -13,7 +13,7 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 
 1. Create a directory called **c:\sql_sample_databases** to store backups and files.
 1. Download a backup of a customized version of the WideWorldImporters sample database from [https://aka.ms/wwi_pspopt](https://aka.ms/wwi_pspopt) from and copy it into c:\sql_sample_databases directory.
-1. Restore the WideWorldImporters backup. You can edit and use the **restorewwi.sql** script. This script was designed for a SQL Server in Azure Virtual Machine marketplace image which has separate disks for data and log files. Edit this file to match your disk storage.
+1. Restore the WideWorldImporters backup. You can edit and use the **restorewwi.sql** script to match the location of your backup and target data and log files. This script assumes c:\sql_sample_databases.
 1. Create a new procedure to be used for the workload test using **proc.sql**.
 1. Execute the script **setup.sql** from SSMS. This will ensure the WideWorldImporters database is at **dbcompat 150** and clear the query store.
 
