@@ -83,7 +83,7 @@ In order to complete the exercises in this workshop you will need the following:
 
 - A virtual machine or computer running Windows 10, Windows 11, Windows Server 2019, or Windows 2022 with at least **4 CPUs and 8Gbm RAM**. You will need Administrator rights on the virtual machine or computer.
 - An Azure subscription is required for Module 2. Check the instructions in each exercise for specific permission requirements.
-- **SQL Server 2022 Evaluation Edition RC0 or later Preview** (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. Exercises in Module 5 require the PolyBase Query Service for External Data Feature. In Module 5 you have the option to review Azure Data Studio notebooks instead of going through the exercises. **You must configure SQL Server for mixed mode authentication**.
+- **SQL Server 2022 Evaluation Edition** from (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. Exercises in Module 5 require the PolyBase Query Service for External Data Feature. **You must configure SQL Server for mixed mode authentication**.
 - Install **SQL Server Management Studio (SSMS)** latest 18 or 19 build from https://aka.ms/ssms18 or https://aka.ms/ssms19. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
 - For **Exercise 3.0 in Module 3** you will need to download a customized version of the **WideWorldImportersDW** sample database from [https://aka.ms/wwidw_mgf](https://aka.ms/wwidw_mgf).
