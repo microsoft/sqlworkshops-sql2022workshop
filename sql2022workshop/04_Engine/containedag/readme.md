@@ -1,4 +1,4 @@
-# SQL Server 2022 Demo for Contained Availability Group
+# Exercises for Contained Availability Groups for SQL Server 2022
 
 These are instructions to setup and demonstrate a contained availability group in SQL Server 2022. This demo will use an Availability Group (AG) without a cluster and no built-in DNS resolution. Therefore there are some manual steps to make this work you would not normally have to do with an AG setup with clustering on Windows. This will require you to perform more manual steps but allows you to setup an contained AG with no Windows Clustering or Windows domain.
 
@@ -12,9 +12,9 @@ These are instructions to setup and demonstrate a contained availability group i
 - Each VM should have SQL Server 2022 Evaluation Edition installed. Just install the Database Engine and use all defaults except allow mixed mode security when installing. You can disable the sa login account after installation. You do not need to check the SQL Server Extension to Azure.
 - On each VM create firewall rules to allow ports 1433 and 5022
 - Enable the Always On Availability Group feature for each SQL instance using the SQL Server Configuration Manager and restart SQL Server.
-- Install the latest SSMS 18.x build on each VM.
+- Install the latest SSMS 18.x or 19.x build on each VM.
 
-## Demo Steps
+## Steps
 
 The following are steps to create a contained AG, create a database to be part of the AG, create a SQLAgent Job, and observe the agent job is replicated to the secondary. Then you will execute a manual failover to see how the agent job is now available as part of the new primary.
 

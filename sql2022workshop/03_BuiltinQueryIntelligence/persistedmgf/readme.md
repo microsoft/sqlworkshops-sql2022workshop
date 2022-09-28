@@ -26,3 +26,5 @@ The following is an exercise to learn memory grant feedback persistence in SQL S
 1. Run **get_plan_feedback.sql** again and see the last_query_memory_kb reflect the new larger memory grant.
 1. Execute the script **clear_proc_cache.sql**. This will clear the plan cache. Prior to SQL Server 2022, this would have "lost" the memory grant feedback.
 1. Run **execute_query.sql** again. You will see the grant is still using the feedback now in the query store and runs in a few seconds.
+
+**Note**: After executing a query that uses feedback from the Query Store the SELECT operator will not show **IsMemoryGrantFeedbackAdjusted = YesAdjusting**
