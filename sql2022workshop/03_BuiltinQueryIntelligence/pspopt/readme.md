@@ -31,7 +31,7 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 **Note**: If you are using a named instance you will need to edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to include a -S.`<instance name>`
 
 1. Execute the script **clear.sql** to clear plan cache and query store. Remember dbcompat is still set to 150.
-1. Setup perfmon to capture **Processor\% Processor Time** (not Processor Information) and **SQL Server:SQL Statistics\Batch Requests/sec** counters.
+1. Setup perfmon to capture **`Processor\% Processor Time`** (not Processor Information) and **`SQL Server:SQL Statistics\Batch Requests/sec`** counters.
 1. Run **workload_index_seek.cmd 10** from the command prompt. This should finish very quickly. The parameter is the number of users. You may want to increase this for machines with 8 CPUs or more. Observe perfmon counters.
 1. Run **workload_index_scan.cmd**. This should take longer but now locks into cache a plan for a scan.
 1. Run **workload_index_seek.cmd 10** again. Observe perfmon counters. Notice much higher CPU and much lower batch requests/sec. Also note the workload doesn't finish in a few seconds as before.
