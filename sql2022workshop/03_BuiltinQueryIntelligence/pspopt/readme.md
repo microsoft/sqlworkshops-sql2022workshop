@@ -28,7 +28,7 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 
 ## See a workload problem for PSP
 
-**Note**: If you are using a named instance you will need to edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to include a `-S.\<instance name>`
+**Note**: If you are using a named instance you will need to edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to use<br>`-S.\<instance name>`
 
 1. Execute the script **clear.sql** to clear plan cache and query store. Remember dbcompat is still set to 150.
 1. Setup perfmon to capture **`Processor\% Processor Time`** (not Processor Information) and **`SQL Server:SQL Statistics\Batch Requests/sec`** counters.
