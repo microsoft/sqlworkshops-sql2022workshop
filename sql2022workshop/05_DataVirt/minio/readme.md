@@ -1,6 +1,6 @@
 # 5.4 Exercises for data virtualization and object storage using minio
 
-These are exercises to use data virtualization and object storage for s3 with minio. After following the Prerequisites and Steps to setup the exercise, you can pick and choose any of the three exercises to use parquet, delta, or backup/restore with s3.
+These are exercises to use data virtualization and object storage for S3 with minio. After following the Prerequisites and Steps to setup the exercise, you can pick and choose any of the three exercises to use parquet, delta, or backup/restore with S3.
 
 **CAUTION**: This exercise uses non-Microsoft software that has "free" license to use for testing and development purposes only. This exercise should only be run in a testing environment and not with any production workload.
 
