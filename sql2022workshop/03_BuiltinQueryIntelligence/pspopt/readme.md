@@ -22,8 +22,8 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 
 ## See a PSP problem for a single query execution
 
-1. Set the actual execution plan option in SSMS by using the GUI or `<Ctrl>`+`<M>`. Run **query_plan_seek.sql** **twice** in a query window in SSMS. Note the query execution time is fast (< 1 second). Check the timings from SET STATISTICS TIME ON from the second execution. The query is run twice so the 2nd execution will not require a compile. This is the time we want to compare. Note the query plan uses an Index Seek.
-2. In a different query window set the actual execution option in SSMS by using the GUI or `<Ctrl>`+`<M>`. Run **query_plan_scan.sql** in a query windows in SSMS. Note the query plan uses an Clustered Index Scan and parallelism.
+1. Load the script **query_plan_seek.sql** and set the actual execution plan option in SSMS by using the GUI or `<Ctrl>`+`<M>`. Run **query_plan_seek.sql** **twice** in a query window in SSMS. Note the query execution time is fast (< 1 second). Check the timings from SET STATISTICS TIME ON from the second execution. The query is run twice so the 2nd execution will not require a compile. This is the time we want to compare. Note the query plan uses an Index Seek.
+2. In a different query window load the script **query_plan_scan.sql** and set the actual execution option in SSMS by using the GUI or `<Ctrl>`+`<M>`. Run **query_plan_scan.sql** in a query windows in SSMS. This will take a few minutes to run. Note the query plan uses an Clustered Index Scan and parallelism.
 3. Now go back and run **query_plan_seek.sql** again. Note that even though the query executes quickly (< 1 sec), the timing from SET STATISTICS TIME is significantly longer than the previous execution. Also note the query plan also uses a clustered index scan and parallelism.
 
 ## See a workload problem for PSP
