@@ -1,2 +1,2 @@
 net stop mssqlserver
-net start mssqlserver /f
+net start mssqlserver /f /mSQLCMD
