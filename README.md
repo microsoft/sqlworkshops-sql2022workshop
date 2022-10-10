@@ -27,9 +27,9 @@ When you complete this course, you will be able to:
 
 - Understand how SQL Server 2022 is the most cloud connected version ever.
 - Learn how built-in query intelligence allows your queries to run faster with no code changes
-- Learn how SQL Server 2022 has an industry proven engine with new innovations in security, scalability, and availability.
-- See new data virtualization capabilities using REST APIs with data sources like s3 and see how to backup and restore SQL databases with S3.
-- Learn how to enable developers for new scenarios using enhancements to the T-SQL language.
+- Learn how SQL Server 2022 has an industry proven database engine with new innovations in security, scalability, and availability.
+- See new data virtualization capabilities using REST APIs with data sources like s3 compatible providers and see how to backup and restore SQL databases with S3.
+- Learn how to enable new application scenarios using enhancements to the T-SQL language.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -54,12 +54,12 @@ When you complete this course, you will be able to:
 <tr><th style="background-color: #1b20a1; color: white;">Technology</th> <th style="background-color: #1b20a1; color: white;">Description</th></tr>
 
 <tr><td><i>SQL Server</i></td><td>Database Platform released and sold by Microsoft</td></tr>
-<tr><td><i>SQL Server 2022</i></td><td>Most current release of SQL Server</td></tr>
+<tr><td><i>SQL Server 2022</i></td><td>The lastest major version of SQL Server</td></tr>
 <tr><td><i>Intelligent Query Processing</i></td><td>Automated query processing enhancements in SQL Server 2022</td></tr>
 <tr><td><i>Microsoft Azure</i></td><td>Microsoft's cloud platform for computing, data, and applications.</td></tr>
 <tr><td><i>Query Store</i></td><td>Built-in query performance execution statistics stored in a user database</td></tr>
 <tr><td><i>Ledger for SQL Server</i></td><td>Built-in tamper evident data integrity using blockchain technologies</td></tr>
-<tr><td><i>Polybase</i></td><td>Data Virtualization through external tables</td></tr>
+<tr><td><i>Polybase</i></td><td>Data Virtualization for data stored outside of SQL Server</td></tr>
 <tr><td><i>SQL Server Management Studio (SSMS)</i></td><td>Graphical User Interface Management and Query Tool</td></tr>
 <tr><td><i>Azure Data Studio<i></td><td>Graphical User Interface to execute T-SQL queries, notebooks, and manage SQL Server</td></tr>
 
@@ -81,12 +81,12 @@ Each module of this workshop can be studied and used independently of each other
 
 In order to complete the exercises in this workshop you will need the following:
 
-- A virtual machine or computer running Windows 10, Windows 11, Windows Server 2019, or Windows 2022 with at least **4 CPUs and 8Gb RAM**. You will need Administrator rights on the virtual machine or computer. **Exercise 3.2 is an advanced exercise in Module 3 that requires 8 CPUs and 24Gb RAM**.
+- A virtual machine or computer running Windows 10, Windows 11, Windows Server 2019, or Windows 2022 with at least **4 CPUs and 8Gb RAM**. You will need Administrator rights on the virtual machine or computer. **Exercise 3.2 is an advanced exercise in Module 3 that requires 8 CPUs and 24Gb RAM. It may be an optional exercise in some workshop delivery. Check with your instructor.**.
 - An Azure subscription is required for Module 2. Check the instructions in each exercise for specific permission requirements. Your instructor will indicate whether you will do Module 2 exercises.
 - **SQL Server 2022 Evaluation Edition** from (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. 
     - Exercises in Module 5 require the PolyBase Query Service for External Data Feature (using all defaults). **IMPORTANT**: If you have an instance already on your computer or VM that has the Polybase feature enabled you will have to remove that feature from that instance or uninstall that instance. If this is not possible Module 5 does have T-SQL notebooks for you to view the experience.
-    - **You must configure SQL Server for mixed mode authentication**.
-    - Named instances are supported but you may need to make some edits to some scripts in modules where the exercise as you connect to SQL Server.
+    - **You must configure SQL Server for mixed mode authentication. Read more how to do this at https://learn.microsoft.com/sql/relational-databases/security/choose-an-authentication-mode**.
+    - Named instances are supported but you may need to make some edits to some scripts in some modules where the exercise have you connect to SQL Server.
     - SQL Sever on Linux or containers are not currently officially supported. However, many of the exercises use T-SQL so you still can go through many of the exercises using Linux or containers.
 - Install **SQL Server Management Studio (SSMS)** latest 18 or 19 build from https://aka.ms/ssms18 or https://aka.ms/ssms19. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
