@@ -18,23 +18,23 @@ These categories include:
 
 **Cloud Connected**
 
-Connect SQL Server 2022 for hybrid capabilities including managed disaster recovery, near-real time analytics, and security governance.
+Connect SQL Server 2022 for hybrid capabilities including managed disaster recovery, near-real time analytics, and security governance. You will learn about these new features in **Module 2** of the workshop.
 
 **Built-in query intelligence**
 
-Gain performance with no code changes using the Query Store and next generation of Intelligent Query Processing capabilities.
+Gain performance with no code changes using the Query Store and next generation of Intelligent Query Processing capabilities. You will learn about these new features in **Module 3** of the workshop.
 
 **Security, scalability, and availability**
 
-Increase security, scalability, and availability built into the SQL Server engine with 25+ new features.
+Increase security, scalability, and availability built into the SQL Server engine with 25+ new features. You will learn about these new features in **Module 4** of the workshop.
 
 **Data virtualization and object storage**
 
-Integrate SQL Server with other data sources and data lakes including Azure Storage and S3 compatible object storage providers.
+Integrate SQL Server with other data sources and data lakes including Azure Storage and S3 compatible object storage providers. You will learn about these new features in **Module 5** of the workshop.
 
 **Extending T-SQL**
 
-Enhance your application with new T-SQL language capabilities including JSON, core engine, and time series.
+Enhance your application with new T-SQL language capabilities including JSON, core engine, and time series. You will learn about these new features in **Module 6** of the workshop.
 
 **Watch this video** by Bob Ward introducing SQL Server 2022 with Microsoft Mechanics:
 
