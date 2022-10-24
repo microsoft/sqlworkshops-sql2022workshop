@@ -82,12 +82,12 @@ Each module of this workshop can be studied and used independently of each other
 In order to complete the exercises in this workshop you will need the following:
 
 - A virtual machine or computer running Windows 10, Windows 11, Windows Server 2019, or Windows 2022 with at least **4 CPUs and 8Gb RAM**. You will need Administrator rights on the virtual machine or computer. **Exercise 3.2 is an advanced exercise in Module 3 that requires 8 CPUs and 24Gb RAM. It may be an optional exercise in some workshop delivery. Check with your instructor.**.
-- An Azure subscription is required for Module 2. Check the instructions in each exercise for specific permission requirements. Your instructor will indicate whether you will do Module 2 exercises.
-- **SQL Server 2022 Evaluation Edition** from (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. 
+- An Azure subscription is required for Module 2. Check the instructions in each exercise for specific permission requirements. Your instructor will indicate whether you will do Module 2 exercises. Exercises 2.2 and 2.3 in this module cannot be completed using an Azure Virtual Machine.
+- **SQL Server 2022 Evaluation Edition RC1 or later** from (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. 
     - Exercises in Module 5 require the PolyBase Query Service for External Data Feature (using all defaults). **IMPORTANT**: If you have an instance already on your computer or VM that has the Polybase feature enabled you will have to remove that feature from that instance or uninstall that instance. If this is not possible Module 5 does have T-SQL notebooks for you to view the experience.
     - **You must configure SQL Server for mixed mode authentication. Read more how to do this at https://learn.microsoft.com/sql/relational-databases/security/choose-an-authentication-mode**.
     - Named instances are supported but you may need to make some edits to some scripts in some modules where the exercise have you connect to SQL Server.
-    - SQL Sever on Linux or containers are not currently officially supported. However, many of the exercises use T-SQL so you still can go through many of the exercises using Linux or containers.
+    - SQL Server on Linux or containers are not currently officially supported. However, many of the exercises use T-SQL so you still can go through many of the exercises using Linux or containers.
 - Install **SQL Server Management Studio (SSMS)** latest 18 or 19 build from https://aka.ms/ssms18 or https://aka.ms/ssms19. Several of the modules require features built only into SSMS. You may have a better experience in some modules with new features of SSMS 19.
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this course.
 - For **Exercise 3.0 in Module 3** you will need to download a customized version of the **WideWorldImportersDW** sample database from [https://aka.ms/wwidw_mgf](https://aka.ms/wwidw_mgf).
