@@ -71,7 +71,11 @@ When you complete this course, you will be able to:
 
 To complete this workshop you will need the following:
 
-- Clone the workshop using git from https://github.com/microsoft/sqlworkshops-sql2022workshop.git or download a zip file of the scripts from https://github.com/microsoft/sqlworkshops-sql2022workshop/archive/refs/heads/main.zip. You will need to expand the zip file after downloading. All the scripts and files for the exercises are found in the **sql2022workshop** folder.
+- Before you attend the workshop, download all the scripts and files for hands-on exercises with one of the following methods:
+
+1.	Clone the workshop repo with `git clone https://github.com/microsoft/sqlworkshops-sql2022workshop.git`. Using this method, the scripts will be under folders by module inside sqlworkshops-sql2022workshop\sql2022workshop. You can download git for windows from https://gitforwindows.org. 
+2.	Or download a zip file of the scripts from https://github.com/microsoft/sqlworkshops-sql2022workshop/archive/refs/heads/main.zip. You will need to expand the zip file after downloading. Using this method the scripts will be under folders by module inside \sqlworkshops-sql2022workshop-main\sql2022workshop.
+
 - Setup a machine or VM and install the software and supporting files as listed in the **Setup** section below
 
 Each module of this workshop can be studied and used independently of each other or taken all as a single set of exercises. The Modules are designed in a sequence but you can use each of them one at a time at your own pace.
