@@ -58,4 +58,4 @@ Enhance your application with new T-SQL language capabilities including JSON, co
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b>  Next Steps</b></h2>
 
-Next, Continue to <a href="./02_IntelligentPerformance.md" target="_blank"><i>Azure Connected</i></a>.
+Next, Continue to <a href="./02_AzureConnected.md" target="_blank"><i>Azure Connected</i></a>.

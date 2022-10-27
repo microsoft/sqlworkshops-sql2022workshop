@@ -136,14 +136,14 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
   <tr><td><a href="./sql2022workshop/04_Engine.md" target="_blank">04 - Power your database with security, scalability, and availability</a></td><td>Learn the new capabilities of the industry proven SQL Server engine</td></tr>
   <tr><td ><a href="./sql2022workshop/05_DataVirt.md" target="_blank">05 - Access new sources with data virtualization and object storage</a></td><td> Learn the new data virtualization and object storage capabilities</td></tr>
   <tr><td><a href="./sql2022workshop/06_TSQL.md" target="_blank">06 - Enhance your application with new T-SQL capabilities</a></td><td>Learn the new T-SQL enhancements for new application scenarios</td></tr>
-  <tr><td><a href="./sql2019workshop/07_summary.md" target="_blank">07 - Summary</a></td><td>Get more resources and next steps for SQL Server 2022</td></tr>
+  <!---- <tr><td><a href="./sql2019workshop/07_summary.md" target="_blank">07 - Summary</a></td><td>Get more resources and next steps for SQL Server 2022</td></tr> ---->
 </table>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b>     Next Steps</b></h2>
 
-Next, Continue to <a href="./sql2022workshop/02_Introduction.md" target="_blank"><i>Introduction to SQL Server 2022</i></a>
+Next, Continue to <a href="./sql2022workshop/01_Introduction.md" target="_blank"><i>Introduction to SQL Server 2022</i></a>
 
 ## Contributing
 
