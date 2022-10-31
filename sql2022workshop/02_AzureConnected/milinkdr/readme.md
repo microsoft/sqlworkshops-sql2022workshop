@@ -34,7 +34,7 @@ The following are steps for an exercise for the Link feature for Azure SQL Manag
 ## Failover to Azure SQL Managed Instance
 
 1. Using the SSMS connection to the SQL Server 2022 instance execute a failover to Azure SQL Managed Instance using the steps at https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-use-ssms-to-failover-database?view=azuresql.
-2. In SSMS run the query **checkstatus.sql** against the local SQL Server 2022 instance. Observe the updateability is READ_ONLY. Use Object Explorer to see the AG and DAG are removed.
+2. In SSMS, use Object Explorer to see the AG and DAG are removed.
 3. Connect to Azure SQL Managed Instance and execute the script **checkstatus.sql** to see the updateability is READ_WRITE
 
 ## Restore a backup from Azure SQL Managed Instance back to SQL Server 2022
