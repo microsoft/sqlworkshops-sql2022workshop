@@ -70,7 +70,7 @@ For more information, and a list of all the capabilities for each edition, see o
 
 ## Licensing for SQL Server 2022
 
-SQL Server 2022 paid editions are licensed on individual instances using models like per core or with contract agreements such as Software Assurance (SA). SQL Server 2022 offers a new licensing model called Pay-as-you-go (PAYG). Learn more about all the licensing options for SQL Server 2022 at [SQL Server licensing](https://aka.ms/sqlserver2022licensing).
+SQL Server 2022 paid editions are licensed on individual instances using models like per core or with contract agreements such as Software Assurance (SA).Learn more about all the licensing options for SQL Server 2022 at [SQL Server licensing](https://aka.ms/sqlserver2022licensing).
 
 ## Feature differences for SQL Server 2022 from previous releases
 
@@ -84,8 +84,7 @@ In future units, you'll learn about all the new features and capabilities in SQL
 
 Some of the differences for features that have been removed, deprecated, or enhanced from SQL Server in SQL Server 2022 from a perspective of deployment is listed below.
 
-> [!TIP]
-> Stay up to date with all the latest release notes at [SQL Server 2022 release notes](https://aka.ms/sqlserver2022releasenotes).
+> **TIP**: Stay up to date with all the latest release notes at [SQL Server 2022 release notes](https://aka.ms/sqlserver2022releasenotes).
 
 ### Features removed or deprecated in SQL Server 2022
 
