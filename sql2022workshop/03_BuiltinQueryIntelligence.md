@@ -33,8 +33,7 @@ Query store hints are not intended to be used as a normal step to tune query per
 
 While the Query Store is beneficial for reducing the amount of time required to tune queries or easily identify query performance issues, performance information is only available for queries executed against the primary replica in an Always On Availability Group. In SQL Server 2022 and new option is available using the T-SQL **ALTER DATABASE** statement to enable the Query Store to collect performance information for read-only queries executed on secondary replicas. All performance information for all replicas is persisted on the primary replica. New information is captured in the Query Store to indicate which replica is associated with a query or query plan.
 
-> [!NOTE]
-> Trace flag 12606 is required in order to be able enable Query Store for secondary replicas
+> NOTE: Trace flag 12606 is required in order to be able enable Query Store for secondary replicas
 
 ### Query store for Intelligent Query Processing
 
@@ -113,7 +112,7 @@ DOP feedback does not require recompilation but validation will be examined on a
 
 You can learn more about DOP feedback at https://aka.ms/dopfeedback.
 
-You will go through the follow exercises in this module to see built-in query intelligence in action:
+You will go through the following exercises in this module to see built-in query intelligence in action:
 
 <dl>
 

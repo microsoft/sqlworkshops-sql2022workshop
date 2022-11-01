@@ -137,7 +137,7 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engin
 
 In this exercise you will see how improvements from SQL Server 2019 and SQL Server 2022 have virtually eliminated any system page latch contention in tempdb.
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: See system page latch contention for tempdb eliminated in SQL Server 2022</a></b></h2>
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\tempdb](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/tempdb)** folder.
 

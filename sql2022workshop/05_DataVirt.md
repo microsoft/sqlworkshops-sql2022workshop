@@ -77,16 +77,16 @@ Use the following sections in this module for exercises for data virtualization 
 <dl>
 
   <dt><a href="#5-0">5.0 Using OPENROWSET with parquet</a></dt>
-  <dt><a href="#5-0">5.1 Using parquet files with s3</a></dt>
-  <dt><a href="#5-1">5.2 Using delta table files with s3</a></dt>
-  <dt><a href="#5-2">5.3 Backup and Restore with s3</a></dt>
-  <dt><a href="#5-2">5.4 Using s3 with minio for data virtualization and object storage</a></dt>
+  <dt><a href="#5-0">5.1 Using parquet files with S3 compatible object storage</a></dt>
+  <dt><a href="#5-1">5.2 Using delta table with S3 compatible object storage</a></dt>
+  <dt><a href="#5-2">5.3 Backup and Restore with S3 compatible object storage</a></dt>
+  <dt><a href="#5-2">5.4 Using S3 with minio for data virtualization and object storage</a></dt>
   
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="5-0">     5.0 Using parquet files with s3</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="5-0">     5.0 Using parquet files with S3 compatible object storage</a></b></h2>
 
 In this exercise you will learn how to use the T-SQL function OPENROWSET to access parquet files in a public dataset.
 
@@ -100,28 +100,28 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\05_DataV
 
 In this exercise you will see how parquet files can be used with external tables for a S3 compatible object storage provider by reviewing the results of T-SQL notebook.
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Access parquet files with T-SQL using s3 compatible object storage</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Access parquet files with T-SQL using S3 compatible object storage</a></b></h2>
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\05_DataVirt\parquet](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/05_DataVirt/parquet)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="5-2">     5.2 Using delta table with S3 compatible object storage provider</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="5-2">     5.2 Using delta table with S3 compatible object storage</a></b></h2>
 
 In this exercise you will see how delta tables Can be used with external tables for a S3 compatible object storage provider by reviewing the results of T-SQL notebook.
 
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Access delta table files with T-SQL using s3 compatible object storage</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Access delta table with T-SQL using S3 compatible object storage</a></b></h2>
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\05_DataVirt\delta](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/05_DataVirt/delta)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="5-3">     5.3 Backup and Restore with s3</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="5-3">     5.3 Backup and Restore with S3 compatible object storage</a></b></h2>
 
 In this exercise you will see how delta tables Can be used with external tables for a S3 compatible object storage provider by reviewing the results of T-SQL notebook.
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Backup and Restore SQL Server databases using s3 compatible object storage</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Backup and Restore SQL Server databases using S3 compatible object storage</a></b></h2>
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\05_DataVirt\s3objectstorage](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/05_DataVirt/s3objectstorage)** folder.
 
