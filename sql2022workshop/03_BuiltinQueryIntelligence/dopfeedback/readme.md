@@ -17,18 +17,15 @@ This demo will show you how to see how to get consistent performance with less C
 1. Execute **configmaxdop.sql** to configure MAXDOP to 0 for the instance.
 1. Copy the customized **WideWorldImporters** sample database from [https://aka.ms/wwi_dop](https://aka.ms/wwi_dop) to a local directory (The restore script assumes **c:\sql_sample_databases**).
 
-**Note**: If you try to restore the default sample WideWorldImporters you can use the populatedata.sql and rebuild_index.sql scripts to customize the database for the exercise.
-
-1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go.
-1. Execute the script **restorewwi.sql**
+    **Note**: If you try to restore the default sample WideWorldImporters you can use the restorewwi.sql, populatedata.sql and rebuild_index.sql scripts to customize the database for the exercise.
 
 1. Execute **proc.sql** to create a stored procedure
 1. Execute **dopxe.sql** to create an XEvent session. Use SSMS to Watch the XE session to see Live Data.
 1. Execute **dopfeedback.sql** to set Query Store settings and db setting for DOP feedback. 
 1. Run **workload_index_scan_users.cmd** from a command prompt.This will take around 15 minutes to run
-1. Look at the XE session live data. 
-. 
-You should first see a **dop_feedback_eligible_query** event. Then you will see a series of **dop_feedback_provided** and **dop_feedback_validation** events until you see a final **dop_feedback_stabilized** event with a feedback_dop value of 4. Depending on your system it is possible the system can stabilize at a feedback_dop value of 2. If you encounter a **dop_feedback_reverted** event immediately then consider retrying the lab by starting back at **step 5**. If you encounter it more than once, you can try to restart SQL Server and/or the VM or computer.
+1. Look at the XE session live data.
+
+    You should first see a **dop_feedback_eligible_query** event. Then you will see a series of **dop_feedback_provided** and **dop_feedback_validation** events until you see a final **dop_feedback_stabilized** event with a feedback_dop value of 4. Depending on your system it is possible the system can stabilize at a feedback_dop value of 2. If you encounter a **dop_feedback_reverted** event immediately then consider retrying the lab by starting back at **step 5**. If you encounter it more than once, you can try to restart SQL Server and/or the VM or computer.
 
 1. Run the script **dop_query_stats.sql** to see the changes in DOP and resulting stats. Note the small decrease in avg duration and decrease in needed CPU across the various **last_dop** values.
 1. Use Top Resource Consuming Queries report and look at Avg Duration and Avg CPU to see the stable duration with decrease in CPU until stable over time.

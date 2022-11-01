@@ -90,7 +90,7 @@ Documentation: https://docs.min.io
 
 1. On the minio dashboard, select menu for Buckets. Select Create Bucket. Use a Bucket Name of **delta**. Leave all defaults and select Create Bucket. From this bucket Browse, Upload, Upload folder. Choose the **people-10m** folder provides with this exercise. This will upload all the files and folders for the delta table.
 
-**Note**: The people-10m delta table is a sample delta table from a sample dataset from Databricks as found at https://docs.microsoft.com/en-us/azure/databricks/data/databricks-datasets#sql. This dataset contains names, birthdates, and SSN which are all fictional and don't represent actual people. This dataset falls under the creative commons license at http://creativecommons.org/licenses/by/4.0/legalcode and can be shared and provided in this repo.
+    **Note**: The people-10m delta table is a sample delta table from a sample dataset from Databricks as found at https://docs.microsoft.com/en-us/azure/databricks/data/databricks-datasets#sql. This dataset contains names, birthdates, and SSN which are all fictional and don't represent actual people. This dataset falls under the creative commons license at http://creativecommons.org/licenses/by/4.0/legalcode and can be shared and provided in this repo.
 
 1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**). Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
 1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go. Skip this step if you have already restored the WideWorldImporters database in the previous exercise.

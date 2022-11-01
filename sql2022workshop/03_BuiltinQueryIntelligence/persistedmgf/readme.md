@@ -12,7 +12,7 @@ The following is an exercise to learn memory grant feedback persistence in SQL S
 
 1. Download the customized **WideWorldImportersDW** database backup from [https://aka.ms/wwidw_mgf](https://aka.ms/wwidw_mgf).
 
-**Note**: If you try to restore the default sample WideWorldImporters you can use the extendwwidw.sql script to customize the database for the exercise.
+    **Note**: If you try to restore the default sample WideWorldImporters you can use the extendwwidw.sql script to customize the database for the exercise.
  
 1. Restore this database to your SQL Server 2022 instance. You can use the provided **restorewwidw.sql** script. You may need to change the directory paths for the location of your backup and where you will restore the database files.
 1. Setup the demo by executing the script **setup.sql**
