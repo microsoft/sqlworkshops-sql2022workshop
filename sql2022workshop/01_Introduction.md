@@ -12,7 +12,7 @@ SQL Server 2022 is a hybrid data platform powered by innovations in security, pe
 
 SQL Server 2022 includes new capabilities that can solve challenges to modernize your data estate. Consider the following category of features in SQL Server 2022.
 
-![SQL Server 2029 Solves Modern Data Challenges](./graphics/sql2022_all_up.png)
+![SQL Server 2022 Solves Modern Data Challenges](./graphics/sql2022_all_up.png)
 
 These categories include:
 

@@ -10,7 +10,7 @@
 
 SQL Server 2022 connects to the cloud with the following Azure services as seen in the following figure:
 
-:::image type="content" source="./graphics/sql-server-2022-cloud-connected.png" alt-text="Diagram showing cloud connected services for SQL Server 2022.":::
+![SQL Server 2022 is Cloud Connected](./graphics/sql-server-2022-cloud-connected.png)
 
 The SQL Server 2022 engine has been enhanced to integrate with all of these Azure services, but also can require extra software or configuration:
 
