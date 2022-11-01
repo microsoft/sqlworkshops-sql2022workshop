@@ -44,7 +44,7 @@ While the Query Store collected key performance information for queries, the que
 
 Intelligent Query Processing is a family of capabilities built into the query processor in the database engine designed to accelerate performance with no code changes. The next generation of Intelligent Query Processing is built on a foundation of capabilities found in SQL Server 2017 and 2019 as seen in the following figure:
 
-:::image type="content" source="../media/iqp-feature-family.svg" alt-text="Intelligent Query Processing Feature Family.":::
+![SQL Server Intelligent Query Processing Feature Family](./graphics/iqp-feature-family.svg)
 
 As you can see in this diagram there have been several IQP features that were part of SQL Server 2017 and SQL Server 2019. SQL Server 2022 adds several new capabilities for IQP. You can keep up to date with all the latest on IQP capabilities at https://aka.ms/iqp. Let's examine each of these new capabilities.
 
