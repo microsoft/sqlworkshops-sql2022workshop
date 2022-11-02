@@ -44,9 +44,9 @@ GO
 -- Insert new stock items for Amarillo
 INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-800', 2000);
 INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-800', 3000);
-INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-800', 3000);
-INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-800', 3000);
-INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-800', 3000);
+INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-800', 4000);
+INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-800', 5000);
+INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-800', 6000);
 GO
 -- Insert a new vehicle for Dallas and a single stock item
 INSERT INTO Warehouse.Vehicle_StockItems VALUES ('BRX-900', 3000);
