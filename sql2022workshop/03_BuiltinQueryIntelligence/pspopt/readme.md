@@ -14,10 +14,11 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 1. Create a directory called **c:\sql_sample_databases** to store backups and files.
 2. Download a backup of a customized version of the WideWorldImporters sample database from [https://aka.ms/wwi_pspopt](https://aka.ms/wwi_pspopt) from and copy it into c:\sql_sample_databases directory.
 
-    **Note**: If you try to restore the default sample WideWorldImporters you can use the restorewwi.sql, populatedata.sql and rebuild_index.sql scripts to customize the database for the exercise.
+    > **Note**: If you try to restore the default sample WideWorldImporters you can use the restorewwi.sql, populatedata.sql and rebuild_index.sql scripts to customize the database for the exercise.
 
-4. Create a new procedure to be used for the workload test using **proc.sql**.
-5. Execute the script **setup.sql** from SSMS. This will ensure the WideWorldImporters database is at **dbcompat 150** and clear the query store.
+1. Restore this database to your SQL Server 2022 instance. You can use the provided **restorewwi.sql** script. You may need to change the directory paths for the location of your backup and where you will restore the database files.
+1. Create a new procedure to be used for the workload test using **proc.sql**.
+1. Execute the script **setup.sql** from SSMS. This will ensure the WideWorldImporters database is at **dbcompat 150** and clear the query store.
 
 ## See a PSP problem for a single query execution
 
