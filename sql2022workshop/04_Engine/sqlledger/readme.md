@@ -51,4 +51,4 @@ Let's see how admin trying to change ledger table properties or drop ledger tabl
 
 ## Exercise 4: What does tampering look like?
 
-Using Azure Data Studio open the T-SQL notebook **ledger.ipynb** and observe the results to see evidence of tampering in a database ledger.
+Using Azure Data Studio open the T-SQL notebook **ledger.ipynb** and observe the results to see evidence of tampering in a database ledger. DO NOT RUN the cells in the notebook. Just review the pre-run results to see tampering in action.
