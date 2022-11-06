@@ -8,15 +8,15 @@ Exercise to  use OPENROWSET with parquet files with an public data set. Follow t
 
 **5.1 Using parquet with S3**
 
-Exercise to access parquet files with S3 compatible object storage by examining T-SQL notebooks. Follow the steps in the **parquet** folder.
+Exercise to access parquet files with S3 compatible object storage by examining T-SQL notebooks. **Read**, not execute, the steps in the **parquet** folder.
 
 **5.2 Using delta tables with S3**
 
-Exercise to access delta tables with S3 compatible object storage by examining T-SQL notebooks. Follow the steps in the **delta** folder.
+Exercise to access delta tables with S3 compatible object storage by examining T-SQL notebooks.**Read**, not execute, the steps in the **parquet** folder.
 
 **5.3 Using S3 object storage for backup and restore**
 
-Exercise to backup and restore databases with S3 compatible object storage by examining T-SQL notebooks. Follow the steps in the **s3objectstorage** folder.
+Exercise to backup and restore databases with S3 compatible object storage by examining T-SQL notebooks. **Read**, not execute, the steps in the **parquet** folder.
 
 **5.4 Using minio with SQL Server 2022**
 
