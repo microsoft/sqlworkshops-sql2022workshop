@@ -11,4 +11,6 @@ Follow these steps for exercises for bit manipulation functions in SQL Server 20
 ##  Steps to run the exercises
 
 1. Execute the script **getbits.sql** to see how the BIT_COUNT() AND GET_BIT() functions work.
-1. Execute the script **packbits.sql** to see how the RIGHT_SHIFT() and LEFT_SHIFT() and SET_BIT functions work.
+1. Execute the script **packbits.sql** to see how the RIGHT_SHIFT() and LEFT_SHIFT() and SET_BIT functions work. 
+
+    > **Note** in the scripts you will sometimes see the LEFT_SHIFT() AND << in back to back statements. The same for RIGHT_SHIFT() AND >>. This is just to demonstrate two ways of doing the same thing.
