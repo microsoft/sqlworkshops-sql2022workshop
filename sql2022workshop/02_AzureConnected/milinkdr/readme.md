@@ -4,7 +4,7 @@ The following are steps for an exercise for the Link feature for Azure SQL Manag
 
 ## Prereqs
 
-- An Azure SQL Managed Instance deployed in the preview program to ensure it is compatible with SQL Server 2022.
+- An Azure SQL Managed Instance. General Purpose or Business Critical Service Tiers are supported. No specific requirements for cores.
 - Create an Azure Storage account with a container to store SQL backups.
 - A virtual machine or computer with at least 2 CPUs and 8Gb RAM.
 - SQL Server 2022 Evaluation Edition.
