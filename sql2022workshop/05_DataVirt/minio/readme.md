@@ -113,7 +113,7 @@ Documentation: https://docs.min.io
 1. Copy the **WideWorldImporters** sample database from https://aka.ms/WideWorldImporters to a local directory (The restore script assumes **c:\sql_sample_databases**). Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
 1. Edit the **restorewwi.sql** script for the correct paths for the backup and where data and log files should go. Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
 1. Execute the script **restorewwi.sql**. Skip this step if you have already restored the WideWorldImporters database in the previous exercise.
-1. Edit the script **creates3creds.sql** to put in the local IP and user/password. Execute the script **creates3creds.sql**.
+1. Edit the script **creates3credsforbackup.sql** to put in the local IP and user/password. Execute the script **creates3credsforbackup.sql**.
 1. Edit the script **backupdbtos3.sql** to put in your local IP. Execute the script **backupdbtos3.sql**.
 1. Use the minio browser to verify the backup file is in the backups bucket.
 1. Edit the script **restoredbfroms3.sql** to put in your local IP in all places. Execute the script **restoredbfroms3.sql**. Note all the standard RESTORE commands work.
