@@ -12,7 +12,7 @@ These are exercises to use data virtualization and object storage for S3 with mi
 
 **CAUTION**: The following pre-requisites are for non-Microsoft software. The use of this software does not represent any official endorsement from Microsoft. This software is not supported by Microsoft so any issues using this software are up to the user to resolve.
 
-- The **minio** server for Windows which you can download at https://min.io/download#/windows. For the exercise I assume you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
+- The **minio** server for Windows which you can download from https://aka.ms/miniosql. Rename the downloaded file to minio.exe. For the exercise I assume you have created a directory called c:\minio and have downloaded the minio.exe for Windows into that directory.
 - openssl for Windows which you can download at https://slproweb.com/products/Win32OpenSSL.html. I chose the Win64 OpenSSL v3.0.5 MSI option.
 
 ## Setup minio for the exercise
