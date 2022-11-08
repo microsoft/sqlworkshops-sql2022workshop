@@ -56,7 +56,7 @@ A new capability in SQL Server 2022 is to create an external table based on a qu
 
 ### New native file format support
 
-SQL Server allows you to create a file format to define the structure of a file in a remote data source. You would use file formats to define the structure of a JSON file since it JSON is not a native supported file format. SQL Server 2022 now recognizes natively file formats **parquet** and **delta tables**.
+SQL Server allows you to create a file format to define the structure of a file in a remote data source. You would use file formats to define the structure of a JSON file since JSON is not a native supported file format. SQL Server 2022 now recognizes native file formats **parquet** and **delta tables**.
 
 - **Parquet**
 
@@ -108,7 +108,7 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\05_DataV
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="5-2">     5.2 Using delta table with S3 compatible object storage</a></b></h2>
 
-In this exercise you will see how delta tables Can be used with external tables for a S3 compatible object storage provider by reviewing the results of T-SQL notebook.
+In this exercise you will see how delta tables can be used with external tables for a S3 compatible object storage provider by reviewing the results of T-SQL notebook.
 
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Access delta table with T-SQL using S3 compatible object storage</a></b></h2>

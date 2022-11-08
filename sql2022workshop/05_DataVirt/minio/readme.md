@@ -17,7 +17,7 @@ These are exercises to use data virtualization and object storage for S3 with mi
 
 ## Setup minio for the exercise
 
-- Download minio.exe for Windows into c:\minio.exe
+- Download minio.exe for Windows into c:\minio
 - Download the openssl for Windows MSI and run the installer. Use all the defaults.
 - Set a system environment variable OPENSSL_CONF=C:\Program Files\OpenSSL-Win64\bin\openssl.cfg and add to the system environment variable PATH c:\Program Files\OpenSSL-Win64\bin
 - Generate a private key using the following command from the c:\minio directory.
@@ -30,7 +30,7 @@ These are exercises to use data virtualization and object storage for S3 with mi
 `openssl req -new -x509 -nodes -days 730 -key private.key -out public.crt -config openssl.conf`
 
 - Double-click the public.crt file and select Install Certificate. Choose Local Machine, Place all certificates in the following store, Browse, and select Trusted Root Certification Authorities.
-- Copy the private.key and public.crt files from c:\minio into `%%USERPROFILE%%\`.minio\certs. (c:\Users`\<username>\`.minio\certs).
+- Copy the private.key and public.crt files from c:\minio into `%USERPROFILE%\`.minio\certs. (c:\Users`\<username>\`.minio\certs).
 
 ## Steps to use minio for the exercise
 
