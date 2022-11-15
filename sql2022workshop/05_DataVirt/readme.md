@@ -12,11 +12,11 @@ Exercise to access parquet files with S3 compatible object storage by examining 
 
 **5.2 Using delta tables with S3**
 
-Exercise to access delta tables with S3 compatible object storage by examining T-SQL notebooks.**Read**, not execute, the steps in the **parquet** folder.
+Exercise to access delta tables with S3 compatible object storage by examining T-SQL notebooks.**Read**, not execute, the steps in the **delta** folder.
 
 **5.3 Using S3 object storage for backup and restore**
 
-Exercise to backup and restore databases with S3 compatible object storage by examining T-SQL notebooks. **Read**, not execute, the steps in the **parquet** folder.
+Exercise to backup and restore databases with S3 compatible object storage by examining T-SQL notebooks. **Read**, not execute, the steps in the **s3objectstorage** folder.
 
 **5.4 Using minio with SQL Server 2022**
 
