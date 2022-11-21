@@ -1,7 +1,7 @@
 
 ![](./sql2022workshop/graphics/microsoftlogo.png)
 
-# Workshop: The SQL Server 2022 Workshop (Preview)
+# Workshop: The SQL Server 2022 Workshop
 
 #### <i>A Microsoft Course from the SQL Server team</i>
 
@@ -87,7 +87,7 @@ In order to complete the exercises in this workshop you will need the following:
 
 - A virtual machine or computer running Windows 10, Windows 11, Windows Server 2019, or Windows 2022 with at least **4 CPUs and 8Gb RAM**. You will need Administrator rights on the virtual machine or computer. **Exercise 3.2 is an advanced exercise in Module 3 that requires 8 CPUs and 24Gb RAM. It may be an optional exercise in some workshop delivery. Check with your instructor.**.
 - An Azure subscription is required for Module 2. Check the instructions in each exercise for specific permission requirements. Your instructor will indicate whether you will do Module 2 exercises. Exercises 2.2 and 2.3 in this module cannot be completed using an Azure Virtual Machine.
-- **SQL Server 2022 Evaluation Edition RC1 or later** from (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. 
+- **SQL Server 2022 Evaluation Edition General Availability** from (https://aka.ms/getsqlserver2022) with the Database Engine feature installed. 
     - Exercises in Module 5 require the PolyBase Query Service for External Data Feature (using all defaults). **IMPORTANT**: If you have an instance already on your computer or VM that has the Polybase feature enabled you will have to remove that feature from that instance or uninstall that instance. If this is not possible Module 5 does have T-SQL notebooks for you to view the experience.
     - **You must configure SQL Server for mixed mode authentication. Read more how to do this at https://learn.microsoft.com/sql/relational-databases/security/choose-an-authentication-mode**.
     - Named instances are supported but you may need to make some edits to some scripts in some modules where the exercise have you connect to SQL Server.
