@@ -3,7 +3,7 @@ GO
 ALTER DATABASE WideWorldImporters SET RECOVERY FULL;
 GO
 BACKUP DATABASE WideWorldImporters
-TO URL = 's3:/<local IP>:9000/backups/wwi.bak'
+TO URL = 's3://<local IP>:9000/backups/wwi.bak'
 WITH CHECKSUM, INIT, FORMAT;
 GO
 BACKUP DATABASE WideWorldImporters
