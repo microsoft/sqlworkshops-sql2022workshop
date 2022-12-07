@@ -1,3 +1,4 @@
+-- IMPORTANT!!!! master must be in dbcompat 160!!!
 -- Step 1: Generate a series of integer values with a default interval of 1
 USE master;
 GO
