@@ -4,7 +4,7 @@ This is an exercise to see the fundamental capability of data virtualization usi
 
 ## Prerequisites
 
-- SQL Server 2022 Evaluation Edition with the Database Engine and PolyBase Query Service for External Data Feature installed. You can use the defaults in setup for Polybase. If you did not add the Polybase feature during SQL Server setup, add the feature using SQL Server setup. Then restart SQL Server.
+- SQL Server 2022 Evaluation or Developer Edition with the Database Engine and PolyBase Query Service for External Data Feature installed. You can use the defaults in setup for Polybase. If you did not add the Polybase feature during SQL Server setup, add the feature using SQL Server setup. Then restart SQL Server.
 - VM or computer with 2 CPUs and at least 8Gb RAM with the ability to connect to the internet.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 

@@ -4,7 +4,7 @@ Follow these steps for exercises for  JSON T-SQL enhancements and new functions 
 
 ## Prerequisites
 
-- SQL Server 2022 Evaluation Edition
+- SQL Server 2022 Evaluation or Developer Edition
 - VM or computer with 2 CPUs and at least 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 
