@@ -36,7 +36,7 @@ Integrate SQL Server with other data sources and data lakes including Azure Stor
 
 Enhance your application with new T-SQL language capabilities including JSON, core engine, and time series. You will learn about these new features in **Module 6** of the workshop.
 
-**Watch this video** by Bob Ward introducing SQL Server 2022 on Data Exposed:
+**Watch this video** introducing SQL Server 2022 on Data Exposed:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=7bV516JfVLs" target="_blank"><img src="http://img.youtube.com/vi/7bV516JfVLs/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
 
