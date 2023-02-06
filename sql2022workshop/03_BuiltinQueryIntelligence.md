@@ -27,7 +27,7 @@ Read through the entire module to learn about all the built-in query intelligent
 
 You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
 
-_______________________________________________________________________________________________________ <br>
+____________________________________________________________________________________________________________________________________________________<br>
 
 ## Challenges for query tuning
 
