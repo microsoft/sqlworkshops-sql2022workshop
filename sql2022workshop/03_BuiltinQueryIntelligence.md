@@ -27,7 +27,7 @@ Read through the entire module to learn about all the built-in query intelligent
 
 You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
 
-<p style="border-bottom: 1px solid lightgrey;"></p>
+<p style="border-top: 1px solid lightgrey;"></p>
 
 ## Challenges for query tuning
 
