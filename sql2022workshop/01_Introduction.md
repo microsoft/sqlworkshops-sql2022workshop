@@ -38,7 +38,7 @@ Enhance your application with new T-SQL language capabilities including JSON, co
 
 **Watch this video** introducing SQL Server 2022 on Data Exposed:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=7bV516JfVLs" target="_blank"><img src="http://img.youtube.com/vi/7bV516JfVLs/0.jpg" alt="Introducing SQL Server 2022" width="600" height="500" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=7bV516JfVLs" target="_blank"><img src="http://img.youtube.com/vi/7bV516JfVLs/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
 
 SQL Server 2022 offers similar deployment, edition, and licensing options as with previous releases of SQL Server. There are some differences, which you'll learn about in this module.
 
