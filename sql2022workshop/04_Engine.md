@@ -12,11 +12,25 @@ While the Query Store and Intelligent Query Processing are built into the SQL Se
 
 In this unit you will learn about some of the new major features in the engine. You can refer to https://aka.ms/sqlserver2022 docs to see all 25+ new engine features.
 
+Read through the entire module to learn about all the new core engine capabilities or go directly to the following exercises in this module to see new engine features in action:
+
+<dl>
+
+  <dt><a href="#4-0">4.0 Ledger for SQL Server</a></dt>
+  <dt><a href="#4-1">4.1 "Hands-free" tempdb in SQL Server 2022</a></dt>
+  <dt><a href="#4-2">4.2 Contained Availability Groups</a></dt>
+  
+</dl>
+
+You can find demonstrations of other engine improvements for SQL Server 2022 at https://aka.ms/sqlserver2022demos.
+
+____________________________________________________________________________________________________________________________________________________<br>
+
 ## Security
 
 SQL Server provides rich capabilities to protect your data through authentication, encryption, and authorization. SQL Server 2022 enhances security through several new capabilities including Ledger for SQL Server, new granular fixed server roles, and strict connected encryption.
 
-### Ledger for SQL Server
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-0">     4.0 Tamper evidence proof of data with Ledger for SQL Server</a></b></h2>
 
 Ledger for SQL Server provides built-in tamper evidence proof for data protection through the concept of ledger tables, a database ledger, and digests.
 
@@ -31,6 +45,12 @@ Inside the database are a series of system tables called the **database ledger**
 Ledger tables can also be created as append-only. Append-only ledger tables will only allow T-SQL INSERT statements against the table but also are verified with the database ledger and digests.
 
 You can learn more about Ledger for SQL Server at https://aka.ms/sqlledger.
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: How to use Ledger for SQL Server</a></b></h2>
+
+In this exercise you will go through various aspects of using Ledger for SQL Server for updatable and append-only ledger tables and see verification using digests.
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\sqlledger](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/sqlledger)** folder.
 
 ### New granular fixed server roles
 
@@ -52,6 +72,8 @@ TDS 8.0 provides the following benefits:
 
 You can learn more about strict connected encryption at https://learn.microsoft.com/sql/relational-databases/security/networking/tds-8-and-tls-1-3.
 
+____________________________________________________________________________________________________________________________________________________<br>
+
 ## Scalability
 
 SQL Server has a proven track record to provide scalability without requiring application changes. SQL Server 2022 continues this tradition including enhancements for memory management, tempdb, and statistics maintenance.
@@ -64,7 +86,7 @@ On systems that use a large amount of RAM, for example 1TB or more, scanning the
 
 SQL Server 2022 will by default for systems with a large amount of RAM now use multiple threads to scan the buffer pool in parallel to speed up affected operations.
 
-### "Hands-free" tempdb
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-1">     4.1 "Hands-free" tempdb with SQL Server 2022</a></b></h2>
 
 Workloads that run concurrently using temporary tables or table variables can result in performance bottlenecks in the form of PAGELATCH waits on system pages in tempdb. Users often create multiple tempdb data files to help mitigate these types of latch waits. 
 In addition, SQL Server 2019 introduced enhancements to further reduce latch concurrency problems with PFS pages built-in and system table pages with tempdb metadata optimization.
@@ -73,21 +95,35 @@ SQL Server 2022 closes out remaining page latch waits for tempdb by eliminating 
 
 With all of these enhancements, users should be able to use the defaults from SQL Server setup to configure tempdb files and no longer have to perform any other tuning for tempdb system page latch contention.
 
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: See system page latch contention for tempdb eliminated in SQL Server 2022</a></b></h2>
+
+In this exercise you will see how improvements from SQL Server 2019 and SQL Server 2022 have virtually eliminated any system page latch contention in tempdb.
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\tempdb](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/tempdb)** folder.
+
 ### Auto async update stats concurrency
 
 If asynchronous statistics update is enabled, you can now in SQL Server 2022 use the ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY database configuration option to cause the background request updating statistics to wait for a Sch-M lock on a low priority queue, to avoid blocking other sessions in high concurrency scenarios.
+
+____________________________________________________________________________________________________________________________________________________<br>
 
 ## Availability
 
 Ensuring SQL Server is highly available and your data is protected from disasters is important for any business critical application. SQL Server 2022 provides new capabilities for both availability and disaster recovery.
 
-### Contained Availability Groups
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-2">     4.2 Contained Availability Groups</a></b></h2>
 
 Always On Availability Groups uses replicas to provide the highest level of availability for SQL Server databases. However, only data within the user database is synchronized to secondary replicas. This means that administrators must manually synchronize SQL Server instance objects such as SQL Server Agent jobs, logins, and linked server definitions.
 
 SQL Server 2022 introduces the concept of a *Contained* Availability Group. Now instance level objects are replicated in *contained system databases* in the Availability Group along with user databases. Therefore, on a failover operation instance level objects will be available automatically with no user intervention required.
 
 You can learn more about Contained Availability Groups at https://learn.microsoft.com/sql/database-engine/availability-groups/windows/contained-availability-groups-overview.
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Setup and use Contained Availability Groups</a></b></h2>
+
+In this exercise you will use two SQL Server instances across two machines to see the fundamentals of Contained Availability Groups.
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\containedag](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/containedag)** folder.
 
 ### Cross-platform snapshot backups
 
@@ -108,52 +144,6 @@ SQL Server supports options to compress a backup saving in some cases a large am
 SQL Server 2022 can use a new compression technique powered by Intel QuickAssist technology (QAT). When a backup is executed using Intel QuickAssist compression, the processing for compression is offloaded to Intel QuickAssist hardware vs core CPUs in the system. This provides more CPU cycles for queries and applications while the backup is being compressed.
 
 You can learn more about how to use Intel QuickAssist Technology (QAT) with SQL Server 2022 at https://learn.microsoft.com/sql/relational-databases/integrated-acceleration/overview.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Exercises</b></h2>
-
-You will go through the following exercises in this module:
-
-<dl>
-
-  <dt><a href="#4-0">4.0 Ledger for SQL Server</a></dt>
-  <dt><a href="#4-1">4.1 "Hands-free" tempdb in SQL Server 2022</a></dt>
-  <dt><a href="#4-2">4.2 Contained Availability Groups</a></dt>
-  
-</dl>
-
-You can find demonstrations of other engine improvements for SQL Server 2022 at https://aka.ms/sqlserver2022demos.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-0">     4.0 Tamper evidence proof of data with Ledger for SQL Server</a></b></h2>
-
-In this exercise you will go through various aspects of using Ledger for SQL Server for updatable and append-only ledger tables and see verification using digests.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: How to use Ledger for SQL Server</a></b></h2>
-
-Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\sqlledger](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/sqlledger)** folder.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-1">     4.1 "Hands-free" tempdb with SQL Server 2022</a></b></h2>
-
-In this exercise you will see how improvements from SQL Server 2019 and SQL Server 2022 have virtually eliminated any system page latch contention in tempdb.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: See system page latch contention for tempdb eliminated in SQL Server 2022</a></b></h2>
-
-Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\tempdb](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/tempdb)** folder.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="4-2">     4.2 Contained Availability Groups</a></b></h2>
-
-In this exercise you will use two SQL Server instances across two machines to see the fundamentals of Contained Availability Groups.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Setup and use Contained Availability Groups</a></b></h2>
-
-Follow the instructions in the readme.md file in the **[sql2022workshop\04_Engine\containedag](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/04_Engine/containedag)** folder.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b>  Next Steps</b></h2>
 
