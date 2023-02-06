@@ -27,6 +27,8 @@ Read through the entire module to learn about all the built-in query intelligent
 
 You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
 
+---------------------------------------------------------------------------------------------------------------- <br>
+
 ## Challenges for query tuning
 
 Developers and SQL experts can all agree that while queries often "just work" meet performance expectations situations arise require performance troubleshooting for query performance and an exercise to tune a query. Tuning query performance can be an expensive and often lengthy process.
@@ -55,7 +57,7 @@ While the Query Store is beneficial for reducing the amount of time required to 
 
 While the Query Store collected key performance information for queries, the query processor in SQL Server 2022 will also use the Query Store to persist information to accelerate query performance including to support features such as Optimized Plan Forcing, Memory Grant feedback, Cardinality Estimation (CE) Model feedback, and Degree of Parallelism (DOP) feedback.
 
-<p style="border-bottom: 1px solid lightgrey;"></p>
+---------------------------------------------------------------------------------------------------------------- <br>
 
 ## Solutions for faster performance with no code changes using the next generation of Intelligent Query Processing (IQP)
 
