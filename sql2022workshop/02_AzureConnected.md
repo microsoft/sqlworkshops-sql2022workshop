@@ -8,6 +8,8 @@
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     SQL Server 2022 Connected to Azure</b></h2>
 
+# Introduction
+
 SQL Server 2022 connects to the cloud with the following Azure services as seen in the following figure:
 
 ![SQL Server 2022 is Cloud Connected](./graphics/sql-server-2022-cloud-connected.png)
@@ -18,7 +20,9 @@ The SQL Server 2022 engine has been enhanced to integrate with all of these Azur
 
 - Self-hosted integration runtime - The self-hosted integration runtime is a Windows program that must be installed on your network, separate from the SQL Server 2022 setup experience, to connect to SQL Server for Azure Synapse Link for SQL Server.
 
-- Azure extension for SQL Server - The Azure extension for SQL Server is used to set up the Azure Arc agents and extensions to enable SQL Server 2022 as an Azure Arc-enabled SQL Server. This extension is required to set up Microsoft Purview, Azure Active Directory (Azure AD) authentication, and Microsoft Defender integration with SQL Server 2022.
+- Azure extension for SQL Server - The Azure extension for SQL Server is used to set up the Azure Arc agents and extensions to enable SQL Server 2022 as an Azure Arc-enabled SQL Server. This extension is required to set up Pay-As-You Go Billing, Microsoft Purview, Azure Active Directory (Azure AD) authentication, Microsoft Defender integration, and other Azure Arc services with SQL Server 2022.
+
+# Exercises
 
 You will learn more details about these features in this module:
 

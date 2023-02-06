@@ -36,9 +36,9 @@ Integrate SQL Server with other data sources and data lakes including Azure Stor
 
 Enhance your application with new T-SQL language capabilities including JSON, core engine, and time series. You will learn about these new features in **Module 6** of the workshop.
 
-**Watch this video** by Bob Ward introducing SQL Server 2022 with Microsoft Mechanics:
+**Watch this video** by Bob Ward introducing SQL Server 2022 on Data Exposed:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=ncF-zFzBDAY" target="_blank"><img src="http://img.youtube.com/vi/ncF-zFzBDAY/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=7bV516JfVLs" target="_blank"><img src="http://img.youtube.com/vi/7bV516JfVLs/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
 
 SQL Server 2022 offers similar deployment, edition, and licensing options as with previous releases of SQL Server. There are some differences, which you'll learn about in this module.
 
@@ -104,7 +104,7 @@ The following features have been removed from SQL Server 2022 that were availabl
 
 ### New deployment experiences in SQL Server 2022
 
-In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an Azure Arc-enabled SQL Server. There's no subscription charge to set up an Azure Arc-enabled SQL Server. You only incur subscription charges when you use specific Azure services such as Azure Active Directory (Azure AD) authentication, Microsoft Purview, or Microsoft Defender for SQL.
+In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an **Azure Arc-enabled SQL Server**. There's no subscription charge to set up an Azure Arc-enabled SQL Server. You only incur subscription charges when you use specific Azure services such as Azure Active Directory (Azure AD) authentication, Microsoft Purview, or Microsoft Defender for SQL.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
