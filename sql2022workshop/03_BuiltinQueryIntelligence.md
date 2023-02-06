@@ -57,7 +57,11 @@ While the Query Store is beneficial for reducing the amount of time required to 
 
 While the Query Store collected key performance information for queries, the query processor in SQL Server 2022 will also use the Query Store to persist information to accelerate query performance including to support features such as Optimized Plan Forcing, Memory Grant feedback, Cardinality Estimation (CE) Model feedback, and Degree of Parallelism (DOP) feedback.
 
----------------------------------------------------------------------------------------------------------------- <br>
+____________________________________________________________________________________________________________________________________________________<br>
+
+## Challenges for query performance
+
+Developers and SQL professionals are looking for ways to improve query performance and ensure consistent performance without having to change the application or SQL query. They are looking for more intelligence built-in to the query optimizer in the engine.
 
 ## Solutions for faster performance with no code changes using the next generation of Intelligent Query Processing (IQP)
 
@@ -92,13 +96,9 @@ Optimized plan forcing is a new capability in SQL Server 2022 intended to reduce
 
 Some queries by their nature can take a significant amount of time to compile. Optimized plan forcing provides a method to reduce the time it takes to compile a query by storing in the Query Store *compilation steps* for eligible queries that have query plans that are forced in the Query Store. Query plan forcing allows you to lock in a query plan for a specific query. The next time a query needs to be compiled that has optimized plan forcing enabled, compilation steps are used to significantly accelerate the compile phase to execute a query. You can learn more about Optimized Plan Forcing at https://learn.microsoft.com/sql/relational-databases/performance/optimized-plan-forcing-query-store.
 
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
 ## SQL Server 2022 additional capabilities using dbcompat 140 or greater
 
 You can get additional Intelligent Query Processing capabilities to enhance memory grant feedback in SQL Server 2022 if you are using dbcompat 140 or greater. This includes **Memory Grant Percentiles** and **Memory Grant Feedback**. Memory grant feedback was introduced in SQL Server 2017 (batch mode) and SQL Server 2019 (row mode). Memory grant feedback is a mechanism where the query processor will *learn* from execution feedback to adjust a memory grant for further executions thereby avoiding or reducing tempdb spills and RESOURCE_SEMAPHORE waits.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-0">     3.0 Enhancements to Memory Grant Feedback</a></b></h2>
 
@@ -117,8 +117,6 @@ You can learn more about memory grant feedback at https://learn.microsoft.com/sq
 In this exercise you will learn how to see how memory grant feedback can improve query performance automatically including persisting feedback to the Query Store.
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\persistedmgf](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf)** folder.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
 
 ## SQL Server 2022 additional capabilities using dbcompat 160 or greater
 
