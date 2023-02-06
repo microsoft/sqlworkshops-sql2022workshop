@@ -15,10 +15,10 @@ Read through the entire module to learn about all the new data virtualization ca
 <dl>
 
   <dt><a href="#5-0">5.0 Using OPENROWSET with parquet</a></dt>
-  <dt><a href="#5-0">5.1 Using parquet files with S3 compatible object storage</a></dt>
-  <dt><a href="#5-1">5.2 Using delta table with S3 compatible object storage</a></dt>
-  <dt><a href="#5-2">5.3 Backup and Restore with S3 compatible object storage</a></dt>
-  <dt><a href="#5-2">5.4 Using S3 with minio for data virtualization and object storage</a></dt>
+  <dt><a href="#5-1">5.1 Using parquet files with S3 compatible object storage</a></dt>
+  <dt><a href="#5-2">5.2 Using delta table with S3 compatible object storage</a></dt>
+  <dt><a href="#5-3">5.3 Backup and Restore with S3 compatible object storage</a></dt>
+  <dt><a href="#5-4">5.4 Using S3 with minio for data virtualization and object storage</a></dt>
   
 </dl>
 
