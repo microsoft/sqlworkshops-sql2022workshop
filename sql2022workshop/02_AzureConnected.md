@@ -20,6 +20,10 @@ The SQL Server 2022 engine has been enhanced to integrate with all of these Azur
 
 - Azure extension for SQL Server - The Azure extension for SQL Server is used to set up the Azure Arc agents and extensions to enable SQL Server 2022 as an Azure Arc-enabled SQL Server. This extension is required to set up Pay-As-You Go Billing, Microsoft Purview, Azure Active Directory (Azure AD) authentication, Microsoft Defender integration, and other Azure Arc services with SQL Server 2022.
 
+**Watch this video** by Bob Ward on the cloud connected capabilities of SQL Server 2022 on Data Exposed:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=bxh8UZDyifI" target="_blank"><img src="http://img.youtube.com/vi/bxh8UZDyifI/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
+
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Exercises</b></h2>
 
 You will learn more details about these features in this module:
