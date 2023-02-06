@@ -27,8 +27,6 @@ Read through the entire module to learn about all the built-in query intelligent
 
 You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
 
-<p style="border-top: 1px solid lightgrey;"></p>
-
 ## Challenges for query tuning
 
 Developers and SQL experts can all agree that while queries often "just work" meet performance expectations situations arise require performance troubleshooting for query performance and an exercise to tune a query. Tuning query performance can be an expensive and often lengthy process.
