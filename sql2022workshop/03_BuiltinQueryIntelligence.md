@@ -72,6 +72,12 @@ The database engine uses two principles to make decisions for Intelligent Query 
 - Avoid causing any query performance regressions by using a new method or automation.
 - Provide a method at the database or query level to disable a specific IQP capability. This allows you to pick and choose which IQP feature you want enabled at the database or query level while using other IQP feature depending on your dbcompat level.
 
+The rest of this module is organized into capabilities based on:
+
+- Features available based on any dbcompat level
+- Additional features available based on dbcompat level 140+
+- Additional features available based on dbcompat level 160
+
 ## Capabilities after upgrading to SQL Server 2022
 
 If you upgrade to SQL Server 2022 there are new capabilities to accelerate performance independent of the database compatibility level (dbcompat) you use for your database. This allows you to take advantage of new features even if you need to use a dbcompat from a previous version of SQL Server. This includes **Approximate Percentile Functions** and **Optimized Plan Forcing**. Learn more about dbcompat at https://aka.ms/dbcompat.
