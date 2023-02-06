@@ -27,6 +27,8 @@ Read through the entire module to learn about all the built-in query intelligent
 
 You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
 
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
 ## Challenges for query tuning
 
 Developers and SQL experts can all agree that while queries often "just work" meet performance expectations situations arise require performance troubleshooting for query performance and an exercise to tune a query. Tuning query performance can be an expensive and often lengthy process.
@@ -55,7 +57,9 @@ While the Query Store is beneficial for reducing the amount of time required to 
 
 While the Query Store collected key performance information for queries, the query processor in SQL Server 2022 will also use the Query Store to persist information to accelerate query performance including to support features such as Optimized Plan Forcing, Memory Grant feedback, Cardinality Estimation (CE) Model feedback, and Degree of Parallelism (DOP) feedback.
 
-## Solutions for faster performance with the next generation of Intelligent Query Processing (IQP)
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+## Solutions for faster performance with no code changes using the next generation of Intelligent Query Processing (IQP)
 
 Intelligent Query Processing is a family of capabilities built into the query processor in the database engine designed to accelerate performance with no code changes. The next generation of Intelligent Query Processing is built on a foundation of capabilities found in SQL Server 2017 and 2019 as seen in the following figure:
 
@@ -70,7 +74,7 @@ The database engine uses two principles to make decisions for Intelligent Query 
 
 ## Capabilities after upgrading to SQL Server 2022
 
-If you upgrade to SQL Server 2022 there are new capabilities to accelerate performance independent of the database compatibility level (dbcompat) you use for your database. This allows you to take advantage of new features even if you need to use a dbcompat from a previous version of SQL Server. Learn more about dbcompat at https://aka.ms/dbcompat.
+If you upgrade to SQL Server 2022 there are new capabilities to accelerate performance independent of the database compatibility level (dbcompat) you use for your database. This allows you to take advantage of new features even if you need to use a dbcompat from a previous version of SQL Server. This includes **Approximate Percentile Functions** and **Optimized Plan Forcing**. Learn more about dbcompat at https://aka.ms/dbcompat.
 
 ### Approximate Percentile functions
 
@@ -80,11 +84,13 @@ SQL Server includes two T-SQL functions to help analytic workload calculate a pe
 
 Optimized plan forcing is a new capability in SQL Server 2022 intended to reduce the time it takes to compile certain queries if the query plan is forced in Query Store.
 
-Some queries by their nature can take a significant amount of time to compile. Optimized plan forcing provides a method to reduce the time it takes to compile a query by storing in the Query Store *compilation steps* for eligible queries that have query plans that are forced in the Query Store. Query plan forcing allows you to lock in a query plan for a specific query. The next time a query needs to be compiled that has optimized plan forcing enabled, compilation steps are used to significantly accelerate the compile phase to execute a query. You can learn more about Optimized Plan Forcing at https://learn.microsoft.com/sql/relational-databases/performance/optimized-plan-forcing-query-store. 
+Some queries by their nature can take a significant amount of time to compile. Optimized plan forcing provides a method to reduce the time it takes to compile a query by storing in the Query Store *compilation steps* for eligible queries that have query plans that are forced in the Query Store. Query plan forcing allows you to lock in a query plan for a specific query. The next time a query needs to be compiled that has optimized plan forcing enabled, compilation steps are used to significantly accelerate the compile phase to execute a query. You can learn more about Optimized Plan Forcing at https://learn.microsoft.com/sql/relational-databases/performance/optimized-plan-forcing-query-store.
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 ## SQL Server 2022 additional capabilities using dbcompat 140 or greater
 
-You can get additional Intelligent Query Processing capabilities to enhance memory grant feedback in SQL Server 2022 if you are using dbcompat 140 or greater. Memory grant feedback was introduced in SQL Server 2017 (batch mode) and SQL Server 2019 (row mode). Memory grant feedback is a mechanism where the query processor will *learn* from execution feedback to adjust a memory grant for further executions thereby avoiding or reducing tempdb spills and RESOURCE_SEMAPHORE waits.
+You can get additional Intelligent Query Processing capabilities to enhance memory grant feedback in SQL Server 2022 if you are using dbcompat 140 or greater. This includes **Memory Grant Percentiles** and **Memory Grant Feedback**. Memory grant feedback was introduced in SQL Server 2017 (batch mode) and SQL Server 2019 (row mode). Memory grant feedback is a mechanism where the query processor will *learn* from execution feedback to adjust a memory grant for further executions thereby avoiding or reducing tempdb spills and RESOURCE_SEMAPHORE waits.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -106,9 +112,11 @@ In this exercise you will learn how to see how memory grant feedback can improve
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\persistedmgf](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf)** folder.
 
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
 ## SQL Server 2022 additional capabilities using dbcompat 160 or greater
 
-You can get additional Intelligent Query Processing capabilities if you use dbcompat 160 or greater.
+You can get additional Intelligent Query Processing capabilities if you use dbcompat 160 or greater. This includes **Parameter Sensitive Plan Optimization**, **Cardinality Estimation (CE) Feedback**, and **Degree of Parallelism (DOP)**.Feedback.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -125,6 +133,8 @@ You can learn more about Parameter Sensitive Plan Optimization at https://aka.ms
 In this exercise, you will learn how Parameter Sensitive Plan Optimization can help gain consistent performance for stored procedures that are sensitive to parameter values.
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\pspopt](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt)** folder.
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 ### Cardinality Estimation (CE) Feedback
 
