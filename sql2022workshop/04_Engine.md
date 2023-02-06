@@ -109,7 +109,7 @@ SQL Server 2022 can use a new compression technique powered by Intel QuickAssist
 
 You can learn more about how to use Intel QuickAssist Technology (QAT) with SQL Server 2022 at https://learn.microsoft.com/sql/relational-databases/integrated-acceleration/overview.
 
-## Exercises
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Exercises</b></h2>
 
 You will go through the following exercises in this module:
 
