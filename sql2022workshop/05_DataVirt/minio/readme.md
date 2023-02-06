@@ -6,7 +6,7 @@ These are exercises to use data virtualization and object storage for S3 with mi
 
 ## Prerequisites
 
-- SQL Server 2022 Evaluation Edition with the Database Engine and PolyBase Query Service for External Data Feature installed. You can use the defaults in setup for Polybase.
+- SQL Server 2022 Evaluation or Developer Edition with the Database Engine and PolyBase Query Service for External Data Feature installed. You can use the defaults in setup for Polybase.
 - VM or computer with 2 CPUs and at least 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 

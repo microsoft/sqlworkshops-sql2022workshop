@@ -112,6 +112,8 @@ DOP feedback does not require recompilation but validation will be examined on a
 
 You can learn more about DOP feedback at https://aka.ms/dopfeedback.
 
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Exercises</b></h2>
+
 You will go through the following exercises in this module to see built-in query intelligence in action:
 
 <dl>

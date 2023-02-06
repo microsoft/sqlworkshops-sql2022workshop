@@ -4,12 +4,12 @@ These are instructions to setup and demonstrate a contained availability group i
 
 ## Prereqs
 
-- 2 Virtual Machines running Windows Server each with 4 CPUs and 8Gb RAM
+- 2 Virtual Machines running Windows Server each with 2 CPUs and 8Gb RAM
 - VMs need to be on the same network and subnet.
 
     **Note**: I used 2 Azure VMs each in the same virtual network. Then I created names in each **C:\windows\system32\drivers\etc\hosts**file for each VM to point to the others private IP address. I used the VM name as the logical name to map to the IP address. This is not required as you can use IP addresses. I found this simpler when using server names in the demo.
 
-- Each VM should have SQL Server 2022 Evaluation Edition installed. Just install the Database Engine and use all defaults except allow mixed mode security when installing. You can disable the sa login account after installation. You do not need to check the SQL Server Extension to Azure.
+- Each VM should have SQL Server 2022 Evaluation or Developer Edition installed. Just install the Database Engine and use all defaults except allow mixed mode security when installing. You can disable the sa login account after installation. You do not need to check the SQL Server Extension to Azure.
 - On each VM create firewall rules to allow ports 1433 and 5022
 - Enable the Always On Availability Group feature for each SQL instance using the SQL Server Configuration Manager and restart SQL Server.
 - Install the latest SSMS 18.x or 19.x build on each VM.

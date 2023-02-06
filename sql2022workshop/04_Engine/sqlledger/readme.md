@@ -4,7 +4,7 @@ These are exercises to learn Ledger for SQL Server for SQL Server 2022.
 
 ## Prerequisistes
 
-- SQL Server 2022 Evaluation Edition. **You must configure SQL Server for mixed mode authentication**.
+- SQL Server 2022 Evaluation or Developer Edition. **You must configure SQL Server for mixed mode authentication**.
 - Virtual machine or computer with minimum 2 CPUs with 8Gb RAM.
 - SQL Server Management Studio (SSMS). The latest SSMS 18.x will work but SSMS 19.x has a new visualization for Ledger tables so the examples in demo 1 were done with the latest SSMS 19.x preview build.
 - Install **Azure Data Studio (ADS)** from https://aka.ms/azuredatastudio. T-SQL notebooks are used in this module.

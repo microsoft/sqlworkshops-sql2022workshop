@@ -4,7 +4,7 @@ This demo will show you how to see how to get consistent performance with less C
 
 ## Pre-requisites
 
-- SQL Server 2022 Evaluation Edition
+- SQL Server 2022 Evaluation or Developer Edition
 - VM or computer with 8 CPUs and at least 24Gb RAM.
 - > **Note**: This exercise is very CPU sensitive. You should execute this exercise on a VM or computer that is "dedicated" to SQL Server and has fast I/O storage. Slow I/O or slow CPU speeds may affect the ability to see the results of this exercise. 
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
