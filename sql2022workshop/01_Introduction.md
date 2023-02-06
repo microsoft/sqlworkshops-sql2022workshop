@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Introduction to SQL Server 2022</b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Module 01 - Introduction to SQL Server 2022</b></h2>
 
 SQL Server 2022 is a hybrid data platform powered by innovations in security, performance, and security. SQL Server 2022 also enables new data scenarios through data virtualization and T-SQL language enhancements
 
