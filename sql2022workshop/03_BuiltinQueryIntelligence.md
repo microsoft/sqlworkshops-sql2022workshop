@@ -15,6 +15,18 @@ SQL Server 2022 provides built-in capabilities to reduce time for query tuning w
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Nd0mKM3O3sQ" target="_blank"><img src="http://img.youtube.com/vi/Nd0mKM3O3sQ/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
 
+You will go through the following exercises in this module to see built-in query intelligence in action:
+
+<dl>
+
+  <dt><a href="#3-0">3.0 Enhancements to Memory Grant feedback</a></dt>
+  <dt><a href="#3-1">3.1 Parameter Sensitive Plan optimization</a></dt>
+  <dt><a href="#3-2">3.2 DOP Feedback</a></dt>
+  
+</dl>
+
+You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
+
 ## Challenges for query tuning
 
 Developers and SQL experts can all agree that while queries often "just work" meet performance expectations situations arise require performance troubleshooting for query performance and an exercise to tune a query. Tuning query performance can be an expensive and often lengthy process.
@@ -74,6 +86,10 @@ Some queries by their nature can take a significant amount of time to compile. O
 
 You can get additional Intelligent Query Processing capabilities to enhance memory grant feedback in SQL Server 2022 if you are using dbcompat 140 or greater. Memory grant feedback was introduced in SQL Server 2017 (batch mode) and SQL Server 2019 (row mode). Memory grant feedback is a mechanism where the query processor will *learn* from execution feedback to adjust a memory grant for further executions thereby avoiding or reducing tempdb spills and RESOURCE_SEMAPHORE waits.
 
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-0">     3.0 Enhancements to Memory Grant Feedback</a></b></h2>
+
 ### Memory Grant Feedback Percentiles
 
 Prior to SQL Server 2022, memory grant feedback was based on the most recent execution for a specific query. This could result in some cases of different feedback adjustments which could lead to the query processor to disable memory grant feedback for a specific query. In SQL Server 2022, memory grant feedback uses a percentile method to look at memory grants over several executions before using a memory grant feedback.
@@ -83,6 +99,12 @@ Prior to SQL Server 2022, memory grant feedback was based on the most recent exe
 Prior to SQL Server 2022, memory grant feedback was only stored in a cached plan in memory. If the cache plan was evicted, memory grant feedback would have to be recalculated on new query executions. In SQL Server 2022, if the Query Store. is enabled memory grant feedback will be persisted in the Query Store. You can view memory grant feedback persistence from the **sys.query_store_plan_feedback** catalog view.
 
 You can learn more about memory grant feedback at https://learn.microsoft.com/sql/relational-databases/performance/intelligent-query-processing-feedback#memory-grant-feedback.
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Automatic performance healing with Memory Grant Feedback Persistence </a></b></h2>
+
+In this exercise you will learn how to see how memory grant feedback can improve query performance automatically including persisting feedback to the Query Store.
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\persistedmgf](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf)** folder.
 
 ## SQL Server 2022 additional capabilities using dbcompat 160 or greater
 
@@ -115,30 +137,6 @@ DOP feedback requires the Query Store to be enabled, dbcompat 160, and a databas
 DOP feedback does not require recompilation but validation will be examined on any new query compilation. You can observe persisted DOP feedback values in the **sys.query_store_plan_feedback** catalog view. You can see what is the most recent DOP used for a query using the last_dop column from the Dynamic Management View sys.dm_exec_query_stats and the **sys.query_store_runtime_stats** catalog view.
 
 You can learn more about DOP feedback at https://aka.ms/dopfeedback.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Exercises</b></h2>
-
-You will go through the following exercises in this module to see built-in query intelligence in action:
-
-<dl>
-
-  <dt><a href="#3-0">3.0 Enhancements to Memory Grant feedback</a></dt>
-  <dt><a href="#3-1">3.1 Parameter Sensitive Plan optimization</a></dt>
-  <dt><a href="#3-2">3.2 DOP Feedback</a></dt>
-  
-</dl>
-
-You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-0">     3.0 Enhancements to Memory Grant Feedback</a></b></h2>
-
-In this exercise you will learn how to see how memory grant feedback can improve query performance automatically including persisting feedback to the Query Store.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Automatic performance healing with Memory Grant Feedback Persistence </a></b></h2>
-
-Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\persistedmgf](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf)** folder.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
