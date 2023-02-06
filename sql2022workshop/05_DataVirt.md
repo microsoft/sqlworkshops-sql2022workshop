@@ -72,6 +72,8 @@ SQL Server 2022 extends the **BACKUP TO URL** and **RESTORE FROM URL** T-SQL sta
 
 You can see a list of common S3 compatible object storage providers at https://learn.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage.
 
+## Exercises
+
 Use the following sections in this module for exercises for data virtualization and backup/restore for S3 compatible object storage providers:
 
 <dl>

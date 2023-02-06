@@ -112,6 +112,8 @@ DOP feedback does not require recompilation but validation will be examined on a
 
 You can learn more about DOP feedback at https://aka.ms/dopfeedback.
 
+## Exercises
+
 You will go through the following exercises in this module to see built-in query intelligence in action:
 
 <dl>
