@@ -15,7 +15,7 @@ SQL Server 2022 provides built-in capabilities to reduce time for query tuning w
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Nd0mKM3O3sQ" target="_blank"><img src="http://img.youtube.com/vi/Nd0mKM3O3sQ/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
 
-You will go through the following exercises in this module to see built-in query intelligence in action:
+Read through the entire module to learn about all the built-in query intelligent capabilities or go directly to the following exercises in this module to see built-in query intelligence in action:
 
 <dl>
 
@@ -110,13 +110,21 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\03_Built
 
 You can get additional Intelligent Query Processing capabilities if you use dbcompat 160 or greater.
 
-### Parameter Sensitive Plan Optimization
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-1">     3.1 Parameter Sensitive Plan Optimization</a></b></h2>
 
 When a query is compiled, values for any parameters used in queries in a stored procedure or parameterized query are using to make decisions to build an execution plan. This concept is commonly known as *parameter sniffing*. Only one query plan can exist in cache for statements in a stored procedure or parameterized query. In most cases this does not result in any performance problems for applications. However, there are situations where the data retrieved for queries based on parameters can be *skewed*, or not evenly distributed. In these cases, the single cache plan may not be optimal for different parameter values. This problem is known as a *parameter sensitive plan*.
 
 In SQL Server 2022, the optimizer can detect parameter sensitive plan scenarios and cache multiple plans for the same stored procedure or parameterized query. The optimizer uses a concept called *query variants* to aggregate sets of parameter values to match a query plan best suited for those parameter values.
 
 You can learn more about Parameter Sensitive Plan Optimization at https://aka.ms/pspopt.
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
+
+In this exercise, you will learn how Parameter Sensitive Plan Optimization can help gain consistent performance for stored procedures that are sensitive to parameter values.
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\pspopt](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt)** folder.
 
 ### Cardinality Estimation (CE) Feedback
 
@@ -126,7 +134,9 @@ In SQL Server 2022, if the Query Store is enabled, the optimizer will evaluate h
 
 You can learn more about CE feedback at https://aka.ms/cefeedback.
 
-### Degree of Parallelism (DOP) feedback
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-2">     3.2 DOP Feedback</a></b></h2>
 
 The optimizer in SQL Server will in some cases run pieces of the query plan called operators using parallelism with multiple concurrent threads. The number of threads used for a query plan operator is called Degree of Parallelism (DOP). SQL Server can control the maximum number of threads per operator using server, database, resource group, or query settings called max degree of parallelism or MAXDOP. Setting the right MAXDOP for a SQL Server deployment can be a complex and sometimes difficult exercise.
 
@@ -138,23 +148,9 @@ DOP feedback does not require recompilation but validation will be examined on a
 
 You can learn more about DOP feedback at https://aka.ms/dopfeedback.
 
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-1">     3.1 Parameter Sensitive Plan Optimization</a></b></h2>
-
-In this exercise, you will learn how Parameter Sensitive Plan Optimization can help gain consistent performance for stored procedures that are sensitive to parameter values.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
-
-Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\pspopt](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt)** folder.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-2">     3.2 DOP Feedback</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Gain parallel efficiency with DOP Feedback</a></b></h2>
 
 In this exercise you will learn how SQL Server in cooperation with the Query Store can achieve parallel efficiency for a query over time.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Gain parallel efficiency with DOP Feedback</a></b></h2>
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\dopfeedback](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback)** folder.
 
