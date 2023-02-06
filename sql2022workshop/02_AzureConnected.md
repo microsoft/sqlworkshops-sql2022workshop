@@ -24,8 +24,6 @@ The SQL Server 2022 engine has been enhanced to integrate with all of these Azur
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bxh8UZDyifI" target="_blank"><img src="http://img.youtube.com/vi/bxh8UZDyifI/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Exercises</b></h2>
-
 You will learn more details about these features in this module:
 
 <dl>

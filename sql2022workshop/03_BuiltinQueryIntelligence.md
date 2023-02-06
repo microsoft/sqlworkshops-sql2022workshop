@@ -15,6 +15,20 @@ SQL Server 2022 provides built-in capabilities to reduce time for query tuning w
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Nd0mKM3O3sQ" target="_blank"><img src="http://img.youtube.com/vi/Nd0mKM3O3sQ/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
 
+Read through the entire module to learn about all the built-in query intelligent capabilities or go directly to the following exercises in this module to see built-in query intelligence in action:
+
+<dl>
+
+  <dt><a href="#3-0">3.0 Enhancements to Memory Grant feedback</a></dt>
+  <dt><a href="#3-1">3.1 Parameter Sensitive Plan optimization</a></dt>
+  <dt><a href="#3-2">3.2 DOP Feedback</a></dt>
+  
+</dl>
+
+You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
+
+____________________________________________________________________________________________________________________________________________________<br>
+
 ## Challenges for query tuning
 
 Developers and SQL experts can all agree that while queries often "just work" meet performance expectations situations arise require performance troubleshooting for query performance and an exercise to tune a query. Tuning query performance can be an expensive and often lengthy process.
@@ -43,7 +57,13 @@ While the Query Store is beneficial for reducing the amount of time required to 
 
 While the Query Store collected key performance information for queries, the query processor in SQL Server 2022 will also use the Query Store to persist information to accelerate query performance including to support features such as Optimized Plan Forcing, Memory Grant feedback, Cardinality Estimation (CE) Model feedback, and Degree of Parallelism (DOP) feedback.
 
-## Solutions for faster performance with the next generation of Intelligent Query Processing (IQP)
+____________________________________________________________________________________________________________________________________________________<br>
+
+## Challenges for query performance
+
+Developers and SQL professionals are looking for ways to improve query performance and ensure consistent performance without having to change the application or SQL query. They are looking for more intelligence built-in to the query optimizer in the engine.
+
+## Solutions for faster performance with no code changes using the next generation of Intelligent Query Processing (IQP)
 
 Intelligent Query Processing is a family of capabilities built into the query processor in the database engine designed to accelerate performance with no code changes. The next generation of Intelligent Query Processing is built on a foundation of capabilities found in SQL Server 2017 and 2019 as seen in the following figure:
 
@@ -56,9 +76,15 @@ The database engine uses two principles to make decisions for Intelligent Query 
 - Avoid causing any query performance regressions by using a new method or automation.
 - Provide a method at the database or query level to disable a specific IQP capability. This allows you to pick and choose which IQP feature you want enabled at the database or query level while using other IQP feature depending on your dbcompat level.
 
+The rest of this module is organized into capabilities based on:
+
+- Features available based on any dbcompat level
+- Additional features available based on dbcompat level 140+
+- Additional features available based on dbcompat level 160
+
 ## Capabilities after upgrading to SQL Server 2022
 
-If you upgrade to SQL Server 2022 there are new capabilities to accelerate performance independent of the database compatibility level (dbcompat) you use for your database. This allows you to take advantage of new features even if you need to use a dbcompat from a previous version of SQL Server. Learn more about dbcompat at https://aka.ms/dbcompat.
+If you upgrade to SQL Server 2022 there are new capabilities to accelerate performance independent of the database compatibility level (dbcompat) you use for your database. This allows you to take advantage of new features even if you need to use a dbcompat from a previous version of SQL Server. This includes **Approximate Percentile Functions** and **Optimized Plan Forcing**. Learn more about dbcompat at https://aka.ms/dbcompat.
 
 ### Approximate Percentile functions
 
@@ -68,11 +94,13 @@ SQL Server includes two T-SQL functions to help analytic workload calculate a pe
 
 Optimized plan forcing is a new capability in SQL Server 2022 intended to reduce the time it takes to compile certain queries if the query plan is forced in Query Store.
 
-Some queries by their nature can take a significant amount of time to compile. Optimized plan forcing provides a method to reduce the time it takes to compile a query by storing in the Query Store *compilation steps* for eligible queries that have query plans that are forced in the Query Store. Query plan forcing allows you to lock in a query plan for a specific query. The next time a query needs to be compiled that has optimized plan forcing enabled, compilation steps are used to significantly accelerate the compile phase to execute a query. You can learn more about Optimized Plan Forcing at https://learn.microsoft.com/sql/relational-databases/performance/optimized-plan-forcing-query-store. 
+Some queries by their nature can take a significant amount of time to compile. Optimized plan forcing provides a method to reduce the time it takes to compile a query by storing in the Query Store *compilation steps* for eligible queries that have query plans that are forced in the Query Store. Query plan forcing allows you to lock in a query plan for a specific query. The next time a query needs to be compiled that has optimized plan forcing enabled, compilation steps are used to significantly accelerate the compile phase to execute a query. You can learn more about Optimized Plan Forcing at https://learn.microsoft.com/sql/relational-databases/performance/optimized-plan-forcing-query-store.
 
 ## SQL Server 2022 additional capabilities using dbcompat 140 or greater
 
-You can get additional Intelligent Query Processing capabilities to enhance memory grant feedback in SQL Server 2022 if you are using dbcompat 140 or greater. Memory grant feedback was introduced in SQL Server 2017 (batch mode) and SQL Server 2019 (row mode). Memory grant feedback is a mechanism where the query processor will *learn* from execution feedback to adjust a memory grant for further executions thereby avoiding or reducing tempdb spills and RESOURCE_SEMAPHORE waits.
+You can get additional Intelligent Query Processing capabilities to enhance memory grant feedback in SQL Server 2022 if you are using dbcompat 140 or greater. This includes **Memory Grant Percentiles** and **Memory Grant Feedback**. Memory grant feedback was introduced in SQL Server 2017 (batch mode) and SQL Server 2019 (row mode). Memory grant feedback is a mechanism where the query processor will *learn* from execution feedback to adjust a memory grant for further executions thereby avoiding or reducing tempdb spills and RESOURCE_SEMAPHORE waits.
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-0">     3.0 Enhancements to Memory Grant Feedback</a></b></h2>
 
 ### Memory Grant Feedback Percentiles
 
@@ -84,17 +112,33 @@ Prior to SQL Server 2022, memory grant feedback was only stored in a cached plan
 
 You can learn more about memory grant feedback at https://learn.microsoft.com/sql/relational-databases/performance/intelligent-query-processing-feedback#memory-grant-feedback.
 
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Automatic performance healing with Memory Grant Feedback Persistence </a></b></h2>
+
+In this exercise you will learn how to see how memory grant feedback can improve query performance automatically including persisting feedback to the Query Store.
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\persistedmgf](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf)** folder.
+
 ## SQL Server 2022 additional capabilities using dbcompat 160 or greater
 
-You can get additional Intelligent Query Processing capabilities if you use dbcompat 160 or greater.
+You can get additional Intelligent Query Processing capabilities if you use dbcompat 160 or greater. This includes **Parameter Sensitive Plan Optimization**, **Cardinality Estimation (CE) Feedback**, and **Degree of Parallelism (DOP)**.Feedback.
 
-### Parameter Sensitive Plan Optimization
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-1">     3.1 Parameter Sensitive Plan Optimization</a></b></h2>
 
 When a query is compiled, values for any parameters used in queries in a stored procedure or parameterized query are using to make decisions to build an execution plan. This concept is commonly known as *parameter sniffing*. Only one query plan can exist in cache for statements in a stored procedure or parameterized query. In most cases this does not result in any performance problems for applications. However, there are situations where the data retrieved for queries based on parameters can be *skewed*, or not evenly distributed. In these cases, the single cache plan may not be optimal for different parameter values. This problem is known as a *parameter sensitive plan*.
 
 In SQL Server 2022, the optimizer can detect parameter sensitive plan scenarios and cache multiple plans for the same stored procedure or parameterized query. The optimizer uses a concept called *query variants* to aggregate sets of parameter values to match a query plan best suited for those parameter values.
 
 You can learn more about Parameter Sensitive Plan Optimization at https://aka.ms/pspopt.
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
+
+In this exercise, you will learn how Parameter Sensitive Plan Optimization can help gain consistent performance for stored procedures that are sensitive to parameter values.
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\pspopt](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt)** folder.
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 ### Cardinality Estimation (CE) Feedback
 
@@ -104,7 +148,9 @@ In SQL Server 2022, if the Query Store is enabled, the optimizer will evaluate h
 
 You can learn more about CE feedback at https://aka.ms/cefeedback.
 
-### Degree of Parallelism (DOP) feedback
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-2">     3.2 DOP Feedback</a></b></h2>
 
 The optimizer in SQL Server will in some cases run pieces of the query plan called operators using parallelism with multiple concurrent threads. The number of threads used for a query plan operator is called Degree of Parallelism (DOP). SQL Server can control the maximum number of threads per operator using server, database, resource group, or query settings called max degree of parallelism or MAXDOP. Setting the right MAXDOP for a SQL Server deployment can be a complex and sometimes difficult exercise.
 
@@ -116,47 +162,9 @@ DOP feedback does not require recompilation but validation will be examined on a
 
 You can learn more about DOP feedback at https://aka.ms/dopfeedback.
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Exercises</b></h2>
-
-You will go through the following exercises in this module to see built-in query intelligence in action:
-
-<dl>
-
-  <dt><a href="#3-0">3.0 Enhancements to Memory Grant feedback</a></dt>
-  <dt><a href="#3-1">3.1 Parameter Sensitive Plan optimization</a></dt>
-  <dt><a href="#3-2">3.2 DOP Feedback</a></dt>
-  
-</dl>
-
-You can find demonstrations of other built-in query intelligence capabilities at https://aka.ms/sqlserver2022demos.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-0">     3.0 Enhancements to Memory Grant Feedback</a></b></h2>
-
-In this exercise you will learn how to see how memory grant feedback can improve query performance automatically including persisting feedback to the Query Store.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityiqp">     Exercise: Automatic performance healing with Memory Grant Feedback Persistence </a></b></h2>
-
-Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\persistedmgf](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf)** folder.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-1">     3.1 Parameter Sensitive Plan Optimization</a></b></h2>
-
-In this exercise, you will learn how Parameter Sensitive Plan Optimization can help gain consistent performance for stored procedures that are sensitive to parameter values.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Get consistent performance with Parameter Sensitive Plan optimization</a></b></h2>
-
-Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\pspopt](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt)** folder.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="3-2">     3.2 DOP Feedback</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Gain parallel efficiency with DOP Feedback</a></b></h2>
 
 In this exercise you will learn how SQL Server in cooperation with the Query Store can achieve parallel efficiency for a query over time.
-
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="activityquerystore">     Exercise: Gain parallel efficiency with DOP Feedback</a></b></h2>
 
 Follow the instructions in the readme.md file in the **[sql2022workshop\03_BuiltinQueryIntelligence\dopfeedback](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback)** folder.
 
