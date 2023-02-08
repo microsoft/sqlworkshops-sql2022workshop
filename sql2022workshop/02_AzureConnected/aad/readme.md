@@ -14,7 +14,7 @@ Exercise for Azure Active Directory Authentication (AAD) for SQL Server 2022
     - **IMPORTANT**: You will need to be able to grant Admin consent for an Azure application. In order to grant Admin consent your AAD account must be a member of the Azure AD Global Administrator or Privilege Role Administrator. It is possible in your organization you don’t have this permission so either you will need to be granted this permission or have another AAD administrator configure this. Do not move forward until you have this permission resolved. If you don't have this permission you can setup AAD for SQL Server and your AAD admin will have access. But you will not be able to create any other AAD logins or users.
 - SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
 
-# Setup AAD with SQL Server 2022
+## Setup AAD with SQL Server 2022
 
 1. Create an Azure Key Vault.
     1. Add your AAD admin account in the Contributor role for the key vault you created

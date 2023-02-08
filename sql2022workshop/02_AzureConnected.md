@@ -30,8 +30,9 @@ You will learn more details about these features in this module:
 
   <dt><a href="#2-0">2.0 Managed Disaster Recovery with Azure SQL Managed Instance</a></dt>
   <dt><a href="#2-1">2.1 Near real-time analytics with Synapse Link for SQL</a></dt>
-  <dt><a href="#2-2">2.2 Azure Active Directory (AAD) Authentication</a></dt>
-  <dt><a href="#2-3">2.3 Microsoft Purview policy management</a></dt>
+  <dt><a href="#2-2">2.2 Azure Arc-enabled SQL Server</a></dt>
+  <dt><a href="#2-3">2.3 Azure Active Directory (AAD) Authentication</a></dt>
+  <dt><a href="#2-4">2.4 Microsoft Purview policy management</a></dt>
   
 </dl>
 
@@ -93,7 +94,36 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\02_Azure
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="2-2">     2.2 Azure Active Directory (AAD) Authentication</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="2-2">     2.2 Azure Arc-enabled SQL Server</a></b></h2>
+
+Azure Arc-enabled SQL Server is a set of software and cloud services to connect ***existing*** SQL Server instances located on-premises or in other clouds to provide hybrid capabilities.
+
+### Challenges
+
+Not all services and capabilities can be included in SQL Server. Sometimes the cloud provides capabilities as services that compliment SQL Server features.
+
+### Solutions with Azure Arc-enabled SQL Server
+
+By connecting a SQL Server to Azure using Azure Arc, you can gain the following capabilities through Azure services:
+
+- Pay-as-you-go licensing
+- Free inventory for the instance and databases
+- Best Practices Assessment
+- Microsoft Defender for SQL
+- Azure Active Directory Authentication*
+- Microsoft Purview Access Policies*
+
+* Only available with SQL Server 2022
+
+You can learn more about Azure Arc-enabled SQL Server at <https://learn.microsoft.com/sql/sql-server/azure-arc/overview>
+
+SQL Server 2022 offers the ability to configure SQL Server as an Azure Arc-enabled SQL Server during the setup process including Pay-as-you-go licensing. You can learn more at <https://learn.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup?view=sql-server-ver16#install-sql-server-2022>
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b><a name="azurearc">     Exercise: Using Azure Arc-enabled SQL Server</a></b></h2>
+
+Follow the instructions in the readme.md file in the **[sql2022workshop\02_AzureConnected\azurearc](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/02_AzureConnected/azurearc)** folder.
+
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="2-3">     2.3 Azure Active Directory (AAD) Authentication</a></b></h2>
 
 Azure AD provides a cloud-based central authentication authority for any organization using advanced authentication methods. SQL Server 2022 supports logins or users based on Azure AD accounts.
 
@@ -122,7 +152,7 @@ Follow the instructions in the readme.md file in the **[sql2022workshop\02_Azure
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="2-3">     2.3 Microsoft Purview policy management</a></b></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><b><a name="2-4">     2.4 Microsoft Purview policy management</a></b></h2>
 
 Microsoft Purview provides services for central governance by allowing you to create policies for authentication and authorization to SQL Server 2022.
 
