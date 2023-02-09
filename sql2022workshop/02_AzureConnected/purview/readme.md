@@ -14,10 +14,7 @@ Exercise for Microsoft Purview access policies for SQL Server 2022
 
 1. Create a Microsoft Purview account.
 1. Setup permissions with Purview to allow you to create, publish policies, and enable DUM. Please follow the steps in this documentation carefully to setup these permissions: https://docs.microsoft.com/azure/purview/how-to-policies-data-owner-arc-sql-server#conf
-1. Register your Purview account with the Azure extension for SQL Server through the Azure portal. 
-    1. Find your SQL Server – Azure Arc resource that you created for AAD Authentication in the Azure portal. Select on the left-hand menu Azure Active Directory.
-    1. Select enable and fill out the Microsoft Purview Endpoint by putting in your Purview account name.
-    1. Select Save at the top of the screen. When the progress message disappears the registration is complete.
+1. Execute the script**howboutthemcowboys.sql** against your SQL Server 2022 instance as your default sysadmin.
 
 ## Using Microsoft Purview access policies
 
@@ -27,6 +24,8 @@ Exercise for Microsoft Purview access policies for SQL Server 2022
 ### Create a data access policy for reading
 
 1. Use the Data Map menu option to register your Azure Arc-enabled SQL Server. Select Enable Data Use Management. The Application ID should be filled in automatically. If not select Refresh. Select Register.
+1. In the Azure Portal for the Azure Arc-enabled SQL Server, select Azure Active Directory on the left-hand menu. At the bottom click the button **Check for Microsoft Purview Governance**. This may take a few minutes to refresh and show the status as Governed.
+1. Switch back to the Purview Portal to add a data access policy.
 1. Under the Data Policy menu option select Data policies.
     1. Select + New Policy and then Access Control
     1. Type in a name and select + New Policy Statement
@@ -37,7 +36,6 @@ Exercise for Microsoft Purview access policies for SQL Server 2022
         1. For subjects type in the AAD account you want to give read access to in the Select subjects search window and then select Ok.
     1. Select Save to create the policy.
     1. Select your policy and select Publish on the right side of the screen. Choose your data source and select Publish at the bottom of the new screen. You should now see a Published On date and time on the screen for your policy.
-1. Execute the script**howboutthemcowboys.sql** against your SQL Server 2022 instance as your default sysadmin.
 1. Execute the script **policyrefresh.sql** against your SQL Server 2022 instance as your default sysadmin..
 1. Login into SSMS with the AAD account you created for the policy.
 1. Execute the script **querythecowboys.sql** as the new AAD account. You should get back results.

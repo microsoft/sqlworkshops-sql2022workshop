@@ -1,0 +1,7 @@
+resources
+| where type == "microsoft.azurearcdata/sqlserverinstances"
+| where resourceGroup == "bwvmsrg"
+| extend SQLVersion = properties.version, LicenseType = properties.licenseType, Edition = properties.edition, vCores = properties.vCore
+| project name, SQLVersion, LicenseType, Edition, vCores
+//| summarize count() by tostring(SQLVersion)
+ 

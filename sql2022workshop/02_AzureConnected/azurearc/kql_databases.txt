@@ -1,0 +1,6 @@
+resources
+| where type == "microsoft.azurearcdata/sqlserverinstances/databases"
+| where resourceGroup == "bwvmsrg"
+| extend state = properties.state, recoveryMode = properties.recoveryMode, sizeMB = properties.sizeMB, spaceAvailableMB = properties.spaceAvailableMB
+| project name, state, recoveryMode, sizeMB, spaceAvailableMB
+| sort by toint(sizeMB) desc

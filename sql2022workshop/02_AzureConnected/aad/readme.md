@@ -40,4 +40,4 @@ Exercise for Azure Active Directory Authentication (AAD) for SQL Server 2022
 1. Login to SSMS with this new AAD account to verify the login works and has sysadmin rights.
 1. Add another AAD account as a user in a database without creating a login by editing and executing the script **createaaduser.sql**.
 1. Login to SSMS with this new AAD account to verify the login works. You must use the option in SSMS to specify the database name from the script to connect since the account was directly added to the database.
-1. If you create an AAD group you can optionally give rights to the AAD group directly which allows all AAD accounts in the group to have login rights and permissions granted to the group. You can see an example of this syntax with **createaadgrouplogin.sql**.
+1. If you created an AAD group you can optionally give rights to the AAD group directly which allows all AAD accounts in the group to have login rights and permissions granted to the group. You can see an example of this syntax with **createaadgrouplogin.sql**.

@@ -23,3 +23,5 @@ For Linux users you can connect SQL to Azure Arc after installation. Learn more 
 
 ## Using Azure Arc-enabled SQL Server
 
+`UNDER CONSTRUCTION`
+
