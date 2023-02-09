@@ -1,4 +1,4 @@
-# Exercise for configuring and using an Azure Arc-enabled SQL Server 2022
+# Exercise for configuring and using an Azure Arc-enabled SQL Server 2022 (UNDER CONSTRUCTION)
 
 Exercise for configuring and using an Azure Arc-enabled SQL Server 2022 instance.
 
