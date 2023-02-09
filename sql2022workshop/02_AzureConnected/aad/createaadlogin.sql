@@ -1,6 +1,6 @@
 USE master;
 GO
-CREATE LOGIN [annahoffman@aadsqlmi.net] FROM EXTERNAL PROVIDER; 
+CREATE LOGIN [annahoffman@aadsqldboutlook.onmicrosoft.com] FROM EXTERNAL PROVIDER; 
 GO
-EXEC sp_addsrvrolemember @loginame='annahoffman@aadsqlmi.net', @rolename='sysadmin';
+EXEC sp_addsrvrolemember @loginame='annahoffman@aadsqldboutlook.onmicrosoft.com', @rolename='sysadmin';
 GO

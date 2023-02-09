@@ -1,8 +1,4 @@
-DROP DATABASE IF EXISTS howboutthemcowboys;
+USE WideWorldImporters;
 GO
-CREATE DATABASE howboutthemcowboys;
-GO
-USE howboutthemcowboys;
-GO
-CREATE USER [marisamathews@aadsqlmi.net] FROM EXTERNAL PROVIDER;
+CREATE USER [marisamathews@aadsqldboutlook.onmicrosoft.com] FROM EXTERNAL PROVIDER;
 GO
