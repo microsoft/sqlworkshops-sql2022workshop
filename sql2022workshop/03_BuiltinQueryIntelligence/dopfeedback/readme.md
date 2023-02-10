@@ -29,6 +29,8 @@ This demo will show you how to see how to get consistent performance with less C
 
     You should first see a **dop_feedback_eligible_query** event. This will take several minutes to first appear. Then you will see a series of **dop_feedback_provided** and **dop_feedback_validation** events until you see a final **dop_feedback_stabilized** event with a feedback_dop value of 4. Depending on your system it is possible the system can stabilize at a feedback_dop value of 2. If you encounter a **dop_feedback_reverted** event immediately then consider retrying the lab by starting back at **step 5**. If you encounter it more than once, you can try to restart SQL Server and/or the VM or computer.
 
+    > **IMPORTANT:** The workload requires queries to have a duration of *at least 10 seconds per execution* to be eligible for DOP feedback. You can use the XEProfiler in SSMS to see how fast your queries are executing. If you run the workload and don't see queries are eligible you can try to edit workload_index_scan_users.cmd to add more users using the -n parameter by providing a value > 1.
+
 1. Run the script **dop_query_stats.sql** to see the changes in DOP and resulting stats. Note the small decrease in avg duration and decrease in needed CPU across the various **last_dop** values.
 1. Run the script **check_query_feedback.sql** to see the persisted DOP feedback. Examine the values in the **feedback_desc** field to see the BaselineStats and LastGoodFeedback values.
 1. Look at **Top Resource Consuming Queries** report in SSMS. Change Statistics to Avg for Duration. Notice the decrease over time until stabilization. Do the same for Avg for CPU.
