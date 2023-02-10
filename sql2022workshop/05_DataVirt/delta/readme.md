@@ -6,6 +6,6 @@ This is an exercise for data virtualization in SQL Server 2022 using the new RES
 
 - You can view the T-SQL notebook with results in a web browser in Github or with Azure Data Studio.
 
-## Exercise for using parquet files with S3
+## Exercise for using delta tables with S3
 
 **Review** all the steps and queries in the Azure Data Studio notebook **querydelta.ipynb**. You can only execute the steps in this notebook if you complete the prereqs and steps in the [minio](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/05_DataVirt/minio) exercise.
