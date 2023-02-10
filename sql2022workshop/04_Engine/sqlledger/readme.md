@@ -22,7 +22,7 @@ This exercise will show you the fundamentals of an updatable ledger table.
 7. Look at the employees ledger view by executing the script **getemployeesledger.sql**. This is a view from the Employees table and a ledger *history* table. Notice the ledger has the transaction information from hidden columns in the table plus an indication of what type of operation was performed on the ledger for a specific row.
 8. Examine the definition of the ledger view by executing **getemployeesledgerview.sql**. The ledger history table uses the name **MSSQL_LedgerHistoryFor_[objectid of table]**. Notice the view is a union of the original table (for new inserts) and updates from the history table (insert/delete pair).
 9. You can combine the ledger view with a system table to get more auditing information. Execute the script  **viewemployeesledgerhistory.sql** to see an example. You can see that 'bob' inserted all the data along with a timestamp.
-10. To verify the integrity of the ledger let's generate a digest by executing the script **generatedigest.sql**. **Save the output value (including the brackets) to be used for verifying the ledger.**
+10. To verify the integrity of the ledger let's generate a digest by executing the script **generatedigest.sql**. **Save the output value (including the braces) to be used for verifying the ledger.**
 11. You can now see blocks generated for the ledger table by executing the script **getledgerblocks.sql**
 10. Try to update Jay Adam's salary to see if no one will notice by executing the script **updatejayssalary.sql**.
 11. Execute the script **getallemployees.sql** to see that it doesn't look anyone updated the data.
