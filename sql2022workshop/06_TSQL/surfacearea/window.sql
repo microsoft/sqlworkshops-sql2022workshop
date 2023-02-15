@@ -1,6 +1,6 @@
 -- Demo to use the new WINDOW clause in SQL Server 2022
 -- Credtis to Sharanya Bhat for providing this example demo
--- If you don't have AdventureWorks2022 just read the example to see query differences
+-- If you don't have AdventureWorks2012 just read the example to see query differences
 USE AdventureWorks2012;
 GO
 
