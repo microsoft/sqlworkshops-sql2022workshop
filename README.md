@@ -97,7 +97,7 @@ In order to complete the exercises in this workshop you will need the following:
 - For **Exercise 3.0 in Module 3** you will need to download a customized version of the **WideWorldImportersDW** sample database from [https://aka.ms/wwidw_mgf](https://aka.ms/wwidw_mgf).
 - For **Exercise 3.1 in Module 3** you will need to download a customized version of the **WideWorldImporters** sample database from [https://aka.ms/wwi_pspopt](https://aka.ms/wwi_pspopt).
 - For **Exercise 3.2 in Module 3** you will need to download a customized version of the **WideWorldImporters** sample database from [https://aka.ms/wwi_dop](https://aka.ms/wwi_dop).
-- Download **ostress.exe** by downloading RML utilities from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults.
+- Download **ostress.exe** by downloading RML utilities from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults. ostress relies on SQLNCLI11. We have seen some situations where this may not be installed. If not, please install SQLNCLI11 from <https://www.microsoft.com/en-us/download/details.aspx?id=50402>.
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
 in this repository under the Creative Commons Attribution 4.0 International Public License,
