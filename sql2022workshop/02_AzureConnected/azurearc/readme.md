@@ -41,7 +41,7 @@ Go through the following examples to see capabilities with Azure Arc-enabled SQL
 
 ### Best Practices Assessment (BPA)
 
-Best Practices Assessment (BPA) is a service to scan the configuraiton (not user data) of your SQL Server instance and databases and look for possible issues that could affect performance, availability, or security.
+Best Practices Assessment (BPA) is a service to scan the configuration (not user data) of your SQL Server instance and databases and look for possible issues that could affect performance, availability, or security.
 
 Carefully read and go through the sections for Prerequisites and Enable best practices assessment to setup BPA. This will require permissions to create a Log Analytics Workspace. Follow each step carefully to ensure BPA will be enabled.
 
