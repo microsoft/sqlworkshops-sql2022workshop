@@ -21,6 +21,9 @@ This demo will show you how to see how to get consistent performance with less C
     > **Note:** If you try to restore the default sample WideWorldImporters you can use the restorewwi.sql, populatedata.sql and rebuild_index.sql scripts to customize the database for the exercise.
 
 1. Restore this database to your SQL Server 2022 instance. You can use the provided **restorewwi.sql** script. You may need to change the directory paths for the location of your backup and where you will restore the database files.
+
+    > **IMPORTANT:** If you have permission issues to restore the backup you can try to copy the backup into the default "data" folder for your SQL Server installation and try the restore again. You will need to edit the restorewwi.sql script accordingly. The default for most instances is C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA
+
 1. Execute **proc.sql** to create a stored procedure
 1. Execute **dopxe.sql** to create and start an XEvent session. Use SSMS to Watch the XE session to see Live Data.
 1. Execute **dopfeedback.sql** to set Query Store settings and db setting for DOP feedback. 
