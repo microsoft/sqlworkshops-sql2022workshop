@@ -15,6 +15,9 @@ The following is an exercise to learn memory grant feedback persistence in SQL S
     **Note**: If you try to restore the default sample WideWorldImportersDW you can use the extendwwidw.sql script to customize the database for the exercise.
  
 1. Restore this database to your SQL Server 2022 instance. You can use the provided **restorewwidw.sql** script. You may need to change the directory paths for the location of your backup and where you will restore the database files.
+
+    > **IMPORTANT:** If you have permission issues to restore the backup you can try to copy the backup into the default "data" folder for your SQL Server installation and try the restore again. You will need to edit the restorewwidw.sql script accordingly. The default for most instances is C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA
+
 1. Setup the demo by executing the script **setup.sql**
 1. Simulate statistics out of date by executing the script **set_stats.sql**.
 1. Using SSMS choose the button to see Include Actual Execution plan (or use `<Ctrl>`+`<M>`) and execute a query that will use a memory grant from **execute_query.sql**. The query will take about 30 seconds to complete.
