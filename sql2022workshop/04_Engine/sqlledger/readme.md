@@ -27,14 +27,14 @@ This exercise will show you the fundamentals of an updatable ledger table. **Usi
 
 1. Create an updatable ledger table for Employees by executing the script **createemployeeledger.sql** from SSMS. Use SSMS Object Explorer to see the tables have properties next to their name that they are ledger tables and a new visual icon to indicate it is a ledger table.
 1. Populate initial employee data using the script **populateemployees.sql** from SSMS. 
-1. Examine the data in the employee table using the script **getallemployees.sql**. Notice there are "hidden" columns that are not shown if you execute a SELECT *. Some of these columns are NULL or 0 because no updates have been made to the data. You normally will not use these columns but use the *ledger view* to see information about changes to the employees table.
+1. Examine the data in the employee table using the script **getallemployees.sql**. Notice there are "hidden" columns that are not shown if you execute a SELECT *. Some of these columns are NULL or 0 because no updates have been made to the data. You normally will not use these columns but use the *ledger view* to see information about changes to the employees table. **Take note of Jay Adams salary which is 55415.00**.
 1. Look at the employees ledger view by executing the script **getemployeesledger.sql**. This is a view from the Employees table and a ledger *history* table. Notice the ledger has the transaction information from hidden columns in the table plus an indication of what type of operation was performed on the ledger for a specific row.
 1. Examine the definition of the ledger view by executing **getemployeesledgerview.sql**. The ledger history table uses the name **MSSQL_LedgerHistoryFor_[objectid of table]**. Notice the view is a union of the original table (for new inserts) and updates from the history table (insert/delete pair).
 1. You can combine the ledger view with a system table to get more auditing information. Execute the script  **viewemployeesledgerhistory.sql** to see an example. You can see that 'bob' inserted all the data along with a timestamp.
 1. To verify the integrity of the ledger let's generate a digest by executing the script **generatedigest.sql**. **Save the output value (including the braces) to be used for verifying the ledger.**. You will use this in a later step. This provides me a snapshot of the data at a point in time.
 1. You can now see blocks generated for the ledger table by executing the script **getledgerblocks.sql**
 1. Try to update Jay Adam's salary to see if no one will notice by executing the script **updatejayssalary.sql**.
-1. Execute the script **getallemployees.sql** to see that it doesn't look anyone updated the data. If you had not run this script before you wouldn't have known Jay's salary had changed.
+1. Execute the script **getallemployees.sql** to see that it doesn't look anyone updated the data. If you had not run this script before you wouldn't have known Jay's salary had been increased by 50,000.
 1. Execute the script **viewemployeesledgerhistory.sql** to see the audit of the changes and who made them. Notice 3 rows for Jay Adam's. Two for the update (DELETE and INSERT) and 1 for the original INSERT.
 1. Let's verify the current state of the ledger. Edit the script **verifyledger.sql** by substituting the JSON value result from the **generatedigest.sql** script (include the brackets inside the quotes) you ran in a previous step. Note the **last_verified_block_id** matches the digest and the result in **getledgerblocks.sql**. If someone had tried to fake out the system but tampering with Jay's salary without using a T-SQL update, the verification would have failed.
 
@@ -51,8 +51,8 @@ Let's assume we have required application developers to record any change made b
 
 1. Use the SQL login **bob** to create an append-only ledger table for auditing of the application by executing the script **createauditledger.sql**.
 1. To simulate a user using the application to change someone else's salary **connect to SSMS as the app login** created with the **createdb.sql** script and execute the script **appchangemaryssalary.sql**
-1. **Logging back in as bob login**, look at the ledger by executing the script **viewemployeesledgerhistory.sql**. All you can see is that the "app" changed Mary's salary.
-1. Using the **bob** again, look at the audit ledger by executing the script **getauditledger.sql**. This ledger cannot be updated so the app must "log" all operations and the originating user from the app who initiated the operation. So I can see from the Employees ledger history that the **app** user changed Mary's salary but the "app ledger table" shows **troy** was the actual person who used the app to make the change.
+1. **Logging back in as bob login**, look at the ledger by executing the script **viewemployeesledgerhistory.sql**. All you can see is that the **app** login changed Mary's salary. But what user from the web application made this change?
+1. Using the **bob** login again, look at the audit ledger by executing the script **getauditledger.sql**. This ledger cannot be updated so the app must "log" all operations and the originating user from the app who initiated the operation. So I can see from the Employees ledger history that the **app** user changed Mary's salary but the "app ledger table" shows **troy** was the actual person who used the app to make the change.
 
 ## Exercise 3: Protecting Ledger tables from DDL changes
 
