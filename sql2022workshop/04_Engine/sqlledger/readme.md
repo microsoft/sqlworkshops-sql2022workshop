@@ -52,7 +52,9 @@ Let's assume we have required application developers to record any change made b
 1. Use the SQL login **bob** to create an append-only ledger table for auditing of the application by executing the script **createauditledger.sql**.
 1. To simulate a user using the application to change someone else's salary **connect to SSMS as the app login** created with the **createdb.sql** script and execute the script **appchangemaryssalary.sql**
 1. **Logging back in as bob login**, look at the ledger by executing the script **viewemployeesledgerhistory.sql**. All you can see is that the **app** login changed Mary's salary. But what user from the web application made this change?
-1. Using the **bob** login again, look at the audit ledger by executing the script **getauditledger.sql**. This ledger cannot be updated so the app must "log" all operations and the originating user from the app who initiated the operation. So I can see from the Employees ledger history that the **app** user changed Mary's salary but the "app ledger table" shows **troy** was the actual person who used the app to make the change.
+1. Using the **bob** login again, look at the audit ledger by executing the script **getauditledger.sql**. This ledger table cannot be updated so the app must "log" all operations and the originating user from the app who initiated the operation. I can see from the Employees ledger history that the **app** user changed Mary's salary but the "app ledger table" shows **troy** was the actual person who used the app to make the change.
+
+Append-only ledger tables also have the same tamper evident proof of tampering with the database ledger blocks and database digests.
 
 ## Exercise 3: Protecting Ledger tables from DDL changes
 
@@ -62,6 +64,7 @@ Let's see how admin trying to change ledger table properties or drop ledger tabl
 1. Admins are restricted from altering certain aspects of a ledger table, removing the ledger history table, and there is a record kept of any dropped ledger table (which you cannot drop). See these aspects of ledger by executing the script **admindropledger.sql**
 1. Execute **getledgerobjects.sql** again to see the original created and then dropped ledger table.
 1. Execute **auditdroppedledgertable.sql** to see who created and dropped the ledger tables.
+1. If you are using SSMS 19.X, Object Explorer also can show **Dropped Ledger Tables**.
 
 ## Exercise 4: What does tampering look like?
 
