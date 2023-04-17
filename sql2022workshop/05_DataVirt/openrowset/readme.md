@@ -12,7 +12,7 @@ This is an exercise to see the fundamental capability of data virtualization usi
 
 1. Execute the script **enablepolybase.sql** to enable the Polybase feature for the instance. If you encounter Msg 46923 you need to add the Polybase feature. The Polybase services do not need to be running.
 1. Restart SQL Server even if you installed the Polybase feature as part of setup. You can safely stop the Polybase services. They are not required to be running to use the new REST API connectors.
-1. Execute the statements in the script **openrowset.sql** to view data from parquet files and a list a files from a public data set in Azure. If you encounter the following error
+1. Execute the statements in the script **openrowset.sql** to view data from parquet files and a list of files from a public data set in Azure. If you encounter the following error
 
 ```sql
 Msg 102, Level 15, State 1, Line 5
