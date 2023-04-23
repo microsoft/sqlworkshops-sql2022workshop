@@ -11,7 +11,7 @@ Follow these steps for an exercise to see system page latch concurrency enhancem
 
 ## Setup the exercise
 
-1. Configure perfmon to track SQL Server **SQL Statistics:SQL Statistics/Batch requests/sec** (set Scale to 0.1) and **SQL Server:Wait Statistics/Page latch waits/Waits started per second**.
+1. Configure perfmon to track SQL Server **SQL Statistics:SQL Statistics/Batch requests/sec** (set Scale to 0.1) and **SQL Server:Wait Statistics/Page latch waits/Waits started per second** (set scale to 0.01).
 1. Execute the script **findtempdbfiles.sql** and save the output. A script is provided for the end of this exercise to restore back your tempdb file settings.
 1. Start SQL Server in minimal mode using the command script **startsqlminimal.cmd**
 1. Execute the command script **modifytempdbfiles.cmd**. This will execute the SQL script **modifytempdbfiles.sql** to expand the log to 200Mb (avoid any autogrow) and remove all tempdb files other than 1. If you have more than 4 tempdb files you need to edit this script to remove all of them except for tempdev.
