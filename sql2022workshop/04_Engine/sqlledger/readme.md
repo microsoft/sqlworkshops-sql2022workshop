@@ -6,7 +6,7 @@ These are exercises to learn Ledger for SQL Server for SQL Server 2022. In this 
 - We want to use ledger to see when changes are made, what the actual change was (INSERT, UPDATE, DELETE) and see the SQL principal that was associated with the change.
 - A web application also can be used to make changes to this table but the web application uses a common "app" login. So we will require web developers to capture the "true user" of the web application that results in a change to the table and record this information in a separate append-only ledger table. Therefore, when a change is found for the table for the "app" SQL principal we can use the append-only ledger table to see who the "true user" who made the change from the web application. Since this is an append-only ledger table, any SQL sysadmin cannot tamper with this table by making direct updates.
 
-## Prerequisistes
+## Prerequisites
 
 - SQL Server 2022 Evaluation or Developer Edition. **You must configure SQL Server for mixed mode authentication**. You will be creating two SQL logins for this exercise: A sysadmin login called **bob** and an "application" login called **app**.
 - Virtual machine or computer with minimum 2 CPUs with 8Gb RAM.
