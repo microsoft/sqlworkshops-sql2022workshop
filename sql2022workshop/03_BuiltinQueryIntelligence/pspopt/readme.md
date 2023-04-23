@@ -12,7 +12,7 @@ The following is an exercise to learn Parameter Sensitive Plan Optimization in S
 ## Setup the exercise
 
 1. Create a directory called **c:\sql_sample_databases** to store backups and files.
-2. Download a backup of a customized version of the WideWorldImporters sample database from [https://aka.ms/wwi_pspopt](https://aka.ms/wwi_pspopt) from and copy it into c:\sql_sample_databases directory.
+2. Download a backup of a customized version of the WideWorldImporters sample database from [https://aka.ms/wwi_pspopt](https://aka.ms/wwi_pspopt) and copy it into c:\sql_sample_databases directory.
 
     > **Note**: If you try to restore the default sample WideWorldImporters you can use the restorewwi.sql, populatedata.sql and rebuild_index.sql scripts to customize the database for the exercise.
 
