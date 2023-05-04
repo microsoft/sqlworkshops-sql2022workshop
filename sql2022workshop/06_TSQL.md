@@ -14,6 +14,10 @@ SQL Server 2022 enhances the developer experience with the following enhancement
 - Enhancements and new T-SQL functions for core T-SQL scenarios.
 - New T-SQL functions to process time series data.
 
+**Watch this video** on T-SQL enhancements in SQL Server 2022 on Data Exposed:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=5p8dezwwnzQ" target="_blank"><img src="http://img.youtube.com/vi/5p8dezwwnzQ/0.jpg" alt="Data virtualization in SQL Server 2022" width="400" height="300" border="10" /></a>
+
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"><b>     Exercises</b></h2>
 
 You will cover the following topics in this Module:
