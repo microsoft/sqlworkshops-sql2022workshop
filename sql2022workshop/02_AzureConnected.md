@@ -22,7 +22,7 @@ The SQL Server 2022 engine has been enhanced to integrate with all of these Azur
 
 **Watch this video** on the cloud connected capabilities of SQL Server 2022 on Data Exposed:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=bxh8UZDyifI" target="_blank"><img src="http://img.youtube.com/vi/bxh8UZDyifI/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=bxh8UZDyifI" target="_blank"><img src="http://img.youtube.com/vi/bxh8UZDyifI/0.jpg" alt="Azure Connected in SQL Server 2022" width="400" height="300" border="10" /></a>
 
 You will learn more details about these features in this module:
 

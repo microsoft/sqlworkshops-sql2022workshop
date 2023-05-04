@@ -13,7 +13,7 @@ SQL Server 2022 provides built-in capabilities to reduce time for query tuning w
 
 **Watch this video** on built-in query intelligence in SQL Server 2022 on Data Exposed:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Nd0mKM3O3sQ" target="_blank"><img src="http://img.youtube.com/vi/Nd0mKM3O3sQ/0.jpg" alt="Introducing SQL Server 2022" width="400" height="300" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Nd0mKM3O3sQ" target="_blank"><img src="http://img.youtube.com/vi/Nd0mKM3O3sQ/0.jpg" alt="Built-in query intelligence in  SQL Server 2022" width="400" height="300" border="10" /></a>
 
 Read through the entire module to learn about all the built-in query intelligent capabilities or go directly to the following exercises in this module to see built-in query intelligence in action:
 
