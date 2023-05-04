@@ -10,6 +10,10 @@
 
 While the Query Store and Intelligent Query Processing are built into the SQL Server engine, SQL Server 2022 continues a tradition of an industry-proven database engine with new capabilities in security, scalability, and availability.
 
+**Watch this video** on the "meat and potatoes" in SQL Server 2022 on Data Exposed:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=DkISiOiDuLs" target="_blank"><img src="http://img.youtube.com/vi/Nd0mKM3O3sQ/0.jpg" alt="Industry proven engine in SQL Server 2022" width="400" height="300" border="10" /></a>
+
 In this unit you will learn about some of the new major features in the engine. You can refer to https://aka.ms/sqlserver2022 docs to see all 25+ new engine features.
 
 Read through the entire module to learn about all the new core engine capabilities or go directly to the following exercises in this module to see new engine features in action:
