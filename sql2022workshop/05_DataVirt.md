@@ -10,6 +10,10 @@
 
 SQL Server 2022 provides data virtualization capabilities to access data stored in formats such as parquet and delta tables over sources such as Azure Blob Storage, Azure Data Lake Storage, and S3 compatible object storage providers. In addition, SQL Server 2022 enhances remote backup and restore capabilities by supporting S3 compatible object storage providers.
 
+**Watch this video** on the data virtualization in SQL Server 2022 on Data Exposed:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=V5PpQlqom-Q" target="_blank"><img src="http://img.youtube.com/vi/V5PpQlqom-Q/0.jpg" alt="Data virtualization in SQL Server 2022" width="400" height="300" border="10" /></a>
+
 Read through the entire module to learn about all the new data virtualization capabilities or go directly to the following exercises in this module to see new features in action:
 
 <dl>
