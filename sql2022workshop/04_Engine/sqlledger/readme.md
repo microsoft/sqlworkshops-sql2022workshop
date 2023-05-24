@@ -37,9 +37,9 @@ This exercise will show you the fundamentals of an updatable ledger table. **Usi
 1. Try to update Jay Adam's salary to see if no one will notice by executing the script **updatejayssalary.sql**.
 1. Execute the script **getallemployees.sql** to see that it doesn't look anyone updated the data. If you had not run this script before you wouldn't have known Jay's salary had been increased by 50,000.
 1. Execute the script **viewemployeesledgerhistory.sql** to see the audit of the changes and who made them. Notice 3 rows for Jay Adam's. Two for the update (DELETE and INSERT) and 1 for the original INSERT.
-1. Let's generate another digest and verify it. Execute the script again **generatedigest.sql**. **Save the new output value (including the braces) to be used for verifying the ledger.**.
-1. Let's verify the current state of the ledger again. Edit the script **verifyledger.sql** by substituting the JSON value result from the **generatedigest.sql** script (include the brackets inside the quotes) you just ran and execute the script. 
-1. Execute the script **getledgerblocks.sql** again. Note the **last_verified_block_id** from **verifyledger.sql** matches the digest and the result of the new row in **getledgerblocks.sql**. If someone had tried to fake out the system but tampering with Jay's salary without using a T-SQL update, the verification would have failed.
+1. Let's generate another digest and verify it. Execute the script again **generatedigest2.sql**. **Save the new output value (including the braces) to be used for verifying the ledger.**.
+1. Let's verify the current state of the ledger again. Edit the script **verifyledger2.sql** by substituting the JSON value result from the **generatedigest2.sql** script (include the brackets inside the quotes) you just ran and execute the script. 
+1. Execute the script **getledgerblocks.sql** again. Note the **last_verified_block_id** from **verifyledger2.sql** matches the digest and the result of the new row in **getledgerblocks.sql**. If someone had tried to fake out the system but tampering with Jay's salary without using a T-SQL update, the verification would have failed.
 
 Let's summarized how ledger has helped you:
 
