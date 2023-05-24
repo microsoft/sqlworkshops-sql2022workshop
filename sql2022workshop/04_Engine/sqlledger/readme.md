@@ -33,10 +33,12 @@ This exercise will show you the fundamentals of an updatable ledger table. **Usi
 1. You can combine the ledger view with a system table to get more auditing information. Execute the script  **viewemployeesledgerhistory.sql** to see an example. You can see that 'bob' inserted all the data along with a timestamp.
 1. To verify the integrity of the ledger let's generate a digest by executing the script **generatedigest.sql**. **Save the output value (including the braces) to be used for verifying the ledger.**. You will use this in a later step. This provides me a snapshot of the data at a point in time.
 1. You can now see blocks generated for the ledger table by executing the script **getledgerblocks.sql**
+1. Let's verify the current state of the ledger. Edit the script **verifyledger.sql** by substituting the JSON value result from the **generatedigest.sql** script (include the brackets inside the quotes) you ran in a previous step. Note the **last_verified_block_id** matches the digest and the result in **getledgerblocks.sql**.
 1. Try to update Jay Adam's salary to see if no one will notice by executing the script **updatejayssalary.sql**.
 1. Execute the script **getallemployees.sql** to see that it doesn't look anyone updated the data. If you had not run this script before you wouldn't have known Jay's salary had been increased by 50,000.
 1. Execute the script **viewemployeesledgerhistory.sql** to see the audit of the changes and who made them. Notice 3 rows for Jay Adam's. Two for the update (DELETE and INSERT) and 1 for the original INSERT.
-1. Let's verify the current state of the ledger. Edit the script **verifyledger.sql** by substituting the JSON value result from the **generatedigest.sql** script (include the brackets inside the quotes) you ran in a previous step. Note the **last_verified_block_id** matches the digest and the result in **getledgerblocks.sql**. If someone had tried to fake out the system but tampering with Jay's salary without using a T-SQL update, the verification would have failed.
+1. Let's generate another digest and verify it. Execute the script again **generatedigest.sql**. **Save the new output value (including the braces) to be used for verifying the ledger.**.
+1. Let's verify the current state of the ledger again. Edit the script **verifyledger.sql** by substituting the JSON value result from the **generatedigest.sql** script (include the brackets inside the quotes) you just ran. Execute the script **getledgerblocks.sql** again. Note the **last_verified_block_id** from **verifyledger.sql** matches the digest and the result of the new row in **getledgerblocks.sql**. If someone had tried to fake out the system but tampering with Jay's salary without using a T-SQL update, the verification would have failed.
 
 Let's summarized how ledger has helped you:
 
@@ -58,7 +60,7 @@ Append-only ledger tables also have the same tamper evident proof of tampering w
 
 ## Exercise 3: Protecting Ledger tables from DDL changes
 
-Let's see how admin trying to change ledger table properties or drop ledger tables. Use the SQL syadmin login **bob** to execute all scripts for this exercise.
+Let's see how admin trying to change ledger table properties or drop ledger tables. Use the SQL sysadmin login **bob** to execute all scripts for this exercise.
 
 1. You can also view which tables and columns have been created for SQL Server ledger by executing the script **getledgerobjects.sql**
 1. Admins are restricted from altering certain aspects of a ledger table, removing the ledger history table, and there is a record kept of any dropped ledger table (which you cannot drop). See these aspects of ledger by executing the script **admindropledger.sql**
